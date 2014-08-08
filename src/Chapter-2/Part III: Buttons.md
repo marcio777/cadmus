@@ -16,7 +16,6 @@ Here is the code, copy it:
 
 ```java
 public class Buttons extends JFrame implements ActionListener {
-
     JButton btn1 = new JButton("Button 1");
     JButton btn2 = new JButton("Button 2");
 	JLabel label = new JLabel("No buttons have been clicked", JLabel.CENTER);
@@ -47,7 +46,6 @@ public class Buttons extends JFrame implements ActionListener {
             label.setText("btn2 was clicked");
         }
     }
-
 }
 ```
 

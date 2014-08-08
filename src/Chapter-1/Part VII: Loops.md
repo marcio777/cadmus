@@ -7,7 +7,7 @@ There a four main loops in Java, the **for loop**, **while loop**, **do loop**, 
 
 ## For loops
 
-For loops are mostly used for counting up or down in steps, usually in steps of one.  The initial condition is an int which you can initialise to a value of your choice (most of the time we use 0 if counting up to a certain value), and the final condition is the value you want to count up or down to.  We also have a function to increase the number of steps, for increasing by one we will use ++ (as described previously), and for decreasing by one we will use --.  So now you know how a for loop works it is time to show you what one looks like.  Below is a for loop which starts at 0, counts up by 1 each step, and prints out the number of each step, until 10 steps have been reached.  (Notice the parameters of the method countTen says `void`, this is because the method does not require any parameters, and putting void is clearer than simply leaving the parameters blank).
+For loops are mostly used for counting up or down in steps, usually in steps of one.  The initial condition is an integer which you can initialise to a value of your choice (most of the time we use 0 if counting up to a certain value), and the final condition is the value you want to count up or down to.  We also have a function to increase the number of steps, for increasing by one we will use ++ (as described previously), and for decreasing by one we will use --.  So now you know how a for loop works it is time to show you what one looks like.  Below is a for loop which starts at 0, counts up by 1 each step, and prints out the number of each step, until 10 steps have been reached.  (Notice the parameters of the method countTen says `void`, this is because the method does not require any parameters, and putting void is clearer than simply leaving the parameters blank).
 
 ```java
 public void countTen() {
@@ -42,7 +42,7 @@ So, onto the while loop.  The while loop has only one condition and if the condi
 ```java
 public void countTenWithWhileLoop() {
 	int n = 0;
-	while (n<=10) {
+	while (n <= 10) {
 		System.out.println(n);
 	}
 }

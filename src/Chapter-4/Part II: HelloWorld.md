@@ -121,21 +121,3 @@ However this gives a lot less control over the scroll bars, for example without 
 
 ### Ex 3
 Import more images and put the on JLabels. If the image is very big, add scroll bars to it. Also, explore the different scroll bar policies i.e. `VERTICAL_SCROLLBAR_ALWAYS`, `VERTICAL_SCROLLBAR_AS_NEEDED` and `VERTICAL_SCROLLBAR_NEVER`.
-
-## JSplitPane
-Now you can put an image onto the screen and add scroll bars to it if it is too big. But what if you want to put two images on to the screen next to eachother, and want to be able to dictate just how much space each image takes up? For that purpose you can use a `JSplitPane`. This is a pane that contains two images and has a functionality with which you can change how much of the screen each image takes. To do this you will have to import `javax.swing.JSplitPane`, and will have to declare a new `JSplitPane`. Inside the parameters however, you will have to add some other things, including scroll bars (because otherwise you will not be able to dictate how much of each picture you see). The declaration will end up looking like this:
-
-```java
-JSplitPane split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, new JScrollPane(label1), new JScrollPane(label2));
-//where 'label1' and 'label2' are predeclared labels.
-```
-
-Then, in the constructor, you set those labels to be your images of choice and add the split pane to the JFrame. This particular piece of code, along with all of the other things needed for it to function, cretes this:
-
-![A horizontally split pane](../Images/horizontal_split.png)
-
-You could also change the `HORIZONTAL_SPLIT` to `VERTICAL_SPLIT`, but that would not be very good for our penguins health:
-
-![A vertically split pane](../Images/vertical_split.png)
-
-He seems to now have a massive mound of rock instead of a body.

@@ -1,18 +1,22 @@
 Calling methods
 ===
 
-You've defined a method, but it won't do anything until you call it.
+You've defined a non-static method, that is to say an instance method, but it won't do anything until you call it.
 
 You can call methods inside the main method like so:
 
 i) First, create a new object:
+
 ```java
 Task myNewObject = new Task();
 ```
+
 ii)	Then, call the method on the object like so:
+
 ```java
 myNewObject.methodName();
 ```
+
 Note that in order to call a method on an object, all you really need to do is put a dot after the object name, followed by the method name and parameter list. 
 
 For example, in **Ex 1** of Part II:
@@ -22,6 +26,7 @@ i) Create a new object: ```java Task anObject = new Task();``` (`anObject` can b
 ii) Call the method on the object: ```java anObject.pizzazzYo(10);```
 
 You can also call one method inside another method like so:
+
 ```java
 public void iAmAMethod() {
   iAmAnotherMethod();

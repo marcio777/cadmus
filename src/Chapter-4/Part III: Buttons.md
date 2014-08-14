@@ -61,6 +61,9 @@ These are what should be outputted at the start; when the first button is clicke
 
 ![What happens when button 2 is clicked](../Images/btn2_clicked.png)
 
+### Ex 1
+Use what you have been taught here to create a random number generator that generates a number between 1 to 100.
+
 ## Adding Images
 These buttons are all well and good, but to be honest, they don't look very good. For that reason, it's time to find out how to add images to buttons. You do this in much the same way that you add images to labels, using ImageIcons. So, to do this you would include the following code:
 

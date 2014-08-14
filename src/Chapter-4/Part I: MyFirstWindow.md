@@ -1,7 +1,7 @@
 MyFirstWindow
 ===
 
-Chapter 2 is all about Graphics. To make your first GUI (graphical user interface) application, i.e. GUIpplication, you need to use the package `javax.swing.JFrame`. Here is an example of an empty window:
+Chapter 2 is all about Graphics. To make your first GUI (graphical user interface) application you need to import the package `javax.swing.JFrame`. Here is an example of an empty window:
 
 ```java
 public class MyFirstWindow extends JFrame {
@@ -34,7 +34,7 @@ To use this import you will have to use the following syntax:
 
 ```java
 getContentPane().setBackground(Color.YELLOW);
-//this will create a yellow window, however you can replace this with other colours.
+// this will create a yellow window, however you can replace this with other colours.
 ```
 
 As you can see, you can change the colour of your background using the method `setBackground(Colour)`. There are wide range of existing colours like:

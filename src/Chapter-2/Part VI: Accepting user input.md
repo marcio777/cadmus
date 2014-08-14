@@ -7,9 +7,9 @@ i)	Write above the line where the class begins:
 ```java
 import java.util.Scanner;
 ```
-This line must be included above your class i.e. `Public class...` in order for you to be able to create a `Scanner` object to accept user input.
+This line must be included above your class i.e. `public class...` in order for you to be able to create a `Scanner` object to accept user input.
 
-ii)	Have some statement such as `System.out.println(“Enter number:”);` in order to prompt the user to enter a number. Otherwise they won’t know!
+ii)	Have some statement such as `System.out.println("Enter number:");` in order to prompt the user to enter a number. Otherwise they won’t know!
 
 iii)	Create a new `Scanner` object by following this rule: 
 ```java
@@ -25,7 +25,7 @@ and secondly, store information inside the variable using:
 ```java
 myString = myScanner.nextLine();
 ```
-By letting `myString` equal the `Scanner` object dot `nextLine`, we’re telling the scanner input object to give us the entire line that was just typed in by the user and assign/store it in `userInput`.
+By letting `myString` equal the `Scanner` object `.nextLine`, we’re telling the scanner input object to give us the entire line that was just typed in by the user and assign/store it in `userInput`.
 
 When placing the dot after `myScanner`, you should notice Eclipse provides you a bunch of options other than `nextLine()`. Depending on what kind of input you’d like to accept you can choose `nextInt()` to accept an `int` input or `nextDouble()` to accept a `double` input type.
 
@@ -45,5 +45,23 @@ Things to think about:
 
 HINTS: 
 - Remember to import the `math` package
-- Also, for methods you can use refer to ![the official docs](http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html)
-- The sin/tan/cos methods in Java give back a result in radians. What method (that you have previously made) would you have to utilise? 
+- Also for methods in the `math` package you canrefer to [the official docs](http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html)
+- The sin/tan/cos methods in Java give back a result in radians. What method (that you have previously made) would you have to utilise?
+
+### Ex 4
+Use what you have been taught to create a command line version of the game, Hangman. For the sake of simplicity display the lives as a number, rather than drawing out a pretty diagram, unless you really want to. Use `.nextLine()` coupled with `.substring()` to get a `char`. Some of what you'll:
+- A global variable to store a series of possibilites
+- A method to generate a random word
+- A variable to store the chosen word
+- A variable (perhaps a boolean array) to store the characters that have been discovered
+- A method to filter out the word with underscores
+
+To generate random numbers: 
+
+```java
+  Random rand = new Random();
+  int randomNum = rand.nextInt(max);
+  // will generate a random number between 0 (inclusive) and max (exclusive)
+```
+
+You will need to import `java.util.Random`.

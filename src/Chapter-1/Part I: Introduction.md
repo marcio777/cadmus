@@ -1,62 +1,7 @@
-# Coding Curriculum - Java KS4
+Installing Eclipse
+===
 
-## Description:
-In this chapter the students will learn basic programming concepts and make their first Java program.
-
-## Learning Objectives:
-**We are aiming to:** 
-- Learn programming concepts; these concepts that you will learn are core concepts that you will have to know to be able to program in any language, not just Java.
-- Make your first Java program, preferably with errors (although no one will complain if there are not any), so that you get a good feel for debugging - something that as a programmer you will have to do very often. 
-
-**This is because:** 
-- These are the basic skills required to program in Java and all other languages. With these concepts mastered it's possible to learn other programming languages in the future.
-
-
-## Success Criteria
-**By the end of the chapter, students will be able to:**
-- Successfully run a Java program without any errors.
-- Be able to talk about programming concepts with relative confidence.
-
-## Previous Experience and Prior Knowledge Required:
-- None for the students.
-- An understanding of core Java and Java coding for the teacher(s).
-
-## Lesson Plan
-Feel free to split this plan up into multiple sections or not to use it at all.
-
-- Lesson Introduction
-
-  1. Student Activities:
-  
-    * You will go over: how to print out text to the console (and what that in itself is); how to initialise  a variable (and the different types of variable); what selection is (if-else statements); how to perform arithmetic operations; what methods are and when it is best to use them; understand why  Loops and If else statements are so important to programmers; and finally what class types are, such as what Objects are and how to use them and what Strings are (the latter will most likely be covered in the previous parts).
-
-  2. Teacher Activities:
-  
-    * Teachers must set up Eclipse and then proceed to help the students with what they are learning - it may be helpful to have previously created model answers for reference.
-
-- Main Activities
-
-  1. Student Activities:
-  
-    * There are a total of 20 exercises for students to work through in this section. Students should aim to complete all 20 questions, some of which are more challenging than others. There are many different ways to approach each of the exercises, and students must take this into account when attempting the exercises.
-
-  2. Teacher Activities:
-  
-    * Help students if they have questions regarding the exercises; if the question is about programming then refer to pages in this book/your own knowledge for further information. However, if the query involves errors in a program, read the error and try to figure out what is going wrong or what the error is trying to tell you. Proceed to analyse the error with the student as should have been explained in the introduction of the lesson(s).
-
-- Plenary (review)
-  
-  1. Student Activities:
-  
-    * Talk amongst peers about the concepts you have learnt, and ask each other challenging questions. If you get stuck, be sure to ask your teacher(s).
-  
-  2. Teacher Activities:
-  
-    * Answer all of the students' queries, as before.
-
-## Installing Eclipse
-
-The students will be using a program called Eclipse to complete their exercises in. Eclipse is an example of an IDE, which stands for **Integrated Development Environment**. In short, an IDE is an application which contains a set of tools used to create programs in whichever language you are using. The main tools which you and your students will be using are an editor which is used to write and edit code, and an interpreter. I have mentioned the interpreter here, however you do not explicitly use the interpreter, it simply runs without you doing anything. As you type in code, the interpreter will constantly check to see if the syntax of your code is correct and that you have not made any silly mistakes. So you can imagine the interpreter as being an English teacher who is constantly checking to see if your grammar/punctuation (syntax) is correct whilst you write sentences, or in our case, code. As the interpreter is running all the time it means that if you are typing in code and you have not yet finished writing the line, you may encounter errors and your code may be underlined in red. This is nothing to worry about and will only be a problem when you finish writing the line, at which point you need to do some investigative work. Try to see if you have made a silly mistake, and if that endeavour bears no fruit, read the error and try to understand what it is trying to tell you, and then correct the mistake. This process of finding and eliminating errors is known as **debugging**.
+You will be using a program called Eclipse to complete their exercises in. Eclipse is an example of an IDE, which stands for **Integrated Development Environment**. In short, an IDE is an application which contains a set of tools used to create programs in whichever language you are using. The main tools which you and your students will be using are an editor which is used to write and edit code, and an interpreter. I have mentioned the interpreter here, however you do not explicitly use the interpreter, it simply runs without you doing anything. As you type in code, the interpreter will constantly check to see if the syntax of your code is correct and that you have not made any silly mistakes. So you can imagine the interpreter as being an English teacher who is constantly checking to see if your grammar/punctuation (syntax) is correct whilst you write sentences, or in our case, code. As the interpreter is running all the time it means that if you are typing in code and you have not yet finished writing the line, you may encounter errors and your code may be underlined in red. This is nothing to worry about and will only be a problem when you finish writing the line, at which point you need to do some investigative work. Try to see if you have made a silly mistake, and if that endeavour bears no fruit, read the error and try to understand what it is trying to tell you, and then correct the mistake. This process of finding and eliminating errors is known as **debugging**.
 
 So now we will cover how to install Eclipse:
 

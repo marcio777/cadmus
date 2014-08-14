@@ -83,8 +83,8 @@ E.g. if you enter these numbers: 1.1, 2.3, 5.6, 7.8, -1 you have this returned t
 Create a method calculator just like this one:
 
 The two methods here are the square root and cosine.
-**Tools:** 
-- For cosine apply the method: Math.cos(integer)
+
+HINT: For cosine apply the method `Math.cos(integer)`.
 
 ### Ex 18-20
 Throughout these next exercise you will create the following calculator:
@@ -94,4 +94,4 @@ clear as possible.
 2. Try to make the plus, equal and reset button operational.
 3. Apply the same technique as previously and make all the buttons active.
 
-Hint: create two labels, one that shows the intermediate results and the final result whereas the other shows what number you have entered. You can then fetch the numbers clicked from the second label. Each operation should have a boolean variable that activates itself once the operation is activated and at the next operation should do the calculations with the new number entered.
+HINT: Create two labels, one that shows the intermediate results and the final result whereas the other shows what number you have entered. You can then fetch the numbers clicked from the second label. Each operation should have a boolean variable that activates itself once the operation is activated and at the next operation should do the calculations with the new number entered.

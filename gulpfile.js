@@ -65,7 +65,7 @@ gulp.task("convert", ["clean"], function() {
 });
 
 gulp.task("copy", ["clean"], function() {
-	return gulp.src("./public/**/*")
+	return gulp.src("./src/**/*")
 		.pipe(gulp.dest("./.dist"));
 });
 

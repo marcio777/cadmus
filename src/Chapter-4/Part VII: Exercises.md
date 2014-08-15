@@ -29,6 +29,8 @@ setBorder(BorderFactory.createEmptyBorder(integer, integer, integer, integer)). 
 ### Ex 4
 Create the following window:
 
+![Exercise 3](../Images/ex_4.png)
+
 ### Ex 5
 Create a program that through the command line asks for an input which will then be added to a GUI. E.g.: If I input "hello there" the following is displayed:
 

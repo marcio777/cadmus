@@ -82,7 +82,9 @@ gulp.task("server", function() {
 
 gulp.task("styles", function() {
 	return gulp.src("./styles/**/*")
-		.pipe(sass())
+		.pipe(sass({
+			outputStyle:"compressed"
+		}))
 		.pipe(rename({
 			extname:".css"
 		}))

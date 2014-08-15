@@ -126,4 +126,29 @@ The following operators apply:
 
 Bear this in mind: because `String` isn't a primitive data type, the `==` operator doesn't work.
 
-N.B. Don't mix up `==` and `=`. One is for comparison, the other is for assignment. 
+N.B. Don't mix up `==` and `=`. One is for comparison, the other is for assignment.
+
+### Else if 
+If you want you can do can have multiple comparisions;
+
+```java
+int x = 5;
+int y = 4;
+
+if(x < y) {
+  System.out.println("x is smaller than y");
+} else if(x > y) {
+  System.out.println("x is bigger than y");
+} else {
+  System.out.println("x is the same as y");
+}
+```
+
+You don't necessarily need the `else` branch:
+```java
+bool alive = true;
+
+if(alive == true) {
+  System.out.println("You're alive good for you");
+}
+```

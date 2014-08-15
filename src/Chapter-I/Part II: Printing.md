@@ -27,7 +27,7 @@ System.out.println("world");
  
 Which would print "Hello" then a new line, and then print "world" on that new line.
 
-You can also print out variables (which you will encounter next). When you print out a variable you do not need to add `" "` or `' '`, you simply put the variable name inside the the brackets.  So if you had an int called `n` which is equal to 5, you could print it out using:
+You can also print out variables (which you will encounter next). When you print out a variable you do not need to add `" "` or `' '`, you simply put the variable name inside the the brackets.  So if you had an integer called `n` which is equal to 5, you could print it out using:
 
 ```java
 int n = 5;

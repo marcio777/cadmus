@@ -55,11 +55,11 @@ Finally, the `setText()` method on the label allows you to dynamically change th
 
 These are what should be outputted at the start; when the first button is clicked; and when the second button is clicked:
 
-![The box when none of the buttons are clicked](../Images/Buttons_none_clicked.png)
+![The box when none of the buttons are clicked](../Images/Chapter-IV/Buttons/Buttons_none_clicked.png)
 
-![What happens when button 1 is clicked](../Images/btn1_clicked.png)
+![What happens when button 1 is clicked](../Images/Chapter-IV/Buttons/btn1_clicked.png)
 
-![What happens when button 2 is clicked](../Images/btn2_clicked.png)
+![What happens when button 2 is clicked](../Images/Chapter-IV/Buttons/btn2_clicked.png)
 
 ### Ex 1
 Use what you have been taught here to create a random number generator that generates a number between 1 to 100.
@@ -75,7 +75,7 @@ button = new JButton(image);
 
 Doing this will set the button to have an image on it instead of text. Add a panel and a text field (you will learn about these later), and you can get something like this:
 
-![CUTE KITTEN BUTTON!!!!!!](../Images/image_buttons.png)
+![CUTE KITTEN BUTTON!!!!!!](../Images/Chapter-IV/Buttons/image_buttons.png)
 
 And yes, you have permission to scream 'CUUUUUUUUTTTTEEEEE' in a very high-pitched voice. 
 
@@ -106,7 +106,7 @@ buttons.add(btn1);
 
 in the constructor to add the button to the button group.Therefore the following would be outputted:
 
-![Radio buttons](../Images/radio.png)
+![Radio buttons](../Images/Chapter-IV/Buttons/radio.png)
 
 ### Ex 2
 Make 3 radio buttons with different names of subjects (History, Computing, Maths etc.) and have a JLabel ask which is the user's favourite. Also have the JLabel respond to that with an appropriate message.
@@ -120,7 +120,7 @@ JCheckBox one = new JCheckBox("Noodles");
 
 Using these you can create things like the following:
 
-![Some check boxes](../Images/check_boxes.png)
+![Some check boxes](../Images/Chapter-IV/Buttons/check_boxes.png)
 
 ### Ex 3
 Create 3 check boxes with custom names, and use ActionListener to display an appropriate message depending on which box hads been checked.

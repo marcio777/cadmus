@@ -11,11 +11,11 @@ JSplitPane split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, new JScrollPane(l
 
 Then, in the constructor, you set those labels to be your images of choice and add the split pane to the JFrame. This particular piece of code, along with all of the other things needed for it to function, cretes this:
 
-![A horizontally split pane](../Images/horizontal_split.png)
+![A horizontally split pane](../Images/Chapter-IV/Complex_Interfaces/horizontal_split.png)
 
 You could also change the `HORIZONTAL_SPLIT` to `VERTICAL_SPLIT`, but that would not be very good for our penguins health:
 
-![A vertically split pane](../Images/vertical_split.png)
+![A vertically split pane](../Images/Chapter-IV/Complex_Interfaces/vertical_split.png)
 
 He seems to now have a massive mound of rock instead of a body.
 
@@ -31,7 +31,7 @@ add(tabbedPane);
 
 This will create the following:
 
-![A tabbed pane](../Images/tabbedpane.png)
+![A tabbed pane](../Images/Chapter-IV/Complex_Interfaces/tabbedpane.png)
 
 ### Ex 1
 Create your own `JTabbedPane` with two tabs, one with a message on it and one with a button that creates a message upon clicking.

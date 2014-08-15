@@ -72,3 +72,29 @@ Set up the main JFrame as usual and you can get something like this:
 As a point of reference, if you were to not use the code from `setMaximizable` to `setClosable`, you would get the following:
 
 ![A worse JInternalFrame](../Images/Chapter-IV/Complex_Interfaces/internal_frame.png)
+
+##JSlider
+So, in the part labelled 'Listeners', the ChangeListener was explained in the context of JSliders. Now, you will find out how to make them. A JSlider is exactly what you think it is, and needs to be added to a JFrame, which I shouldn't have to tell you to extend by now. This is an example of declaring a JSlider:
+
+```java
+JSlider slide = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+```
+
+The contents of the parameters are necessary for this component. The HORIZONTAL refers to the positioning of the slider i.e. horizontally or vertically. The first 0 dictates the number the slider starts at and the 255 is the number the slider ends at. The second 0 dicates where the pointer will be when you start the program. And that's pretty much it, adding that to a JFrame will create a slider. You can however further customise the slider. Including the following code in the constructor will change the slider:
+
+```java
+slide.setMajorTickSpacing(10);
+//every big number comes along every 10.
+slide.setMinorTickSpacing(1);
+//every small number is shown every 1.
+slide.setPaintLabels(true);
+//creates the numbers.
+slide.setPaintTicks(true);
+//creates the lines
+```
+
+These sliders can be added to ChangeListeners and you can create something like the following which changes the colour of a label based on the value of the slider:
+
+![A Slider at no value](../Images/Chapter-IV/Complex_Interfaces/slider1.png)
+![A Slider at a low value](../Images/Chapter-IV/Complex_Interfaces/slider2.png)
+![A Slider at a high value](../Images/Chapter-IV/Complex_Interfaces/slider3.png)

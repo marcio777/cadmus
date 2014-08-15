@@ -73,7 +73,7 @@ As a point of reference, if you were to not use the code from `setMaximizable` t
 
 ![A worse JInternalFrame](../Images/Chapter-IV/Complex_Interfaces/internal_frame.png)
 
-##JSlider
+## JSlider
 So, in the part labelled 'Listeners', the ChangeListener was explained in the context of JSliders. Now, you will find out how to make them. A JSlider is exactly what you think it is, and needs to be added to a JFrame, which I shouldn't have to tell you to extend by now. This is an example of declaring a JSlider:
 
 ```java
@@ -98,3 +98,29 @@ These sliders can be added to ChangeListeners and you can create something like 
 ![A Slider at no value](../Images/Chapter-IV/Complex_Interfaces/slider1.png)
 ![A Slider at a low value](../Images/Chapter-IV/Complex_Interfaces/slider2.png)
 ![A Slider at a high value](../Images/Chapter-IV/Complex_Interfaces/slider3.png)
+
+## JToolBar
+A useful toll is the JToolBar. It is exactly what it says on the tin, it is a toolbar which can have various components put onto it. To create a JToolBar you have to declare and instantiate it as usual. The, inside the main constructor, you add components to the toolbar. Bear in mind that this is position-sensitive - if you add a button, then a text field then a label, then the button will be on the left, then the text field, then the label on the right. You can therefore make something like the following:
+
+![The various toolbar positions](../Images/Chapter-IV/Complex_Interfaces/toolbar_positions.png)
+
+As you will notice from the pictures, you can move this toolbar about by default and even separate it from the frame it is in. This may not be preferable however, so you can naturally stop this. To do so just add this to your constructor: 
+
+```java
+tools.setFloatable(false);
+//where 'tools' is the name of the toolbar
+```
+
+Using that, the following would be outputted:
+
+![A non-floatable toolbar](../Images/Chapter-IV/Complex_Interfaces/non-floatable_toolbar.png)
+
+Finally you can separate the components in a JToolbar using the following code:
+
+```java
+tools.addSeparator();
+```
+
+Bear in mind that this is position sensitive, so you place this inbetween the additions of the two components you want to separate. The following is therefore possible:
+
+![A separated toolbar](../Images/Chapter-IV/Complex_Interfaces/separated_toolbar.png)

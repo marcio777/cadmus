@@ -1,7 +1,7 @@
 Printing
 ===
 
-To output text to the console, use the `System.out.println`; this is equivalent to `console.log` in JavaScript, e.g:
+To output text to the console, use `System.out.println` e.g.:
 
 ```java
 System.out.println("Hello world");

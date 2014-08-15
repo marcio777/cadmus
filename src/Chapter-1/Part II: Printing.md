@@ -7,7 +7,7 @@ To output text to the console, use `System.out.println` e.g.:
 System.out.println("Hello world");
 ```
 
-Try printing out "Hello world" (like above) and if it works, try printing out your own custom messages. Remember to put it in the `main` method. Notice that once you type in `System.out` followed by a full stop you will get many different options popping up, this is simply Eclipse offering you suggestions for what to type, but for now we will only be interested in two of these; `print` and `println`.  `print` simply prints out whatever you have inserted in speech marks. However if you use 'println' like we have done above, then Hello world will be printed and then a new line will be made (like when you hit enter in word); here the ln stands for "line new".
+Try printing out "Hello world" (like above) and if it works, try printing out your own custom messages. Remember to put it in the `main` method. Notice that once you type in `System.out` followed by a full stop you will get many different options popping up, this is simply Eclipse offering you suggestions for what to type, but for now we will only be interested in two of these; `print` and `println`.  `print` simply prints out whatever you have inserted in speech marks. However if you use `println` like we have done above, then Hello world will be printed and then a new line will be made (like when you hit enter in word); here the ln stands for "line new".
 
 N.B. Every line that tells Java to do something must end with a semicolon. It is like a full stop (or period in American English). It  delimiters the end of a sentence. 
 

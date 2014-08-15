@@ -4,7 +4,7 @@ cadmus
 A Primer in Java
 
 ## Contributing
-Files are stored in the `src` folder. Help is wanted, particularly with translations. 
+Files are stored in the `src` folder. Help is wanted, particularly with translations and serverside web development.
 
 ### Instructions for those who've never used GitHub before
 To contribute:

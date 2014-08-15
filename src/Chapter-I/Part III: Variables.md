@@ -146,7 +146,7 @@ if(x < y) {
 
 You don't necessarily need the `else` branch:
 ```java
-bool alive = true;
+boolean alive = true;
 
 if(alive == true) {
   System.out.println("You're alive good for you");

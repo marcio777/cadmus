@@ -1,7 +1,7 @@
 cadmus
 ======
 
-A Primer in Java
+A Primer in Java, suitable for someone with previous progrmaming experience or a complete beginner, including Object-Oriented Programming and Java Swing.
 
 ## Contributing
 Files are stored in the `src` folder. Help is wanted, particularly with translations and serverside web development.

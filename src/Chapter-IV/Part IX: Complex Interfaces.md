@@ -35,3 +35,40 @@ This will create the following:
 
 ### Ex 1
 Create your own `JTabbedPane` with two tabs, one with a message on it and one with a button that creates a message upon clicking.
+
+##JInternalFrame
+Next on the list of random trinkets is the JInternalFrame. As the name suggests this is a fram inside of a frame, or, quite literally, an internal frame. To do this you will need the following imports:
+
+```java
+import javax.swing.JDesktopPane;
+import javax.swing.JFrame;
+import javax.swing.JInternalFrame;
+```
+
+You need JFrame and JInternalFrame for obvious reasons, and you need the DesktopPane for reasons that you need not delve in to. Be satisfied with the knowledge that it is necessary. To set up your internal frame, you will have to extends your JFrame as usual and then declare a DesktopPane and a JInternalFrame, with the parameters for the JInternalFrame containing the title of the internal frame. Then, inside the constructor use the following code, where 'frame' is the identifier of the JInternalFrame and 'desktop' is the identifier of, you guessed it, the DesktopPane:
+
+```java
+frame.setSize(320,240);
+frame.setVisible(true);
+
+frame.setMaximizable(true);;
+//can be maximised
+frame.setIconifiable(true);
+//can be reduced to an icon
+frame.setResizable(true);
+//can be resized
+frame.setClosable(true);
+//can be shut down
+frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+
+desktop.add(frame);
+add(desktop);
+```
+
+Set up the main JFrame as usual and you can get something like this:
+
+![A JInternalFrame](../Images/Chapter-IV/Complex_Interfaces/internal_frame2.png)
+
+As a point of reference, if you were to not use the code from `setMaximizable` to `setClosable`, you would get the following:
+
+![A worse JInternalFrame](../Images/Chapter-IV/Complex_Interfaces/internal_frame.png)

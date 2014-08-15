@@ -1,4 +1,4 @@
-Temperature
+Celsius to Farenheit Converter
 ===
 
 For this part, the imports will be identical to the last part's, except for the addition of `import javax.swing.JTextField;`. Also in this part I'll give you the first few lines of **the class**, and then I'll give the rest as pseudocode, which is just normal text that you have to translate into Java yourself:

@@ -100,17 +100,30 @@ However using these instead of primitives has an unnecessary performance cost, a
 
 N.B. It is perfectly accceptable to use their static methods i.e. `Integer.parseInt()` etc, because they do not actually involve instantiating those classes (Part VIII). 
 
-## Selection
-If/else/else if statements work in Java exactly as they do in JavaScript, so this is perfectly valid:
+## Selection (Comparing values)
+You can compare values by using an `if/else` statement: 
 
 ```java
 int x = 5;
 int y = 4;
-if(x == y) {
-  System.out.println("Matches");
+
+if(x < y) {
+  System.out.println("x is smaller than y");
 } else {
-  System.out.println("Oh well!");
+  System.out.println("x isn't smaller than y");
 }
 ```
 
+The following operators apply:
+
+| Operator        | Meaning           |
+| ------------- |-------------| 
+| <    | Smaller than | 
+| >  | Greater than    |   
+| <=  | Smaller than or equal to  |   
+| >=  | Greater than or equal to  |
+| == | Is equal to    | 
+
 Bear this in mind: because `String` isn't a primitive data type, the `==` operator doesn't work.
+
+N.B. Don't mix up `==` and `=`. One is for comparison, the other is for assignment. 

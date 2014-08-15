@@ -74,7 +74,8 @@ Create a frame with five buttons that are oriented using the border layout. You 
 A Grid Layout arranges the components into a two dimensional grid with a number of rows and columns.
 
 ```java
-setLayout(new GridLayout(2,3));
+setLayout(new GridLayout(2, 3, 3, 5));
+//the different values are as follows: number of rows; number of columns; horizontal padding and vertical padding.
 ```
 
 This creates a layout with two rows and three columns as seen below:

@@ -41,8 +41,7 @@ As you can see, you can change the colour of your background using the method `s
 
 Color.PINK, Color.GREEN, Color.BLACK, Color.Yellow, Color.BLUE, Color.RED, Color.WHITE, Color.CYAN, Color.ORANGE
 
-It is unfortunate that due to the current American political hegemony, Java Swing has chosen to propagate their establishment's idiocratic lexical fallacies i.e. by spelling colour without the "u". If you were confused, don't worry colour is still spelt with a "u" in proper English.
-
+N.B. American spellings apply here.
 
 This particular piece of code would putput the following:
 

@@ -45,7 +45,7 @@ Things to think about:
 
 HINTS: 
 - Remember to import the `math` package
-- Also for methods in the `math` package you canrefer to [the official docs](http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html)
+- Also for methods in the `math` package you can refer to [the official docs](http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html)
 - The sin/tan/cos methods in Java give back a result in radians. What method (that you have previously made) would you have to utilise?
 
 

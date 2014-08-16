@@ -124,3 +124,66 @@ tools.addSeparator();
 Bear in mind that this is position sensitive, so you place this inbetween the additions of the two components you want to separate. The following is therefore possible:
 
 ![A separated toolbar](../Images/Chapter-IV/Complex_Interfaces/separated_toolbar.png)
+
+## JMenu
+The title of this portion is not strictly correct, because this covers three things, the `JMenuBar`, the `JMenu` and the `JMenuItem`. However these all coalesce into one menu. What I mean by menu is the bar at the very top of the screen when you enter Eclipse or Microsoft Word i.e the bar that contains File and Edit and Help etc. To do this you will first need to declare and instantiate a new JMenuBar. Then in the constructor you need the following:
+
+```java
+	setJMenuBar(menu);
+	//where 'menu' is the name of the JMenuBar
+	```
+	
+This sets the menubar up, but it currently has nothing in it. So, you need to add JMenus. These are the actual buttons that you click in order to display the drop-down. To do this you need to declare JMenus and name them, then add them to the JMenuBar. As if you need a reminder, this is how you would do it:
+
+```java
+JMenu file = new JMenu("File");
+JMenu edit = new JMenu("Edit");
+
+menu.add(file);
+menu.add(edit);
+```
+
+This would create the following, but notice the lack of items, that is our next job:
+
+![ A menu bar with titles](../Images/Chapter-IV/Complex_Interfaces/menu&bar.png)
+
+The items are easy to add, as you shall see. You simply create a JMenuItem, name it like you did with a JMenu and then add it to the respective JMenu. Bear in mind that, once again, it is position-sensitive, so you have to add them in order. If you want the line between the items that you see in most menus, just include this:
+
+```java
+component.addSeparator();
+```
+
+As you did with the toolbar. Once again, put it in the right place. So, if you have followed me, you could create something like this, which I have unashamedly copied from Eclipse's menu itself:
+
+![A menubar with items](../Images/Chapter-IV/Complex_Interfaces/menuitems.png)
+
+## JTable
+In our quest to discover more complex components, we find the JTable. This is exactly as it souns - it is a table. You will need a JTable and a ScrollPane, which you have met before. This ScrollPane is simply for use if the table has too much data in it. First thing you will need to do it set a flow layout. Then you need two arrays, one for the column names and one for the actual contents. These are the arrays that I used:
+
+```java
+String[] columnnames = {"Name","Age", "Gender"};
+
+Object[] [] data = {
+	{"Bob", "30", "Male"},
+	{"Susan", "46", "Female"},
+	{"Patrick", "22", "Male"},
+	{"Samantha", "72", "Female"}
+};
+```
+
+Thes second array looks more complicated, and that's because it is an array of arrays. Each of the arrays inside of the data arrays represents a row, and the contents represents the data. To actaully make the table, now that you have the things inside of it, you will need ths follwing lines of code:
+
+```java
+table1 = new JTable(data, columnnames);
+//yes you have to create the data before the titles
+table1.setPreferredScrollableViewportSize(new Dimension(500,50));
+//creates the size of the table
+table1.setFillsViewportHeight(true);
+//Don't ask why this is here, it just is
+table1.setEnabled(false);
+//the table is editable if this is not used
+```
+
+Now just add the table to the scrollpane and add the scrollpane to the JFrame, and you will create something like this:
+
+![A JTable](../Images/Chapter-IV/Complex_Interfaces/JTable.png)

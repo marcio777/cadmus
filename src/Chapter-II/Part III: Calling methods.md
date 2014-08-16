@@ -21,7 +21,11 @@ Note that in order to call a method on an object, all you really need to do is p
 
 For example, in **Ex 1** of Part II:
 
-i) Create a new object: ```java Task anObject = new Task();``` (`anObject` can be any name as long as it is valid)
+i) Create a new object: 
+```java 
+Task anObject = new Task();
+``` 
+(`anObject` can be any name as long as it is valid)
 
 ii) Call the method on the object: ```java anObject.pizzazzYo(10);```
 

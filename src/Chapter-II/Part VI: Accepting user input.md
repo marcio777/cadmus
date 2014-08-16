@@ -19,7 +19,7 @@ Note: `myScanner` is just a random name chosen for this example; any valid name 
 
 iv)	Store user input inside a variable. Let’s take a string for example. In this case, we would first, declare a new String:
 ```java
-String myString = null;
+String myString;
 ```
 and secondly, store information inside the variable using:
 ```java

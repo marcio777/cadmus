@@ -156,3 +156,34 @@ component.addSeparator();
 As you did with the toolbar. Once again, put it in the right place. So, if you have followed me, you could create something like this, which I have unashamedly copied from Eclipse's menu itself:
 
 ![A menubar with items](../Images/Chapter-IV/Complex_Interfaces/menuitems.png)
+
+## JTable
+In our quest to discover more complex components, we find the JTable. This is exactly as it souns - it is a table. You will need a JTable and a ScrollPane, which you have met before. This ScrollPane is simply for use if the table has too much data in it. First thing you will need to do it set a flow layout. Then you need two arrays, one for the column names and one for the actual contents. These are the arrays that I used:
+
+```java
+String[] columnnames = {"Name","Age", "Gender"};
+
+Object[] [] data = {
+	{"Bob", "30", "Male"},
+	{"Susan", "46", "Female"},
+	{"Patrick", "22", "Male"},
+	{"Samantha", "72", "Female"}
+};
+```
+
+Thes second array looks more complicated, and that's because it is an array of arrays. Each of the arrays inside of the data arrays represents a row, and the contents represents the data. To actaully make the table, now that you have the things inside of it, you will need ths follwing lines of code:
+
+```java
+table1 = new JTable(data, columnnames);
+//yes you have to create the data before the titles
+table1.setPreferredScrollableViewportSize(new Dimension(500,50));
+//creates the size of the table
+table1.setFillsViewportHeight(true);
+//Don't ask why this is here, it just is
+table1.setEnabled(false);
+//the table is editable if this is not used
+```
+
+Now just add the table to the scrollpane and add the scrollpane to the JFrame, and you will create something like this:
+
+![A JTable](../Images/Chapter-IV/Complex_Interfaces/JTable.png)

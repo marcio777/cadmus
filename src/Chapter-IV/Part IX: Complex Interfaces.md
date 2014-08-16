@@ -124,3 +124,35 @@ tools.addSeparator();
 Bear in mind that this is position sensitive, so you place this inbetween the additions of the two components you want to separate. The following is therefore possible:
 
 ![A separated toolbar](../Images/Chapter-IV/Complex_Interfaces/separated_toolbar.png)
+
+## JMenu
+The title of this portion is not strictly correct, because this covers three things, the `JMenuBar`, the `JMenu` and the `JMenuItem`. However these all coalesce into one menu. What I mean by menu is the bar at the very top of the screen when you enter Eclipse or Microsoft Word i.e the bar that contains File and Edit and Help etc. To do this you will first need to declare and instantiate a new JMenuBar. Then in the constructor you need the following:
+
+```java
+	setJMenuBar(menu);
+	//where 'menu' is the name of the JMenuBar
+	```
+	
+This sets the menubar up, but it currently has nothing in it. So, you need to add JMenus. These are the actual buttons that you click in order to display the drop-down. To do this you need to declare JMenus and name them, then add them to the JMenuBar. As if you need a reminder, this is how you would do it:
+
+```java
+JMenu file = new JMenu("File");
+JMenu edit = new JMenu("Edit");
+
+menu.add(file);
+menu.add(edit);
+```
+
+This would create the following, but notice the lack of items, that is our next job:
+
+![ A menu bar with titles](../Images/Chapter-IV/Complex_Interfaces/menu&bar.png)
+
+The items are easy to add, as you shall see. You simply create a JMenuItem, name it like you did with a JMenu and then add it to the respective JMenu. Bear in mind that, once again, it is position-sensitive, so you have to add them in order. If you want the line between the items that you see in most menus, just include this:
+
+```java
+component.addSeparator();
+```
+
+As you did with the toolbar. Once again, put it in the right place. So, if you have followed me, you could create something like this, which I have unashamedly copied from Eclipse's menu itself:
+
+![A menubar with items](../Images/Chapter-IV/Complex_Interfaces/menuitems.png)

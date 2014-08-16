@@ -11,7 +11,7 @@ This line must be included above your class i.e. `public class...` in order for 
 
 ii)	Have some statement such as `System.out.println("Enter number:");` in order to prompt the user to enter a number. Otherwise they won’t know!
 
-iii)	Create a new `Scanner` object by following this rule: 
+iii)	Instantiate a new `Scanner` object by following this rule: 
 ```java
 Scanner myScanner = new Scanner(System.in); 
 ```

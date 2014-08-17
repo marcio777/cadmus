@@ -11,11 +11,11 @@ JSplitPane split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, new JScrollPane(l
 
 Then, in the constructor, you set those labels to be your images of choice and add the split pane to the JFrame. This particular piece of code, along with all of the other things needed for it to function, cretes this:
 
-![A horizontally split pane](../Images/Chapter-IV/Complex_Interfaces/horizontal_split.png)
+![A horizontally split pane](../../Images/Chapter-IV/Complex_Interfaces/horizontal_split.png)
 
 You could also change the `HORIZONTAL_SPLIT` to `VERTICAL_SPLIT`, but that would not be very good for our penguins health:
 
-![A vertically split pane](../Images/Chapter-IV/Complex_Interfaces/vertical_split.png)
+![A vertically split pane](../../Images/Chapter-IV/Complex_Interfaces/vertical_split.png)
 
 He seems to now have a massive mound of rock instead of a body.
 
@@ -31,7 +31,7 @@ add(tabbedPane);
 
 This will create the following:
 
-![A tabbed pane](../Images/Chapter-IV/Complex_Interfaces/tabbedpane.png)
+![A tabbed pane](../../Images/Chapter-IV/Complex_Interfaces/tabbedpane.png)
 
 ### Ex 1
 Create your own `JTabbedPane` with two tabs, one with a message on it and one with a button that creates a message upon clicking.
@@ -67,11 +67,11 @@ add(desktop);
 
 Set up the main JFrame as usual and you can get something like this:
 
-![A JInternalFrame](../Images/Chapter-IV/Complex_Interfaces/internal_frame2.png)
+![A JInternalFrame](../../Images/Chapter-IV/Complex_Interfaces/internal_frame2.png)
 
 As a point of reference, if you were to not use the code from `setMaximizable` to `setClosable`, you would get the following:
 
-![A worse JInternalFrame](../Images/Chapter-IV/Complex_Interfaces/internal_frame.png)
+![A worse JInternalFrame](../../Images/Chapter-IV/Complex_Interfaces/internal_frame.png)
 
 ## JSlider
 So, in the part labelled 'Listeners', the ChangeListener was explained in the context of JSliders. Now, you will find out how to make them. A JSlider is exactly what you think it is, and needs to be added to a JFrame, which I shouldn't have to tell you to extend by now. This is an example of declaring a JSlider:
@@ -95,14 +95,14 @@ slide.setPaintTicks(true);
 
 These sliders can be added to ChangeListeners and you can create something like the following which changes the colour of a label based on the value of the slider:
 
-![A Slider at no value](../Images/Chapter-IV/Complex_Interfaces/slider1.png)
-![A Slider at a low value](../Images/Chapter-IV/Complex_Interfaces/slider2.png)
-![A Slider at a high value](../Images/Chapter-IV/Complex_Interfaces/slider3.png)
+![A Slider at no value](../../Images/Chapter-IV/Complex_Interfaces/slider1.png)
+![A Slider at a low value](../../Images/Chapter-IV/Complex_Interfaces/slider2.png)
+![A Slider at a high value](../../Images/Chapter-IV/Complex_Interfaces/slider3.png)
 
 ## JToolBar
 A useful toll is the JToolBar. It is exactly what it says on the tin, it is a toolbar which can have various components put onto it. To create a JToolBar you have to declare and instantiate it as usual. The, inside the main constructor, you add components to the toolbar. Bear in mind that this is position-sensitive - if you add a button, then a text field then a label, then the button will be on the left, then the text field, then the label on the right. You can therefore make something like the following:
 
-![The various toolbar positions](../Images/Chapter-IV/Complex_Interfaces/toolbar_positions.png)
+![The various toolbar positions](../../Images/Chapter-IV/Complex_Interfaces/toolbar_positions.png)
 
 As you will notice from the pictures, you can move this toolbar about by default and even separate it from the frame it is in. This may not be preferable however, so you can naturally stop this. To do so just add this to your constructor: 
 
@@ -113,7 +113,7 @@ tools.setFloatable(false);
 
 Using that, the following would be outputted:
 
-![A non-floatable toolbar](../Images/Chapter-IV/Complex_Interfaces/non-floatable_toolbar.png)
+![A non-floatable toolbar](../../Images/Chapter-IV/Complex_Interfaces/non-floatable_toolbar.png)
 
 Finally you can separate the components in a JToolbar using the following code:
 
@@ -123,7 +123,7 @@ tools.addSeparator();
 
 Bear in mind that this is position sensitive, so you place this inbetween the additions of the two components you want to separate. The following is therefore possible:
 
-![A separated toolbar](../Images/Chapter-IV/Complex_Interfaces/separated_toolbar.png)
+![A separated toolbar](../../Images/Chapter-IV/Complex_Interfaces/separated_toolbar.png)
 
 ## JMenu
 The title of this portion is not strictly correct, because this covers three things, the `JMenuBar`, the `JMenu` and the `JMenuItem`. However these all coalesce into one menu. What I mean by menu is the bar at the very top of the screen when you enter Eclipse or Microsoft Word i.e the bar that contains File and Edit and Help etc. To do this you will first need to declare and instantiate a new JMenuBar. Then in the constructor you need the following:
@@ -145,7 +145,7 @@ menu.add(edit);
 
 This would create the following, but notice the lack of items, that is our next job:
 
-![ A menu bar with titles](../Images/Chapter-IV/Complex_Interfaces/menu&bar.png)
+![ A menu bar with titles](../../Images/Chapter-IV/Complex_Interfaces/menu&bar.png)
 
 The items are easy to add, as you shall see. You simply create a JMenuItem, name it like you did with a JMenu and then add it to the respective JMenu. Bear in mind that, once again, it is position-sensitive, so you have to add them in order. If you want the line between the items that you see in most menus, just include this:
 
@@ -155,7 +155,7 @@ component.addSeparator();
 
 As you did with the toolbar. Once again, put it in the right place. So, if you have followed me, you could create something like this, which I have unashamedly copied from Eclipse's menu itself:
 
-![A menubar with items](../Images/Chapter-IV/Complex_Interfaces/menuitems.png)
+![A menubar with items](../../Images/Chapter-IV/Complex_Interfaces/menuitems.png)
 
 ## JTable
 In our quest to discover more complex components, we find the JTable. This is exactly as it souns - it is a table. You will need a JTable and a ScrollPane, which you have met before. This ScrollPane is simply for use if the table has too much data in it. First thing you will need to do it set a flow layout. Then you need two arrays, one for the column names and one for the actual contents. These are the arrays that I used:
@@ -186,4 +186,4 @@ table1.setEnabled(false);
 
 Now just add the table to the scrollpane and add the scrollpane to the JFrame, and you will create something like this:
 
-![A JTable](../Images/Chapter-IV/Complex_Interfaces/JTable.png)
+![A JTable](../../Images/Chapter-IV/Complex_Interfaces/JTable.png)

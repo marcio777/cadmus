@@ -40,16 +40,16 @@ public class FloLayout extends JFrame{
 
 This displays elements of a frame so that `component1` (which has already been initialised) comes before `component2` (which has also been initialised). It should therefore look something like this:
 
-![The flow layout](../Images/Chapter-IV/Layouts/flow_layout.png)
+![The flow layout](../../Images/Chapter-IV/Layouts/flow_layout.png)
 
 ###Ex 1
 Create a frame using three buttons that are oriented using the flow layout. Use the syntax above. It should therefore look like this:
 
-![The flow layout in Java](../Images/Chapter-IV/Layouts/the_flow_layout.png)
+![The flow layout in Java](../../Images/Chapter-IV/Layouts/the_flow_layout.png)
 
 ## The Border Layout
 
-![The border layout](../Images/Chapter-IV/Layouts/border_layout.png)
+![The border layout](../../Images/Chapter-IV/Layouts/border_layout.png)
 
 A border layout allows you to place your elements into five different regions as shown above. You can use relatively the same code as you did for the flow layout, but bear in mind that you must give the component the name NORTH, SOUTH etc.  
 
@@ -87,12 +87,12 @@ setLayout(new GridLayout(2, 3, 3, 5));
 
 This creates a layout with two rows and three columns as seen below:
 
-![The grid layout](../Images/Chapter-IV/Layouts/grid_layout.png)
+![The grid layout](../../Images/Chapter-IV/Layouts/grid_layout.png)
 
 ###Ex 3
 Create a frame with six buttons that are oriented using the grid layout. You will once again have to do this yourself. This is what the end product should look like:
 
-![The grid layout in Java](../Images/Chapter-IV/Layouts/the_grid_layout.png)
+![The grid layout in Java](../../Images/Chapter-IV/Layouts/the_grid_layout.png)
 
 ## The Box Layout
 The Box Layout us basically a better flow layout, because the flow layout allows for horizontal alignment of components whereas the box layout allows for that, horizontally aligned components and a better manipulation of these components. To use this layout you will need a panel and some buttons, or other components. You then have to use the following code:
@@ -108,7 +108,7 @@ add(panel);
 
 The first line is the important one when using the Box Layout. You set the layout to the panel, as with all the others, but the contents of the parameters is what's important. The first word is the parent component i.e. the panel. Then the `BoxLayout.PAGE_AXIS` sets the components to be aligned vertically, which is one of the reasons the box layout is better than the flow layout. However if you do want to align the components horizontally, you just replace `PAGE_AXIS` with `LINE_AXIS`. Anyway, using the code above, you create something like this:
 
-![A box layout](../Images/Chapter-IV/Layouts/plain_box_layout.png)
+![A box layout](../../Images/Chapter-IV/Layouts/plain_box_layout.png)
 
 But this is not the extent of the box layout. The first thing that we can do is separate the components. To do this you have to use the following code:
 
@@ -118,7 +118,7 @@ panel.add(Box.createRigidArea(new Dimension(0,5)));
 
 This will separate the two components that it is placed in between with a gap of '5', which can be interpreted as 5px. This is created by the `new Dimension(0,5)`, which would be replaced by `new Dimension(5,0)` if you were using the `LINE_AXIS`. The separation looks like this:
 
-![A separated box layout](../Images/Chapter-IV/Layouts/separated_box_layout.png)
+![A separated box layout](../../Images/Chapter-IV/Layouts/separated_box_layout.png)
 
 One final thing that you can do with the box layout is 'glue' the components to the top or bottom of the frame. To use this you will need the following:
 
@@ -134,7 +134,7 @@ panel.add(Box.createHorizontalGlue());
 
 The vertical glue will create the following layout:
 
-![Vertically-glued box layout](../Images/Chapter-IV/Layouts/glued_box_layout.png)
+![Vertically-glued box layout](../../Images/Chapter-IV/Layouts/glued_box_layout.png)
 
 ## The Card Layout
 At the beginning of this part I mentioned four basic layouts, but they are not the only ones. The next to look at is the `CardLayout`. This layout allows for two panels to occupy the same place. This is not the only way, but is the best. As a point of reference, the least experienced will use JFrames, the more experienced will use JTabbedPanes (which you will experience in Complex Interfaces) but the best will use this. To use a card layout, you have to actually declare and instantiate it - which is brand new for a layout. As a reminder:
@@ -167,6 +167,6 @@ btn1.addActionListener(new ActionListener() {
 
 This is for the first button which, when pressed, will show the second panel. This is easily replicable by simply including the container panel (otherwise known as the parent component) and the identifier of the panel. You can create something like this using this, and you'll just have to believe me that this was all done at once using the same space.
 
-![Card layout panel 1](../Images/Chapter-IV/Layouts/first_panel.png)
-![Card layout panel 2](../Images/Chapter-IV/Layouts/second_panel.png)
-![Card layout panel 3](../Images/Chapter-IV/Layouts/third_panel.png)
+![Card layout panel 1](../../Images/Chapter-IV/Layouts/first_panel.png)
+![Card layout panel 2](../../Images/Chapter-IV/Layouts/second_panel.png)
+![Card layout panel 3](../../Images/Chapter-IV/Layouts/third_panel.png)

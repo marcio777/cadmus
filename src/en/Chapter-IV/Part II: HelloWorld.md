@@ -35,7 +35,7 @@ Notice the constructor for the `JLabel`: it takes in two parameters, both of whi
 
 This should be outputted:
 
-![Now the box has text!](../Images/Chapter-IV/HelloWorld/Hello_World.png)
+![Now the box has text!](../../Images/Chapter-IV/HelloWorld/Hello_World.png)
 
 ### Ex 1
 Play around with it. Try adding another `JLabel` with a different greeting. You may have to change the second parameter, the height parameter, of `setSize()` to fit it in. You will have to add another call to the `add()` method.
@@ -45,11 +45,11 @@ It may not say it outright, but this part is desgined to show you how to create 
 
 To set a JLabel (or a button, but you'll see that later) to contain an image, first you have to import the image into Eclipse. To do this, find an image and save it to your computer. Then, in Eclipse, click **File** in the top bar, and then click **Import**. This should give you the following screen:
 
-![Importing images](../Images/Chapter-IV/HelloWorld/imports.png)
+![Importing images](../../Images/Chapter-IV/HelloWorld/imports.png)
 
 Then choose your file source, which will most likely be General->File System. This will then give you this:
 
-![Choosing your image](../Images/Chapter-IV/HelloWorld/imports2.png)
+![Choosing your image](../../Images/Chapter-IV/HelloWorld/imports2.png)
 
 I have already filled this in. I have taken my pictures from the Sample Pictures folder, which I got when I clicked the Browse button (bordered in black) and followed the path Libraries->Pictures->Public Pictures->Sample Pictures. However you could store your images anywhere and find them. I then chose the folder to import them to using the **Browse** button (bordered in blue) and chose the folder JavaKS4, which is simply one of my folders.
 
@@ -81,7 +81,7 @@ public class ImagesExample extends JFrame {
 
 This should output the following, only it would be the size of the screen:
 
-![Tulips image](../Images/Chapter-IV/HelloWorld/Tulips.png)
+![Tulips image](../../Images/Chapter-IV/HelloWorld/Tulips.png)
 
 ### Ex 2
 Try it yourself. Also research the `getIconWidth()` and `getIconHeight()` of `ImageIcon` and try them out too.
@@ -117,7 +117,7 @@ scroller.setViewportView(image);
 
 However this gives a lot less control over the scroll bars, for example without it you can set the bars to be on the image as needed, all the time or not at all. You can therefore create an image like this:
 
-![A scrollable image](../Images/Chapter-IV/HelloWorld/scroll-images.png)
+![A scrollable image](../../Images/Chapter-IV/HelloWorld/scroll-images.png)
 
 ### Ex 3
 Import more images and put the on JLabels. If the image is very big, add scroll bars to it. Also, explore the different scroll bar policies i.e. `VERTICAL_SCROLLBAR_ALWAYS`, `VERTICAL_SCROLLBAR_AS_NEEDED` and `VERTICAL_SCROLLBAR_NEVER`.

@@ -55,11 +55,11 @@ Finally, the `setText()` method on the label allows you to dynamically change th
 
 These are what should be outputted at the start; when the first button is clicked; and when the second button is clicked:
 
-![The box when none of the buttons are clicked](../Images/Chapter-IV/Buttons/Buttons_none_clicked.png)
+![The box when none of the buttons are clicked](../../Images/Chapter-IV/Buttons/Buttons_none_clicked.png)
 
-![What happens when button 1 is clicked](../Images/Chapter-IV/Buttons/btn1_clicked.png)
+![What happens when button 1 is clicked](../../Images/Chapter-IV/Buttons/btn1_clicked.png)
 
-![What happens when button 2 is clicked](../Images/Chapter-IV/Buttons/btn2_clicked.png)
+![What happens when button 2 is clicked](../../Images/Chapter-IV/Buttons/btn2_clicked.png)
 
 ### Ex 1
 Use what you have been taught here to create a random number generator that generates a number between 1 to 100.

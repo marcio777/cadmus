@@ -13,6 +13,8 @@ public class MyFirstWindow extends JFrame {
     setTitle("MyFirstWindow");
     setVisible(true);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
+    setLocationRelativeTo(null);
+    //this one is not necessary, but places the JFrame in the middle of the screen
   }
 }
 ```

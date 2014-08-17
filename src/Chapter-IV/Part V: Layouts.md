@@ -1,7 +1,7 @@
 Layouts
 ===
 
-Basically, a **layout manager** is a way of presenting and displaying the elements of either a frame or a panel. In other words: layouts allow you to tell the computer where you want to display your different objects and in what order. As we have seen previously, you  apply the layouts to a frame. In Java, there exists many different types of layouts, three of which are: the grid layout, the flow layout and the border layout.
+Basically, a **layout manager** is a way of presenting and displaying the elements of either a frame or a panel. In other words: layouts allow you to tell the computer where you want to display your different objects and in what order. As we have seen previously, you  apply the layouts to a frame. In Java, there exists many different types of layouts, four of which are: the grid layout, the flow layout, the box layout and the border layout.
 
 ## The Flow Layout
 Flow Layout, which is the only layout manager you have seen before, is the simplest layout you can choose because it arranges the components one after another, going from left to right, in the order in which you add them.
@@ -135,3 +135,38 @@ panel.add(Box.createHorizontalGlue());
 The vertical glue will create the following layout:
 
 ![Vertically-glued box layout](../Images/Chapter-IV/Layouts/glued_box_layout.png)
+
+## The Card Layout
+At the beginning of this part I mentioned four basic layouts, but they are not the only ones. The next to look at is the `CardLayout`. This layout allows for two panels to occupy the same place. This is not the only way, but is the best. As a point of reference, the least experienced will use JFrames, the more experienced will use JTabbedPanes (which you will experience in Complex Interfaces) but the best will use this. To use a card layout, you have to actually declare and instantiate it - which is brand new for a layout. As a reminder:
+
+```java
+CardLayout cl = new CardLayout();
+```
+
+So, to use the card layout, you ahve to have a few things. Firstly, you need the panels, but you need one more than you will be showing. In other words, if you plan to house three panels in the same place, you need to declare four. This fourth extra panel is the container for all the other panels. Once you have that, you need the components to put in the panels, and I will be using buttons so I can change the panels. Then you will need the following code:
+
+```java
+cont.add(panel1, "1");
+//'cont' is the container panel, 'panel1' is the panel's name and '"1"' is the identifier for the card layout.
+cont.add(panel2, "2");
+cont.add(panel3, "3");
+cl.show(cont, "1");
+//the card layout will show the container panel with the panel with the identifier '"1"' first.
+```
+
+Once you have that, you have to actually make the buttons switch the panels. So, add ActionListeners to each, and use the following code, which includes the `show()` method:
+
+```java
+btn1.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent e) {
+	cl.show(cont, "2");
+	//show the second
+    }
+});
+```
+
+This is for the first button which, when pressed, will show the second panel. This is easily replicable by simply including the container panel (otherwise known as the parent component) and the identifier of the panel. You can create something like this using this, and you'll just have to believe me that this was all done at once using the same space.
+
+![Card layout panel 1](../Images/Chapter-IV/Layouts/first_panel.png)
+![Card layout panel 2](../Images/Chapter-IV/Layouts/second_panel.png)
+![Card layout panel 3](../Images/Chapter-IV/Layouts/third_panel.png)

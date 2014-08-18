@@ -3,7 +3,7 @@ Loops
 
 Loops are very important to programmers as they allow us to do complicated, long-winded calculations in a short amount of time.
 
-There a four main loops in Java, the **for loop**, **while loop**, **do loop**, and **array loop**.  With each loop you have an initial condition, a final condition, and a set of instructions.  The set of instructions will continue to run until the final condition is met.
+There are four main loops in Java, the **for loop**, **while loop**, **do loop**, and **array loop**.  With each loop you have an initial condition, a final condition, and a set of instructions.  The set of instructions will continue to run until the final condition is met.
 
 ## For loops
 

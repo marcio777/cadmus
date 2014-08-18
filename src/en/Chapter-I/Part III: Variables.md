@@ -88,7 +88,7 @@ int pi = ((int) Math.rand());
 //'pi' is now a random integer
 ```
 
-N.B. DO NOT USE MATH.RAND() YOU WILL FIND A BETTER OPTION IN ONE OF THE EXERCISES IN THE NEXT CHAPTER. I AM SIMPLY USING IT FOR DEMOSTRATORY PURPOSES.
+N.B. **DO NOT USE MATH.RAND(), YOU WILL FIND A BETTER OPTION IN ONE OF THE EXERCISES IN THE NEXT CHAPTER. I AM SIMPLY USING IT FOR DEMOSTRATORY PURPOSES.**
 
 This can work with other things as well, and may serve as a faster way to convert between variable formats.
 

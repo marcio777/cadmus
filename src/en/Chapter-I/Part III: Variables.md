@@ -30,6 +30,12 @@ And to print it out:
 System.out.println(name);
 ```
 
+If you want to display two lines worth of text, for example in a JPanel (which you will discover in a long time), or even in the console, you can create this:
+
+```java
+System.out.println(name + "\n" + name);
+```
+
 ### Integers
 An integer is a whole number. Integers are stored as the data type `int`. To define an Integer with variable identifier `age` do:
 

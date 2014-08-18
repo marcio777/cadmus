@@ -78,6 +78,64 @@ Create a drop-down menu with 5 different options. It does not have to be about D
 
 ![A drop-down Menu](../../Images/Chapter-IV/Text_Fields/drop-down_menu.png)
 
+## JSpinner
+This is not strictly a text field, however it is a form of user input, which is all a text field is. Besides, a JComboBox is also not a text field. Onto the matter at hand. The JSpinner is what you use to cycle through values, usually numbers. To create one you will need to declare and instantiate a JSpinner. This will create a basic spinner like the following:
+
+![A basic spinner](../../Images/Chapter-IV/Text_Fields/basic_spin.png)
+
+You can type in any number to this spinner and cycle through any number (positive and negative). But, if you make this or are particularly observant you will see that any two digit number will not fit. To fix this you will need to use Dimensions, which are basically ways of saving the sizes of components:
+
+```java
+Dimension a = spin1.getPreferredSize();
+//creates a Dimension and gets the preferred size of the spinner (the preferred size is the natural size of the component)
+a.width = 50;
+//sets the width of a to be 50
+spin1.setPreferredSize(a);
+//sets the preferred size of the spinner to a i.e. 50
+```
+
+This will create the following, and you will see that the numbers now fit:
+
+![A sized basic spinner](../../Images/Chapter-IV/Text_Fields/basic_spin2.png)
+
+But this is not all you can do with spinners. This spinner literally just counts numbers, but what if you want to do things like set boundaries? In that case, you actually have to fill out the paramemters of the JSpinner when you declare it. You do so as follows:
+
+```java
+spin2 = new JSpinner(new SpinnerNumberModel(1, 1, 100, 1));
+//better spinner -> 1 is the starting value, 1 is minimum value, 100 is maximum value and 1 is incremental value
+```
+
+This one simply serves to cap the value at 100. Therefore, no picture is necessary. Now, what if you wanted to put something other than numbers into the spinner? First you will need to know what you want to put into the spinner, and I'm going to use days of the week. To do this you will need an array of the values, and then you will need to use the following code:
+
+```java
+spin3 = new JSpinner(new SpinnerListModel(days));
+//where 'days' is the name of a String array containing the days of the week
+```
+
+The 'SpinnerListModel' is need for that to work, as if it wouldn't be. So, doing that will create the following:
+
+![A customised spinner](../../Images/Chapter-IV/Text_Fields/day_spin.png)
+
+The final thing I want to tell you about including JSpinners is how to make one that cycles through the date. To do this you will need to import both `Date` and `Calendar`. Then you copy out the following code and you have created a date-cycling spinner: 
+
+```java
+Date todaysDate = new Date();
+//gets today's date
+
+spin4 = new JSpinner(new SpinnerDateModel(todaysDate, null, null, Calendar.DAY_OF_MONTH));
+//'Calendar.DAY_OF_MONTH' is required, and while both DAY_OF_WEEK and DAY_OF_YEAR could be used, DAY_OF_MONTH is best
+JSpinner.DateEditor dateEditor = new JSpinner.DateEditor(spin4, "dd/MM/yy");
+//edits the date as you spin it
+spin4.setEditor(dateEditor);
+//sets the spinner's editor to be the date editor just created
+```
+
+This will create the following:
+
+![A date spinner](../../Images/Chapter-IV/Text_Fields/date_spin.png)
+
+As a final note, the JSpinner works with ChangeListener, which you will find in Chapter V.
+
 ## Accepting and using user input
 It's all very well having a text field on your screen, but it has no purpose if you cannot use what the user has inputted. Therefore for your text field to be fully working, you need to be able to accept and use these inputs. There are two main ways to do this, one using the above formats of text field; and one which uses a whole new format i.e. The `JOptionPane`. I will explain both of these in detail shortly.
 
@@ -137,7 +195,7 @@ public static void main(String[] args) {
 
 This will create three JOptionPanes; the first two will store the variables and the last will act on those variables. This particular piece of code outputs the following:
 
-![Three JOptionPanes](../Images/Chapter-IV/Text_Fields/JOptionPanes.png)
+![Three JOptionPanes](../../Images/Chapter-IV/Text_Fields/JOptionPanes.png)
 
 ### Ex 5
 Look what happens when you change `INFORMATION_MESSAGE` to `ERROR_MESSAGE`, `PLAIN_MESSAGE`, `QUESTION_MESSAGE` and/or `WARNING_MESSAGE`.

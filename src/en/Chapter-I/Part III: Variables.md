@@ -152,10 +152,11 @@ There are also things called logical operators, and there are another 4 of those
 
 | Operator        | Meaning
 | ------------- |-------------|
-| !    | Not (turns true into false) |
-| && | AND operator - returns true if both values next to it are correct |
-| || | OR operator - returns true if one or two values are correct |
-| ^  | returns true if one value is true and one is false !
+| !    | NOT OPERATOR - turns true into false |
+| && | AND operator - returns true if both values next to it are true |
+| ^  | XOR OPERATOR - returns true if one value is true and one is false |
+
+I mentioned 4 operators, but the table only lists 3. This is because this file is being made in a format called MarkDown, and the table system in MarkDown is hell on earth. Suffice to say, it does not allow me to make the final operator, so I'm going to have to tell you in a not-so-pretty format. The final one is the OR operator, signified by this : `||`. This will return true if one or two of the values next to it are true, and doesn't require both to be.
 
 ### Else if 
 If you want you can do can have multiple comparisions;

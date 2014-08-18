@@ -81,6 +81,17 @@ double pi = Double.parseDouble(piAsString);
 piAsString = Double.toString(pi);
 ```
 
+With this method you can convert a double into a string. However, what if you wanted to convert a double into an integer? You may be thinking that you could use `Integer.parseInt()`, but doing so will make Java have a fit - it can't understand an integer with a decimal point. To convert it you would use something called "casting". This is the only time I will mention it, so listen carefully. Casting is very easy - all you have to do is write what you want to cast it to in brackets before the actual value. In other words, to turn pi into an int you would do the following:
+
+```java
+int pi = ((int) Math.rand());
+//'pi' is now a random integer
+```
+
+N.B. **DO NOT USE MATH.RAND(), YOU WILL FIND A BETTER OPTION IN ONE OF THE EXERCISES IN THE NEXT CHAPTER. I AM SIMPLY USING IT FOR DEMOSTRATORY PURPOSES.**
+
+This can work with other things as well, and may serve as a faster way to convert between variable formats.
+
 ### Booleans
 A boolean is a variable that has two possible values - `true` or `false`. As before, you can convert between booleans and strings:
 
@@ -129,10 +140,23 @@ The following operators apply:
 | <=  | Smaller than or equal to  |   
 | >=  | Greater than or equal to  |
 | == | Is equal to    | 
+| != | Is not equal to  |
+
+These are known as relational operators. 
 
 Bear this in mind: because `String` isn't a primitive data type, the `==` operator doesn't work.
 
 N.B. Don't mix up `==` and `=`. One is for comparison, the other is for assignment.
+
+There are also things called logical operators, and there are another 4 of those. These are them, amd they mostly work with boolean values:
+
+| Operator        | Meaning
+| ------------- |-------------|
+| !    | NOT OPERATOR - turns true into false |
+| && | AND operator - returns true if both values next to it are true |
+| ^  | XOR OPERATOR - returns true if one value is true and one is false |
+
+I mentioned 4 operators, but the table only lists 3. This is because this file is being made in a format called MarkDown, and the table system in MarkDown is hell on earth. Suffice to say, it does not allow me to make the final operator, so I'm going to have to tell you in a not-so-pretty format. The final one is the OR operator, signified by this : `||`. This will return true if one or two of the values next to it are true, and doesn't require both to be.
 
 ### Else if 
 If you want you can do can have multiple comparisions;

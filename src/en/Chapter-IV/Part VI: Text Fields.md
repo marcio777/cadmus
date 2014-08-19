@@ -237,3 +237,5 @@ Create another text area, only this time include scroll bars.
 You met JSplitPanes when you were introduced to images, and in case you have forgotten, they are used to display two things on a screen and let you dictate how much space each one takes. So, as you can probably guess from the title, they can also apply to JTextAreas. They work exactly the same as they did with JLabels, only instead of adding JLabels to the split pane, you add text areas. As a result you can produce this:
 
 ![A split pane with text areas](../../Images/Chapter-IV/Text_Fields/text_area_split.png)
+
+[Now for some challenging exercises!! &rarr;](./Part VII: Exercises.html)

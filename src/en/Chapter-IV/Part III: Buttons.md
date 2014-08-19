@@ -124,3 +124,5 @@ Using these you can create things like the following:
 
 ### Ex 3
 Create 3 check boxes with custom names, and use ActionListener to display an appropriate message depending on which box hads been checked.
+
+[I hope you've been listening - we've got a challenge coming up &rarr;](./Part IV: Temperature.html)

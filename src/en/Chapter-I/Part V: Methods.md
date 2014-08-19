@@ -83,3 +83,7 @@ public static void main(String[] args) {
 
 }
 ```
+
+You should be feeling a profound sense of deja vu here because you've been using this for every piece of code you have written. 
+
+[Time to look at some arrays (fancy lists) &rarr;](./Part VI: Arrays.html)

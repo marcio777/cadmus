@@ -182,3 +182,5 @@ if(alive == true) {
   System.out.println("You're alive good for you");
 }
 ```
+
+[Time to do some maths &rarr;](./Part IV: Arithmetic.html)

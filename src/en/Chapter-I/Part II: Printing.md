@@ -46,3 +46,5 @@ System.out.println("The value of n is " + n);
 ### Ex 1
 Write a program to print a simple drawing of a house, once you have done that have some fun and see what else you can draw!
 Hint: Use `*` or `+` or another symbol and the `println` function.
+
+[Learn some more about variables &rarr;](./Part III: Variables.html)

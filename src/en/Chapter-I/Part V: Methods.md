@@ -1,4 +1,4 @@
-Methods
+Static Methods
 ===
 
 ## Creating and using your own methods
@@ -12,14 +12,6 @@ public static int triple(int number) {
 ```
 
 After `public static` you write the type of the thing that you are returning; in this case we are taking in an int and returning an int. If of course it returns nothing, use the `void` keyword.  After the return type you have the name of the method. I have called this method triple. It's always best to start the method name with a lower case letter and name it something similar to what it does. Inside the brackets after the method name you have the parameters, which are the pieces of information that the method is given when it is called.  So, when we call the triple function we supply it with a number, which is then multiplied by three and the tripled number is returned.
-
-To call the method from the `main` method, do:
-
-```java
-public static void main(String[] args) {
-	System.out.println(triple(3));
-}
-```
 
 Note: `Math.abs()`, and `Math.sqrt()` (which you met in the last part) are examples of methods in the `Math` package. Inside the `Math` package, there are also trigonometric functions such as `Math.sin()`, `Math.cos()`, and `Math.tan()`.
 
@@ -66,21 +58,6 @@ String personA = "George";
 String personB = "George";
 if(personA.equals(personB)) {
 	System.out.println("They're the same person!");
-}
-```
-
-## Static methods
-Static methods are methods that belong to a class, as opposed to an instance of a class. For instance, the method `Integer.parseInt()` is a static method. If I, however, create an integer like so:
-
-```java
-Integer age = 5;
-```
-
-`age` does not have the method `.parseInt()`. You've met many of these methods already. Indeed the methods, you've created with the `static` keyword, are static methods. If I removed the `static` keyword from them they would not be able to be called by the `main` method. The `main` method is a special sort of static method, it is the **execution point** of the program. An execution point must have the **method signature** of:
-
-```java
-public static void main(String[] args) {
-
 }
 ```
 

@@ -1,4 +1,4 @@
-Defining methods
+Methods
 ===
 
 Here's an example of a method:

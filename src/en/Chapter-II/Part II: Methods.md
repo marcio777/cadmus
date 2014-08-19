@@ -83,7 +83,6 @@ Write a method called `findParaArea` which accepts two parameters, the base leng
 Copy & paste the method for Ex 3 and rename it `findTrapeArea`. The method should now calculate the area of a given trapezium. What changes should you make?
 
 ## Non-ststic methods
-
 To define a non-static method, you have to - bet you can't guess - remove the `static` keyword. You can call non-static methods inside the main method like so:
 
 i) First, instantiate the class (for example if the class were called `Task`):

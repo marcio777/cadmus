@@ -119,4 +119,6 @@ public void sumFirstFifteenNumbers() {
 }
 ```
 
-[You've almost finished Chapter I!!!! But not yet &rarr;](./Part VII: Classes.html)
+[Phew, I'm glad that's over; oh, there's more &rarr;](../Chapter-II/Part I: Introduction.html)
+
+[Or you can read the addendum, but I find that boring &rarr;](./Addendum I: History of Java.html)

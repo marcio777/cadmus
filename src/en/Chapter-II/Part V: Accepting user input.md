@@ -2,12 +2,12 @@ Accepting user input
 ===
 
 In order to accept user input, one must first import `java.util.Scanner`. Then have some statement such as `System.out.println("Enter number:");` in order to prompt the user to enter a number. Otherwise they won’t know! Afterwards instantiate a new `Scanner` object by following this rule: 
+
 ```java
 Scanner myScanner = new Scanner(System.in); 
 ```
-Note: `myScanner` is just a random name chosen for this example; any valid name will do.
 
-iv)	Store user input inside a variable. Let’s take a string for example. In this case, we would first, declare a new String:
+Store user input inside a variable. Let’s take a string for example. In this case, we would first, declare a new String:
 ```java
 String myString;
 ```
@@ -17,7 +17,7 @@ myString = myScanner.nextLine();
 ```
 By letting `myString` equal the `Scanner` object `.nextLine`, we’re telling the scanner input object to give us the entire line that was just typed in by the user and assign/store it in `userInput`.
 
-When placing the dot after `myScanner`, you should notice Eclipse provides you a bunch of options other than `nextLine()`. Depending on what kind of input you’d like to accept you can choose `nextInt()` to accept an `int` input or `nextDouble()` to accept a `double` input type.
+When placing the dot after `myScanner`, you should notice Eclipse provides you a bunch of options other than `nextLine()`. Depending on what kind of input you’d like to accept you can choose `nextInt()` to accept an integer input or `nextDouble()` to accept a double.
 
 ### Ex 1 (Computer Science)
 Create a function that will continually prompt the user for an integer till a valid integer is entered.

@@ -121,3 +121,5 @@ However this gives a lot less control over the scroll bars, for example without 
 
 ### Ex 3
 Import more images and put the on JLabels. If the image is very big, add scroll bars to it. Also, explore the different scroll bar policies i.e. `VERTICAL_SCROLLBAR_ALWAYS`, `VERTICAL_SCROLLBAR_AS_NEEDED` and `VERTICAL_SCROLLBAR_NEVER`.
+
+[I think we need some buttons &rarr;](./Part III: Buttons.html)

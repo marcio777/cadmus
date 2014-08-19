@@ -1,4 +1,4 @@
-Methods
+Static Methods
 ===
 
 ## Creating and using your own methods
@@ -70,7 +70,7 @@ if(personA.equals(personB)) {
 ```
 
 ## Static methods
-Static methods are methods that belong to a class, as opposed to an instance of a class. For instance, the method `Integer.parseInt()` is a static method. If I, however, create an integer like so:
+Hitherto you've only met static methods, methods that belong to a class, as opposed to an instance of a class. For instance, the method `Integer.parseInt()` is a static method. If I, however, create an integer like so:
 
 ```java
 Integer age = 5;

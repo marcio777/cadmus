@@ -138,3 +138,5 @@ public class colours extends JFrame{
 ```
 
 This will create a frame that changes colour everytime it gets clicked.
+
+[If you think what you've seen so far is complex - you've got a surprise waiting for you &rarr;](./Part II: Complex Interfaces.html)

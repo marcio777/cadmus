@@ -35,7 +35,7 @@ public void convertToF(int celsius) {
 
 A method header consists of the following:
 
-![An image of a method header](../Images/Chapter-II/Defining_Methods/method_header.png)
+![An image of a method header](../../Images/Chapter-II/Defining_Methods/method_header.png)
 
 Sometimes, we want methods to ‘return’ something to us, and we specify this in the **return type**. For example, you might want one of your employees to give you a report. In this case, however, you have specified that you don’t want anything. Thus, you have told your employee (this method) to return `void` i.e. nothing. 
 

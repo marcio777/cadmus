@@ -63,11 +63,58 @@ Write a program to work out the missing angle of a triangle which has two known 
 Hint: The angles of a triangle must sum up to 180 degrees.
 
 #### Ex 6 (Ecology)
-![A quadrat](../Images/Chapter-I/Arithmetic/Quadrants.png)
+![A quadrat](../../Images/Chapter-I/Arithmetic/Quadrants.png)
 
 A standard quadrat used in school has an area of 0.25m<sup>2</sup>. A quadrat is used to sample a random area of a field to estimate the abundance/variety/percentage coverage of a species. For a random sampling to be statistically viable, at least 3% of the area must be sampled. Write a program, given the size of an area, (say 2000m<sup>2</sup>) works out the amount of different samplings that must be done.
 
 ## Advanced Arithmetic
+Advanced Arithmetic is one way to describe this, the other is endless Math functions. This will be mentioned again, but to import this you will need the import `java.lang.Math`. This contains a load of functions which do various mathematical things, which we will now explore.
+
+### Absolute values
+The first function turns a number into an absolute value. But for that to mean anything, we need to know what an absolute value is. The basic way of saying it is that it is a number regardless of its sign. Therefore -6 = 6 just as 6 = 6. To do this you will need the function `Math.abs()` which can be used in situations such as the following:
+
+```java
+int a = 20
+int b = 27
+int c = 20 - 27
+//in that case c = -7, or you could do the following:
+int c = Math.abs(20 - 27);
+//in which case c = 7
+```
+
+### Maximum & Minimum
+The maximum and the minimum functions take two values and returns either the maximum or the minimum value respectively. You could just do this using two values, which is what I will use as an example, or you could takes two numbers that the user inputted and return the maximum or minimum value. You will learn how to do this in the next chapter. Back on track, this is how they work:
+
+```java
+int a = Math.max(27, 38);
+//a = 38
+int b = Math.min(27, 38);
+//b = 27
+```
+
+### Rounding
+Rounding can be done in three forms using the `java.lang.Math` package. These three forms are `Math.ceil()`, `Math.floor()` and `Math.round()`. Let's do these in order. Math.ceil() will round a number up, no matter what the decimalis. So, this is possible:
+
+```java
+Math.ceil(5.23);
+//prints out 6 despite 0.23 being under 0.5
+```
+
+Math.floor() does the exact opposite and will always round down:
+
+```java
+Math.floor(5.76);
+//prints out 5
+```
+
+Finally there is `Math.round()`, which actually works likerounding is supposed to!! It's a miracle:
+
+```java
+Math.round(5.23);
+//prints out 5 whereas:
+Math.round(5.76);
+//prints out 6
+```
 
 ### Powers
 To get the value of a number to a given power you can use the `Math.pow()` function, which takes two parameters: a number and a power. To use this however, you must import the `java.lang.Math` package. A package is essentially a collection of functions. To import `java.lang.Math`, write this at the very top of your code:
@@ -105,6 +152,8 @@ int n = 7 % 5;
 #### Ex 7 (Geometry, Physics, Chemistry, Game Programming)
 Write a programs that given four numbers *x<sub>1</sub>*, *y<sub>1</sub>*, *x<sub>2</sub>* and *y<sub>2</sub>*, that are points on a graph, and calculates the distance between them, using the formula:
 
-![Distance formula](../Images/Chapter-I/Arithmetic/calculations_for_points_on_a_graph.png)
+![Distance formula](../../Images/Chapter-I/Arithmetic/calculations_for_points_on_a_graph.png)
 
 This is very useful in collision dectection, in scientific models and game programming.
+
+[So, what is a method? &rarr;](./Part V: Methods.html)

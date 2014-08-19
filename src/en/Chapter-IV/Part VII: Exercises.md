@@ -12,7 +12,7 @@ When programming in Java Swing, here are a few things you want to be careful:
 ### Ex 1
 Create the following window without using panels:
 
-![Exercise 1](../Images/Chapter-IV/Exercises/ex_1.png)
+![Exercise 1](../../Images/Chapter-IV/Exercises/ex_1.png)
 
 ### Ex 2 
 Create the same window but this time use panels.
@@ -20,7 +20,7 @@ Create the same window but this time use panels.
 ### Ex 3
 Create the following window:
 
-![Exercise 3](../Images/Chapter-IV/Exercises/ex_3.png)
+![Exercise 3](../../Images/Chapter-IV/Exercises/ex_3.png)
 
 **Tools:** 
 You are going to have to use the following method:
@@ -29,7 +29,7 @@ You are going to have to use the following method:
 ### Ex 4
 Create the following window:
 
-![Exercise 3](../Images/Chapter-IV/Exercises/ex_4.png)
+![Exercise 3](../../Images/Chapter-IV/Exercises/ex_4.png)
 
 ### Ex 5
 Create a program that through the command line asks for an input which will then be added to a GUI. E.g.: If I input "hello there" the following is displayed:
@@ -97,3 +97,5 @@ clear as possible.
 3. Apply the same technique as previously and make all the buttons active.
 
 HINT: Create two labels, one that shows the intermediate results and the final result whereas the other shows what number you have entered. You can then fetch the numbers clicked from the second label. Each operation should have a boolean variable that activates itself once the operation is activated and at the next operation should do the calculations with the new number entered.
+
+[You may think that I'm heartless for making you do more, and you are correct. &rarr;](../Chapter-V/Part I: Listeners.html)

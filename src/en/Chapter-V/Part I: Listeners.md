@@ -90,7 +90,7 @@ public class colours extends JFrame{
 		panel.setBackground(newColour());
 		add(panel);
 		
-		rgb e = new rgb();
+		RGB e = new RGB();
 		panel.addMouseListener(e);
 		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -100,16 +100,16 @@ public class colours extends JFrame{
 	}
 	
 	public Color newColour() {
-		int r = (int) (Math.random()*256);
-		int g = (int) (Math.random()*256);
-		int b = (int) (Math.random()*256);
-		return(new Color(r, g, b));
+		int R = (int) (Math.random()*256);
+		int G = (int) (Math.random()*256);
+		int B = (int) (Math.random()*256);
+		return(new Color(R, G, B));
 	}
 	
-	public class rgb implements MouseListener {
+	public class RGB implements MouseListener {
 
 		public void mouseClicked(MouseEvent e) {
-			panel.setBackground(randomColour());
+			panel.setBackground(newColour());
 			
 			
 		}

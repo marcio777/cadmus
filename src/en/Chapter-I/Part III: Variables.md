@@ -84,7 +84,7 @@ piAsString = Double.toString(pi);
 With this method you can convert a double into a string. However, what if you wanted to convert a double into an integer? You may be thinking that you could use `Integer.parseInt()`, but doing so will make Java have a fit - it can't understand an integer with a decimal point. To convert it you would use something called "casting". This is the only time I will mention it, so listen carefully. Casting is very easy - all you have to do is write what you want to cast it to in brackets before the actual value. In other words, to turn pi into an int you would do the following:
 
 ```java
-int pi = ((int) Math.rand());
+int pi = (int) (Math.random());
 //'pi' is now a random integer
 ```
 

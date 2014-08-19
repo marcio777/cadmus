@@ -23,6 +23,14 @@ By letting `myString` equal the `Scanner` object `.nextLine`, we’re telling th
 
 When placing the dot after `myScanner`, you should notice Eclipse provides you a bunch of options other than `nextLine()`. Depending on what kind of input you’d like to accept you can choose `nextInt()` to accept an integer input or `nextDouble()` to accept a double.
 
+You can also react to what the user inputs. One way to do this is to use the method `hasNextInt()`. This is also possible for doubles and floats and booleans etc. Add this to an if statement and you can react to what type of input the user inputted. So, you can create the following:
+
+```java
+if(myScan.hasNextInt()) {
+  System.out.println("Why did you enter an integer????? We wanted a double");
+}
+```
+
 ### Ex 1 (Computer Science)
 Create a method that will continually prompt the user for an integer until a valid integer is entered. That valid integer is a multiple of 13.
 

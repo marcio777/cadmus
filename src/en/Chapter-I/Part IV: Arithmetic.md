@@ -155,3 +155,5 @@ Write a programs that given four numbers *x<sub>1</sub>*, *y<sub>1</sub>*, *x<su
 ![Distance formula](../../Images/Chapter-I/Arithmetic/calculations_for_points_on_a_graph.png)
 
 This is very useful in collision dectection, in scientific models and game programming.
+
+[So, what is a method? &rarr;](./Part V: Methods.html)

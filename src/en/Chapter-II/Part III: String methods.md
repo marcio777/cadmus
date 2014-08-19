@@ -1,6 +1,6 @@
+String methods
+===
 
-
-## String methods
 I've told you previously that `String` is a class, not a primitive. Therefore it can, and does, have its own non-static methods.
 
 ### Length

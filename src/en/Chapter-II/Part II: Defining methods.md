@@ -67,13 +67,12 @@ public static void main(String[] args) {
 
 ### Ex 1
 Write a method called `pizzazzYo` which accepts one integer and displays `Pizzazz` on the terminal if the integer is fully divisible by 7. If the integer isn’t divisible by 7, display `A tragic number has been entered` instead.
-Hint: find out what modulo `%` is in programming. Can you use it?
 
 ### Ex 2
 Write a method called `checkEvenOdd` which accepts one integer and checks if it is odd or even. Given the integer is odd, “The number is odd” is displayed on the terminal. 
 
 ### Ex 3
-Write a method called `findTriangleArea` which accepts two parameters, the base length and height of a triangle, then calculates and displays this.
+Write a method called `findTriangleArea` which accepts two parameters, the base length and height of a triangle, then calculates and displays the area of the triangle.
 
 ### Ex 4
 Write a method called `findParaArea` which accepts two parameters, the base length and height of a parallelogram, then calculates and displays its area on screen.

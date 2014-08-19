@@ -61,21 +61,6 @@ if(personA.equals(personB)) {
 }
 ```
 
-## Static methods
-Hitherto you've only met static methods, methods that belong to a class, as opposed to an instance of a class. For instance, the method `Integer.parseInt()` is a static method. If I, however, create an integer like so:
-
-```java
-Integer age = 5;
-```
-
-`age` does not have the method `.parseInt()`. You've met many of these methods already. Indeed the methods, you've created with the `static` keyword, are static methods. If I removed the `static` keyword from them they would not be able to be called by the `main` method. The `main` method is a special sort of static method, it is the **execution point** of the program. An execution point must have the **method signature** of:
-
-```java
-public static void main(String[] args) {
-
-}
-```
-
 You should be feeling a profound sense of deja vu here because you've been using this for every piece of code you have written. 
 
 [Time to look at some arrays (fancy lists) &rarr;](./Part VI: Arrays.html)

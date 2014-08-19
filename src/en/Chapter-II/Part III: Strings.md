@@ -40,3 +40,16 @@ if(personA.equals(personB)) {
 }
 ```
 
+### Substring
+This takes the string you give it and two index numbers, and returns the chars in between them, excluding the value at the final index. So:
+
+```java
+String a = "last";
+System.out.println(a.substring(0,1));
+//prints out "l"
+```
+
+As a note, you can also use substring where you only input one index and the string keeps everything after and including the value of that index.
+
+
+N.B. There are many many many more of these methods and I would advise looking them up if you need them.

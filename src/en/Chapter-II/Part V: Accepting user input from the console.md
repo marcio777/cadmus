@@ -1,26 +1,30 @@
-Accepting user input
+Accepting user input from the console
 ===
 
-In order to accept user input, one must first import `java.util.Scanner`. Then have some statement such as `System.out.println("Enter number:");` in order to prompt the user to enter a number. Otherwise they won’t know! Afterwards instantiate a new `Scanner` object by following this rule: 
+In order to accept user input from the console, one must first import `java.util.Scanner`. Then have some statement such as `System.out.println("Enter number:");` in order to prompt the user to enter a number. Otherwise they won’t know! Then instantiate a new `Scanner` object by following this rule: 
 
 ```java
 Scanner myScanner = new Scanner(System.in); 
 ```
 
-Store user input inside a variable. Let’s take a string for example. In this case, we would first, declare a new String:
+This will store the user's input inside a variable. Let’s take a string for example. In this case, we would first, declare a new String:
+
 ```java
 String myString;
 ```
+
 and secondly, store information inside the variable using:
+
 ```java
 myString = myScanner.nextLine();
 ```
-By letting `myString` equal the `Scanner` object `.nextLine`, we’re telling the scanner input object to give us the entire line that was just typed in by the user and assign/store it in `userInput`.
+
+By letting `myString` equal the `Scanner` object `.nextLine`, we’re telling the scanner input object to give us the entire line that was just typed in by the user and assign/store it in `myString`.
 
 When placing the dot after `myScanner`, you should notice Eclipse provides you a bunch of options other than `nextLine()`. Depending on what kind of input you’d like to accept you can choose `nextInt()` to accept an integer input or `nextDouble()` to accept a double.
 
 ### Ex 1 (Computer Science)
-Create a function that will continually prompt the user for an integer till a valid integer is entered.
+Create a method that will continually prompt the user for an integer until a valid integer is entered. That valid integer is a multiple of 13.
 
 ### Ex 2 (Maths)
 Modify Ex 4 of Part IV, so that the method can now calculate any side of a triangle given two of its sides are known. 
@@ -35,11 +39,10 @@ Things to think about:
 
 HINTS: 
 - Remember to import the `math` package
-- Also for methods in the `math` package you can refer to [the official docs](http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html)
-- The sin/tan/cos methods in Java give back a result in radians. What method (that you have previously made) would you have to utilise?
+- Also for methods in the `math` package you can refer to [the official documents](http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html)
+- The sin/tan/cos methods in Java give back a result in radians. What method (that you have previously made) will you have to utilise?
 
-
-### Ex 4 (Games): Guess that number
+### Ex 4 (Games): Guess that number:
 Use what you have been taught to create the game, Guess that number. The computer will generate a random number and the player will have to guess it till he/she gets it right. After each attempt the computer says whether it's higher or lower until he/she gets it right. 
 
 To generate a random number:

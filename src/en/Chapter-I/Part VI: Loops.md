@@ -119,4 +119,4 @@ public void sumFirstFifteenNumbers() {
 }
 ```
 
-[You've almost finished Chapter I!!!! But not yet &rarr;](./Part VIII: Classes.html)
+[You've almost finished Chapter I!!!! But not yet &rarr;](./Part VII: Classes.html)

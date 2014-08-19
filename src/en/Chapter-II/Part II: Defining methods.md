@@ -47,6 +47,15 @@ This means that when using this method later on, you can input something like `c
 
 For now, you are going to have to accept that there is something called an **access modifier** that will be at the start of every method you write. In this case, we will always be using the access modifier `public`. For the curious, access modifiers are related to classes (a key feature of an object-orientated language like Java), and other ‘access modifiers’ apart from public exist such as `private` and `protected`. It is also not actually a requirement to have an access modifier at the beginning of a method. 
 
+## Static methods
+Hitherto you've only met static methods, methods that belong to a class, as opposed to an instance of a class. For instance, the method `Integer.parseInt()` is a static method. If I, however, create an integer like so:
+
+```java
+Integer age = 5;
+```
+
+`age` does not have the method `.parseInt()`. You've met many of these methods already. Indeed the methods, you've created with the `static` keyword, are static methods. If I removed the `static` keyword from them they would not be able to be called by the `main` method.
+
 ## Calling methods
 To call the method from the `main` method or any other non-static method, do:
 

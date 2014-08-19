@@ -42,3 +42,5 @@ Set the text of label to farenheitValue.
 
 #### Extension
 Modify the code to convert Farenheit to Celsius. You will have to add another button, and use `.getSource()` in `actionPerformed` to check which button was pressed.
+
+[That was tough - but theirs no rest for the wicked; or the programmer &rarr;](./Part V: Layouts.html)

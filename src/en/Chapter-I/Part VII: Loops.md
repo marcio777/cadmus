@@ -23,17 +23,17 @@ So in the brackets of the for loop we initialise a variable called `n` to 0, and
 Use a loop of your choice to print out all the multiples of 9 within the range 0-108.
  
 #### Ex 2 (Maths)
-Write a function, that when given a number, calculates whether it is a prime number.
+Write a program, that given a number `n`, calculates whether it is a prime number.
 
 #### Ex 3 (Maths)
-Write a function, that when given a number, prints an array of all its factors.
+Write a function, that given a number `n`, prints an array of all its factors.
 
 #### Ex 4 (Music)
-Write a function, that prints the lyrics of [99 Bottles of Beer](http://99-bottles-of-beer.net/lyrics.html), with a loop.
+Write a program, that prints the lyrics of [99 Bottles of Beer](http://99-bottles-of-beer.net/lyrics.html), with a loop.
 Extension: Add a variable to change the number of bottles.
 
 #### Ex 5 (Morphology)
-Write a function that, when given a word, returns the syllable count. To do this count the number of vowels including `y`, excluding two or more vowels that are in a row (dipthongs).
+Write a program, that given a word, returns the syllable count. To do this count the number of vowels including `y`, excluding two or more vowels that are in a row (dipthongs).
 
 ## While loops
 
@@ -93,9 +93,6 @@ public void countTenWithDoLoop() {
 ```
 
 Notice here that we must change 10 to 9, as if we keep it as 10, once n becomes 11 the piece of code will be run and then the program will check to see if the condition is met.
-
-#### Ex 7 (Computer Science)
-Write a program, that uses a do loop to prompt the user for a number, checks whether it's a number, and repeats until it is actually a number.
 
 ## Array loops
 

@@ -109,7 +109,7 @@ public class colours extends JFrame{
 	public class rgb implements MouseListener {
 
 		public void mouseClicked(MouseEvent e) {
-			panel.setBackground(randomColour());
+			panel.setBackground(newColour());
 			
 			
 		}

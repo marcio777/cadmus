@@ -170,3 +170,5 @@ This is for the first button which, when pressed, will show the second panel. Th
 ![Card layout panel 1](../../Images/Chapter-IV/Layouts/first_panel.png)
 ![Card layout panel 2](../../Images/Chapter-IV/Layouts/second_panel.png)
 ![Card layout panel 3](../../Images/Chapter-IV/Layouts/third_panel.png)
+
+[We've made passing mentions, but now it's time to study JTextFields in full &rarr;](./Part VI: Text Fields.html)

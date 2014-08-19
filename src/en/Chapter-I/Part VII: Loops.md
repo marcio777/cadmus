@@ -121,3 +121,5 @@ public void sumFirstFifteenNumbers() {
 	System.out.println(sum); // this prints out the final sum
 }
 ```
+
+[You've almost finished Chapter I!!!! But not yet &rarr;](./Part VIII: Classes.html)

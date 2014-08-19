@@ -17,10 +17,10 @@ myNewObject.methodName();
 Note that in order to call a method on an object, all you really need to do is put a dot after the object name, followed by the method name and parameter list. 
 
 ### Ex 1
-Write a non-static method called quintuple (and the main method of course), which quintuples a number.  Get the program to triple the number 34 and then print out the result.
+Write a non-static method called triple (and the main method of course), which triples a number.  Get the program to triple the number 34 and then print out the result.
 
 ### Ex 2
-Write a non-static method, which returns a Hello World-style greeting. For instance if I called it with `George`, it would respond with: `Hello George!`.
+Write a non-static method, which returns a "Hello World"-style greeting. For instance, if I called it with `George`, it would respond with: `Hello George!`.
 
 ## String methods
 I've told you previously that `String` is a class, not a primitive. Therefore it can, and does, have its own non-static methods.

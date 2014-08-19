@@ -47,6 +47,15 @@ This means that when using this method later on, you can input something like `c
 
 For now, you are going to have to accept that there is something called an **access modifier** that will be at the start of every method you write. In this case, we will always be using the access modifier `public`. For the curious, access modifiers are related to classes (a key feature of an object-orientated language like Java), and other ‘access modifiers’ apart from public exist such as `private` and `protected`. It is also not actually a requirement to have an access modifier at the beginning of a method. 
 
+## Calling methods
+To call the method from the `main` method or any other non-static method, do:
+
+```java
+public static void main(String[] args) {
+	System.out.println(triple(3));
+}
+```
+
 ### Ex 1
 Write a method called `pizzazzYo` which accepts one integer and displays `Pizzazz` on the terminal if the integer is fully divisible by 7. If the integer isn’t divisible by 7, display `A tragic number has been entered` instead.
 Hint: find out what modulo `%` is in programming. Can you use it?

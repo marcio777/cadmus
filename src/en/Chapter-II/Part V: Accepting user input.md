@@ -56,10 +56,10 @@ You will need to import `java.util.Random`.
 Add a lives element to the game so that the user only has ten or so lives to get it right.
 
 ### Ex 5 (Games): Hangman
-Use what you have been taught to create a command line version of the game, Hangman. For the sake of simplicity display the lives as a number, rather than drawing out a pretty diagram, unless you really want to. Use `.nextLine()` coupled with `.substring()` to get a `char`. Some of what you'll:
+N.B. This exercise is designed to stretch your computational thinking.
+
+Use what you have been taught to create a command line version of the game, Hangman. For the sake of simplicity display the lives as a number, rather than drawing out a pretty diagram, unless you really want to. Use `.nextLine()` coupled with `.substring()` to get a `char`. Some of what you'll need:
 - A global variable to store a series of possibilites
-- A method to generate a random word
-- A variable to store the chosen word
 - A variable (perhaps a boolean array) to store the characters that have been discovered
 - A method to filter out the word with underscores
 

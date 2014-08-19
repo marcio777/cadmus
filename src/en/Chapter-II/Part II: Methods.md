@@ -1,4 +1,4 @@
-Defining methods
+Methods
 ===
 
 Here's an example of a method:
@@ -55,6 +55,8 @@ Integer age = 5;
 ```
 
 `age` does not have the method `.parseInt()`. You've met many of these methods already. Indeed the methods, you've created with the `static` keyword, are static methods. If I removed the `static` keyword from them they would not be able to be called by the `main` method.
+
+N.B.: `Math.abs()`, and `Math.sqrt()` are also statics, as are other methods inside the `Math` package, such as trigonometric functions `Math.sin()`, `Math.cos()`, and `Math.tan()`.
 
 ## Calling methods
 To call the method from the `main` method or any other non-static method, do:

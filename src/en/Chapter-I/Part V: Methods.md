@@ -13,14 +13,6 @@ public static int triple(int number) {
 
 After `public static` you write the type of the thing that you are returning; in this case we are taking in an int and returning an int. If of course it returns nothing, use the `void` keyword.  After the return type you have the name of the method. I have called this method triple. It's always best to start the method name with a lower case letter and name it something similar to what it does. Inside the brackets after the method name you have the parameters, which are the pieces of information that the method is given when it is called.  So, when we call the triple function we supply it with a number, which is then multiplied by three and the tripled number is returned.
 
-To call the method from the `main` method, do:
-
-```java
-public static void main(String[] args) {
-	System.out.println(triple(3));
-}
-```
-
 Note: `Math.abs()`, and `Math.sqrt()` (which you met in the last part) are examples of methods in the `Math` package. Inside the `Math` package, there are also trigonometric functions such as `Math.sin()`, `Math.cos()`, and `Math.tan()`.
 
 ### Ex 1

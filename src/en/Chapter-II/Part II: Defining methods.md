@@ -4,7 +4,7 @@ Defining methods
 Here's an example of a method:
 
 ```java
-public void convertToF(int celcius) {
+public static void convertToF(int celcius) {
 	int fahrenheit = celcius * 9/5 + 32;
 	System.out.println("C:" + celcius + " F: " + fahrenheit);
 }
@@ -13,7 +13,6 @@ public void convertToF(int celcius) {
 Don’t worry if you don’t quite understand what’s going on in the code above for now. What you are looking at, however, is a basic method which converts a temperature you specify in degrees Celsius to its equivalent in Fahrenheit.  
 
 ## Creating and defining your very first method
-
 Before creating your first method, there are a few things you need to know. Mainly, the two ingredients needed to create a method: the method **header** and the method **body**.
 
 To do this, let’s first decipher the method above.

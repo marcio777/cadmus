@@ -43,28 +43,16 @@ An integer is a whole number. Integers are stored as the data type `int`. To def
 int age = 15;
 ```
 
-You can convert an integer to a string, by using `Integer.toString()`:
-
-```java
-int age = 13;
-String ageAsString = Integer.toString(age);
-```
-
-You can convert a string to an integer by using `Integer.parseInt()`:
-
-```java
-String ageAsString = "13";
-int age = Integer.parseInt(ageAsString);
-```
-
-You can also increment and decrement variables by one, by using unary operators, that is to say operators that take one value:
+You can increment and decrement variables by one, by using unary operators, that is to say operators that take one value:
 
 ```java
 age++; // Age now equals 14
 age--; // Age is back to 13
 ```
 
-Binary operators like `+`, `-`, `/` and `*` take two values. 
+Binary operators like `+`, `-`, `/` and `*` take two int values.
+
+You will learn how to convert between variables at a later point.
 
 ### Real numbers
 While an integer is a whole number, a real number has a decimal point in it. To use a real number in Java, use the `double` data type:
@@ -73,15 +61,7 @@ While an integer is a whole number, a real number has a decimal point in it. To 
 double pi = 3.14159265359;
 ```
 
-As with an integer, you can convert it into a string and a double, using the following:
-
-```java
-String piAsString = "3.14159265359";
-double pi = Double.parseDouble(piAsString);
-piAsString = Double.toString(pi);
-```
-
-With this method you can convert a double into a string. However, what if you wanted to convert a double into an integer? You may be thinking that you could use `Integer.parseInt()`, but doing so will make Java have a fit - it can't understand an integer with a decimal point. To convert it you would use something called "casting". This is the only time I will mention it, so listen carefully. Casting is very easy - all you have to do is write what you want to cast it to in brackets before the actual value. In other words, to turn pi into an int you would do the following:
+You can convert a double into a string, and you will find out how to do that later. That is possible because the method simply sets it to be a piece of text. However, what if you wanted to convert a double into an integer? You will be finding out how to do that using `Integer.parseInt()` in Chapter II, but doing so here will make Java have a fit - it can't understand an integer with a decimal point. To convert it you would use something called "casting". This is the only time I will mention it, so listen carefully. Casting is very easy - all you have to do is write what you want to cast it to in brackets before the actual value. In other words, to turn pi into an int you would do the following:
 
 ```java
 int pi = (int) (Math.random());
@@ -93,19 +73,16 @@ N.B. **DO NOT USE MATH.RAND(), YOU WILL FIND A BETTER OPTION IN ONE OF THE EXERC
 This can work with other things as well, and may serve as a faster way to convert between variable formats.
 
 ### Booleans
-A boolean is a variable that has two possible values - `true` or `false`. As before, you can convert between booleans and strings:
+A boolean is a variable that has two possible values - `true` or `false`. That's it:
 
 ```java
 boolean myBoolean = true;
-String aliveAsString = "true";
-alive = Boolean.parseBoolean(aliveAsString); 
-aliveAsString = Boolean.toString(alive);
 ```
 
 # Primitives versus Classes
 You may have picked up on the fact that `String` is capitalised, while `int`, `double` and `boolean` are not. This is because `int`, `double` and `boolean` are all **primitive data types**, while  `String` is a **class data type**. These may not mean anything to you yet, but in essence there are 8 built-in primitives within Java. Primitives cannot be added or removed by the programmer; they are the DNA of the programming language. Primitives represent one scalar value. Classes are far more powerful than primitives. They shift the power to the programmer, allowing the programmer to create classes, which are composed from other datatypes. Java comes with a bunch of classes built in, namely `String`.
 
-But what about `Integer`, `Double`, and `Boolean` as in `Integer.parseInt()` or `Double.parseDouble()` etc.? These are indeed classes, that wrap around their respective primitives. So the following would be perfectly valid:
+But what about `Integer`, `Double`, and `Boolean` etc.? These are indeed classes, that wrap around their respective primitives. So the following would be perfectly valid:
 
 ```java
 Integer age = 13;
@@ -114,8 +91,6 @@ Boolean alive = false;
 ```
 
 However using these instead of primitives has an unnecessary performance cost, and should not be used. There are valid reasons for using them, that will come up in Chapter II, but as for now they are a burden. 
-
-N.B. It is perfectly accceptable to use their static methods i.e. `Integer.parseInt()` etc, because they do not actually involve instantiating those classes (Part VIII). 
 
 ## Selection (Comparing values)
 You can compare values by using an `if/else` statement: 

@@ -71,7 +71,7 @@ Inspiring yourself from exercise 13 create a program that displays the first 20 
 Create the following window that converts values of temperature:
 
 ### Ex 15
-Just like the previous exercise, create a program that after asking you to choose between a temperature converter or an angle converter either displays an angle converter (degree/radian) or a temperature converter (the same as above) based on what the yser chose.
+Just like the previous exercise, create a program that after asking you to choose between a temperature converter or an angle converter either displays an angle converter (degree/radian) or a temperature converter (the same as above) based on what the user chose.
 
 ### Ex 16
 Create a program that, using scanner, asks you to input positive numbers until you input a negative one, after which it creates a GUI with the following information: 
@@ -99,3 +99,5 @@ clear as possible.
 HINT: Create two labels, one that shows the intermediate results and the final result whereas the other shows what number you have entered. You can then fetch the numbers clicked from the second label. Each operation should have a boolean variable that activates itself once the operation is activated and at the next operation should do the calculations with the new number entered.
 
 [You may think that I'm heartless for making you do more, and you are correct. &rarr;](../Chapter-V/Part I: Listeners.html)
+
+[Or you can read the addendum &rarr;](./Addendum I: History of Object-Oriented Programming.html)

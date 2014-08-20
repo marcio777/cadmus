@@ -74,3 +74,4 @@ Use what you have been taught to create a command line version of the game, Hang
 - A variable (perhaps a boolean array) to store the characters that have been discovered
 - A method to filter out the word with underscores
 
+[And finally, more on classes &rarr;](./Part VI: Classes.html)

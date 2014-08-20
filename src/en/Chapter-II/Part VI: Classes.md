@@ -56,3 +56,5 @@ This non-static method will be available on every instance, that is to say objec
 
 ### Ex 3
 Add a method to get the author and publisher of a `Book`.
+
+[Once more into the breach - time for Java Swing &rarr;](../Chapter-IV/Part I: MyFirstWindow.html)

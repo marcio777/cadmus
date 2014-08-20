@@ -104,4 +104,4 @@ Write a non-static method called triple (and the main method of course), which t
 ### Ex 2
 Write a non-static method, which returns a "Hello World"-style greeting. For instance, if I called it with `George`, it would respond with: `Hello George!`.
 
-[Some pre-determined methods &rarr;](./Part III: Strings.html)
+[Some pre-determined methods &rarr;](./Part III: Variable Methods.html)

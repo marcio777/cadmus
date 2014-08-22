@@ -2,18 +2,19 @@ Arrays
 ===
 
 ## Declaring Arrays
-An array is a list of variables. Arrays must be of a type. That is to say you cannot have an array that contains some integers, next to some strings, next to some booleans. To declare an array in Java you use:
+An array is a list of variables, and arrays must be of a type. That is to say you cannot have an array that contains some integers, next to some strings, next to some booleans. To declare an array in Java you use:
 
 ```java
 int[] myArray;
 ```
 
-Notice the square bracket notation. It tells the compiler that `myArray` isn't an integer, but a list of integers. You must also initialise arrays.
+Notice the square bracket notation. It tells the computer that `myArray` isn't an integer, but a list of integers. You must also initialise arrays.
 
 ### When you don't know what you want inside
 
 ```java
 myArray = new int[10];
+//this sets the array's length to be 10 without any values
 ```
 
 ### When you do know what you want inside
@@ -22,13 +23,14 @@ myArray = new int[10];
 myArray = {10, 523, 34, 63, 32, 64, 992, 353, 5, 0};
 ```
 
-Both ways create arrays of type Integer, that have a size of 10. The second way, however, initialises the array with values. Arrays must have sizes. You cannot fill the array past said sizes. In the second way, Java assumes the size to be the number of values the array is set to.
+Both ways create arrays of type Integer that have a size of 10. The second way however, initialises the array with values. Arrays must have sizes. You cannot fill the array past said sizes. In the second way, Java assumes the size to be the number of values the array is set to.
 
 Finally, arrays can be declared and initialised together:
 
 ```java
 bool[] myArray = new bool[10];
-String[] girlfriends = {"Jessica", "Abby", "Zoey", "Daisy"};
+String[] girlfriends = {"Jessica", "Abbey", "Zoey", "Daisy"};
+//yes, Agent X has that many girlfriends at once
 ```
 
 ### Ex 1

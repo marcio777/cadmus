@@ -68,7 +68,7 @@ add(component5, BorderLayout.CENTER);
 ###Ex 2
 Create a frame with five buttons that are oriented using the border layout. You will have to do this yourself. For reference however, the end product should look like this:
 
-![The border layout in Java](../Images/Chapter-IV/Layouts/the_border_layout.png)
+![The border layout in Java](../../Images/Chapter-IV/Layouts/the_border_layout.png)
 
 ##The Grid Layout
 A Grid Layout arranges the components into a two dimensional grid with a number of rows and columns.

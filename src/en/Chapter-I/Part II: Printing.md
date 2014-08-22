@@ -3,6 +3,7 @@ Printing
 
 To output text to the console, use `System.out.println` e.g.:
 
+Wait, wait, wait stop. What on earth is the console? Well, the console is what the computer uses to 'talk' to the programmer. Any errors occur, and the console will fill with red error messages. The programmer can also program messages to be displayed in the console, either as a very basic form of UI(user input) or to tell the programmer what is going on when the program is running. The user almost never sees this console. 
 ```java
 System.out.println("Hello world");
 ```

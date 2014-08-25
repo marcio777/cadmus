@@ -5,7 +5,7 @@ Here's an example of a method:
 
 ```java
 public static void convertToF(int celsius) {
-	int fahrenheit = celsius * 9/5 + 32;
+	int fahrenheit = ((celsius * 9) /5) + 32;
 	System.out.println("C:" + celsius + " F: " + fahrenheit);
 }
 ```
@@ -27,8 +27,8 @@ When we refer to a method body, we basically mean everything within the curly br
 
 ```java
 public void convertToF(int celsius) {
-	int fahrenheit = celsius * 9/5 + 32;
-	System.out.println(" C:" + celsius + " F: " + fahrenheit);
+	**int fahrenheit = celsius * 9/5 + 32;**
+	**System.out.println(" C:" + celsius + " F: " + fahrenheit);**
 }
 ```
 

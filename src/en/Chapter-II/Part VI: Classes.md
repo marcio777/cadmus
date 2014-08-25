@@ -38,7 +38,7 @@ new Book("Horton Hears A Who!","Dr. Seuss","Random House");
 Notice that the way in which you create an object is similar to how you create a variable, you have the type then the name of the object then the equals sign; the only difference comes after the equals sign.  Now, you have the word `new` which just tells the interpreter that the object that you are creating is a new object, and then you have what we call a *constructor method*. The characteristics of the object are passed as parameters.
 
 ### Ex 1 
-Rewrite the code into Java, and instantiate, that is to say create, your favourite book.
+Rewrite the code into Java, and instantiate your favourite book.
 
 ### Ex 2
 Change the code to create an array of books, and populate it with your favourite books.

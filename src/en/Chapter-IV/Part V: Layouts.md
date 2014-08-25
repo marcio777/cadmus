@@ -171,4 +171,7 @@ This is for the first button which, when pressed, will show the second panel. Th
 ![Card layout panel 2](../../Images/Chapter-IV/Layouts/second_panel.png)
 ![Card layout panel 3](../../Images/Chapter-IV/Layouts/third_panel.png)
 
+## The GridBagLayout
+Now, onto the most powerful, and most weirdly named, layout, the GridBagLayout. This is, most definitely, the most powerful layout, and it sets the frame up as a grid, like a gridlayout but gives far more adaptability. 
+
 [We've made passing mentions, but now it's time to study JTextFields in full &rarr;](./Part VI: Text Fields.html)

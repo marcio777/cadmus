@@ -172,6 +172,34 @@ This is for the first button which, when pressed, will show the second panel. Th
 ![Card layout panel 3](../../Images/Chapter-IV/Layouts/third_panel.png)
 
 ## The GridBagLayout
-Now, onto the most powerful, and most weirdly named, layout, the GridBagLayout. This is, most definitely, the most powerful layout, and it sets the frame up as a grid, like a gridlayout but gives far more adaptability. 
+Now, onto the most powerful, and most weirdly named, layout, the GridBagLayout. This is, most definitely, the most powerful layout, and it sets the frame up as a grid, like a gridlayout but gives far more adaptability. Before we get ahead of ourselves however, we have to know how to use the basics of this layout. First you have to set the layout to be `GridBagLayout()`, but you also have to declare the following:
+
+```java
+GridBagConstraints gc = new GridBagConstraints();
+```
+
+You will have to remember `gc` because that is what you manipulate and then you add he components to that. Bear in mind that `gc` is just an identifier, so you can replace it with anything. So, for example, if I had 4 buttons and wanted to have 2 on the top row, 1 on the middle-left and 1 on the bottom-right, I would use the following:
+
+```java
+gc.gridx = 0;
+gc.gridy = 0;
+add(btn1, gc);
+
+gc.gridx = 1;
+gc.gridy = 0;
+add(btn2, gc);
+
+gc.gridx = 0;
+gc.gridy = 2;
+add(btn3, gc);
+
+gc.gridx = 1;
+gc.gridy = 3;
+add(btn4, gc);
+```
+
+The code above should mean nothing to you but is actually very simple. I mentioned that GridBagLayout works based off of grid co-ordinates, and that is what the whole business with `gridx` and `gridy` is doing. `gridx = 0` and `gridy = 0` refers to the top left corner of the frame. Setting `gridx` to 1 would move it over one on the x axis; setting `gridy` to 1 would move it down one on the y axis. Also, it must be noted that when you add the component to the JFrame or JPanel, you must add it to the GridBagConstraints at the same time. So, instead of `add(btn4)`, you have to use `add(btn4, gc)`. It would be useful to remember that GridBagConstraints are also position-sensitive. Therefore you should add the button directly after you set the location. The fact that it is position-sensitive will become important later. Anyway, the above code will create the following:
+
+![GridBag 1](../../)
 
 [We've made passing mentions, but now it's time to study JTextFields in full &rarr;](./Part VI: Text Fields.html)

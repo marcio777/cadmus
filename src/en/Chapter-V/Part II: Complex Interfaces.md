@@ -189,7 +189,6 @@ Now just add the table to the scrollpane and add the scrollpane to the JFrame, a
 ![A JTable](../../Images/Chapter-IV/Complex_Interfaces/JTable.png)
 
 ## JProgressBar
-
 You will have seen a lot of progress bars before because they are commonly used to show how much of a task is completed. These are also only mainly used on loading screens. As a result the one I will be telling you about today and showing you will be on a JWindow, which acts as a basic loading screen. However, this is the **only** time you should ever used JWindow. It is a horrible component that you will want to never give the time of day. With that warning out of the way, onto the JProgressBar.
 
 The JProgressbar is reasonably simple to use in itself, you only need to declare and instantiate it. The difficult part comes in the form of the Timer that is needed for the JProgressBar to actually work. This is the code for a JProgressBar that works fully, and it's explained underneath:

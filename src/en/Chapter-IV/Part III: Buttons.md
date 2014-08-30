@@ -123,6 +123,36 @@ Using these you can create things like the following:
 ![Some check boxes](../../Images/Chapter-IV/Buttons/check_boxes.png)
 
 ### Ex 3
-Create 3 check boxes with custom names, and use ActionListener to display an appropriate message depending on which box hads been checked.
+Create 3 check boxes with custom names, and use ActionListener to display an appropriate message depending on which box has been checked.
+
+## Calling another class
+Another thing you can do with a button is display another frame on screen when it is clicked. So, for example, if I wanted a red panel to appear whn I clicked a button, what should I do? Well, the first thing is to create the button and add an ActionListener, but that goes without saying. What you have to do beyond that is something like the following:
+
+```java
+btn1.addActionListener(new ActionListener () {
+	public void actionPerformed(ActionEvent e) {
+		redpanel red = new redpanel();
+		red.setVisible(true);
+	}
+});
+```
+
+That code will call another class, or another file in the same folder to put it in other words, and set it to be visible. This particular file is called `redpanel`, and I gave it the identifier `red`. However, this file needs to exist, and it can be like the following:
+
+```java
+public class redpanel extends JDialog {
+
+	public redpanel() {
+		setSize(200,200);
+		setVisible(true);
+		getContentPane().setBackground(Color.RED);
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setTitle("Red panel");
+	}
+}
+```
+ The astute will notice two things different with this. 1) There is no main method. This is because it is being called from another class, so that main method was the first to be looked at by the computer. Therefore it is not needed. 2) The class extends `JDialog`, not JFrame. This is just something that you have to accept - a JFrame would not work, so we use JDialog. Using this something like this can be made:
+ 
+![Red panel button](../../Images/Chapter-IV/Buttons/calling_panel.png)
 
 [I hope you've been listening - we've got a challenge coming up &rarr;](./Part IV: Temperature.html)

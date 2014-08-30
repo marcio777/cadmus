@@ -131,7 +131,7 @@ Another thing you can do with a button is display another frame on screen when i
 ```java
 btn1.addActionListener(new ActionListener () {
 	public void actionPerformed(ActionEvent e) {
-		redpanel red = new redpanel();
+		RedPanel red = new RedPanel();
 		red.setVisible(true);
 	}
 });

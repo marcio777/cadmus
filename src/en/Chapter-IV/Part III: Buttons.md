@@ -131,13 +131,13 @@ Another thing you can do with a button is display another frame on screen when i
 ```java
 btn1.addActionListener(new ActionListener () {
 	public void actionPerformed(ActionEvent e) {
-		redpanel red = new redpanel();
+		RedPanel red = new RedPanel();
 		red.setVisible(true);
 	}
 });
 ```
 
-That code will call another class, or another file in the same folder to put it in other words, and set it to be visible. This particular file is called `redpanel`, and I gave it the identifier `red`. However, this file needs to exist, and it can be like the following:
+That code will call another class, or another file in the same folder to put it in other words, and set it to be visible. This particular file is called `RedPanel`, and I gave it the identifier `red`. However, this file needs to exist, and it can be like the following:
 
 ```java
 public class RedPanel extends JDialog {
@@ -151,7 +151,7 @@ public class RedPanel extends JDialog {
 	}
 }
 ```
- The astute will notice two things different with this. 1) There is no main method. This is because it is being called from another class, so that main method was the first to be looked at by the computer. Therefore it is not needed. 2) The class extends `JDialog`, not JFrame. This is just something that you have to accept - a JFrame would not work, so we use JDialog. Using this something like this can be made:
+The astute will notice two things different with this. 1) There is no main method. This is because it is being called from another class, so that main method was the first to be looked at by the computer. Therefore it is not needed. 2) The class extends `JDialog`, not JFrame. This is just something that you have to accept - a JFrame would not work, so we use JDialog. Using this something like this can be made:
  
 ![Red panel button](../../Images/Chapter-IV/Buttons/calling_panel.png)
 

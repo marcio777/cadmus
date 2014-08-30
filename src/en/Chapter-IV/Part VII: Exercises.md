@@ -100,6 +100,8 @@ Create a program that, using scanner, asks you to input positive numbers until y
 
 E.g. if you enter these numbers: 1.1, 2.3, 5.6, 7.8, -1 you have this returned to you:
 
+![Exercise 15](../../Images/Chapter-IV/Exercises/ex_15.png)
+
 ### Ex 16
 Create a method calculator just like this one:
 

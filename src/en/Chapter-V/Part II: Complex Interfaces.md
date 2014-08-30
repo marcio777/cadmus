@@ -71,7 +71,7 @@ Set up the main JFrame as usual and you can get something like this:
 
 As a point of reference, if you were to not use the code from `setMaximizable` to `setClosable`, you would get the following:
 
-![A worse JInternalFrame](../../Images/Chapter-IV/Complex_Interfaces/internal_frame.png)
+![A worse JInternalFrame](../../Images/Chapter-IV/Complex_Interfaces/internal_frame1.png)
 
 ## JSlider
 So, in the part labelled 'Listeners', the ChangeListener was explained in the context of JSliders. Now, you will find out how to make them. A JSlider is exactly what you think it is, and needs to be added to a JFrame, which I shouldn't have to tell you to extend by now. This is an example of declaring a JSlider:
@@ -187,3 +187,37 @@ table1.setEnabled(false);
 Now just add the table to the scrollpane and add the scrollpane to the JFrame, and you will create something like this:
 
 ![A JTable](../../Images/Chapter-IV/Complex_Interfaces/JTable.png)
+
+## JProgressBar
+
+You will have seen a lot of progress bars before because they are commonly used to show how much of a task is completed. These are also only mainly used on loading screens. As a result the one I will be telling you about today and showing you will be on a JWindow, which acts as a basic loading screen. However, this is the **only** time you should ever used JWindow. It is a horrible component that you will want to never give the time of day. With that warning out of the way, onto the JProgressBar.
+
+The JProgressbar is reasonably simple to use in itself, you only need to declare and instantiate it. The difficult part comes in the form of the Timer that is needed for the JProgressBar to actually work. This is the code for a JProgressBar that works fully, and it's explained underneath:
+
+```java
+t = new Timer(100, new ActionListener() {
+	public void actionPerformed(ActionEvent e) {
+		count ++;
+		bar.setValue(count);
+		if(bar.getValue() < 100) {
+			bar.setValue(bar.getValue() + 1);
+		}
+		if(bar.getValue() == 100) {
+			JOptionPane.showMessageDialog(null, "100% loading has been achieved");
+			System.exit(0);
+		}
+	}
+});
+t.start();
+bar.setStringPainted(true);
+```
+
+That certainly looks complicated. The first line states that `t` (which is the identifier of a Timer that I declared earlier) is a new Timer, with values of 100 and an ActionListener. The value of 100 is basically how many numbers the timer has to get through, and it therefore dictates the speed of the timer. If the number is 1000, then the progressbar that works off of this timer will run slower; if the number is 50 then it will run faster. Then the `actionPerformed()` method is created, as usual, and inside it `count ++` is run. `count` is an integer I set to 0 earlier. Then `bar` (which is the identifier of a JProgressBar I declared earlier) is set to the value of count, which is 1. Then an if statement is run. If the value of `bar` (which is 1), then the value of bar will be set the the current value + 1, which is 2. This will happen every time the timer goes up, so count will go up with it. 
+
+Then, another if statement is declared. This time, if the value of `bar` is 100, then a JOptionPane with the message "100% loading has been achieved" will appear, and when the close button is clicked, the program will end thanks to `System.exit(0)`. After all that is set, the timer is started via `t.start()`. And finally. `bar.setStringPainted(true)` is added, which displays the number that the progressbar is at, and dynamically updates it. 
+
+That is a very long explanantion but it all coalesces into this:
+
+![Progress bar halfway](../../Images/Chapter-IV/Complex_Interfaces/halfway_progress.png)
+
+![Finished progress bar](../../Images/Chapter-IV/Complex_Interfaces/finished_progress.png)

@@ -5,7 +5,7 @@ Here's an example of a method:
 
 ```java
 public static void convertToF(int celsius) {
-	int fahrenheit = celsius * 9/5 + 32;
+	int fahrenheit = ((celsius * 9) /5) + 32;
 	System.out.println("C:" + celsius + " F: " + fahrenheit);
 }
 ```
@@ -40,7 +40,7 @@ Sometimes, we want methods to 'return' something to us, and we specify this in t
 
 NOTE: This can be changed to other return types of your such as `int`, `String`, `boolean`. However, for now, focus on setting methods to return `void`. 
 
-Following the return type is the **method name**, in this case `convertToF`. This is something you specify too. By convention method names start with a lowercase letter and every other word after starts with a capital. Try to make method names reasonably short and meaningful as to what task they carry out, as this will make it easier in the long run.
+Following the return type is the **method name**, in this case `convertToF`. This is something you specify too. By convention, method names start with a lowercase letter and every other word after starts with a capital. Try to make method names reasonably short and meaningful as to what task they carry out, as this will make it easier in the long run.
 
 Following the method name comes the **parameter list** (the contents of the brackets). This enables you to pass values into a method. For example, in the `convertToF` method, it accepts one parameter (`celsius`) which is declared to be of type int. This means that when using this method later on, you can input something like `convertToF(20)` in order to convert 20 degrees Celsius to Fahrenheit.
 
@@ -53,7 +53,7 @@ Hitherto you've only met static methods, methods that belong to a class, as oppo
 Integer age = 5;
 ```
 
-`age` does not have the method `.parseInt()`. You've met many of these methods already. Indeed, the methods you've created with the `static` keyword, are static methods. If I removed the `static` keyword from them they would not be able to be called by the `main` method.
+`age` does not have the method `.parseInt()`. You will meet many of these methods soon. Indeed, the methods you've created with the `static` keyword are also static methods. If you were to remove the `static` keyword from them they would not be able to be called by the `main` method.
 
 N.B.: `Math.abs()`, and `Math.sqrt()` are also statics, as are other methods inside the `Math` package, such as trigonometric functions `Math.sin()`, `Math.cos()`, and `Math.tan()`.
 
@@ -62,7 +62,8 @@ To call the method from the `main` method or any other non-static method, write:
 
 ```java
 public static void main(String[] args) {
-	System.out.println(convertToF(10));
+	int converted = convertToF(10);
+	System.out.println(converted);
 }
 ```
 
@@ -70,16 +71,19 @@ public static void main(String[] args) {
 Write a method called `pizzazzYo` which accepts one integer and displays `Pizzazz` on the terminal if the integer is fully divisible by 7. If the integer isn’t divisible by 7, display `A tragic number has been entered` instead.
 
 ### Ex 2
-Write a method called `checkEvenOdd` which accepts one integer and checks if it is odd or even. Given the integer is odd, “The number is odd” is displayed on the terminal. 
+Write a method called `checkEvenOdd` which accepts one integer and checks if it is odd or even. If the integer is odd, `The number is odd` will be displayed on the terminal. 
 
 ### Ex 3
 Write a method called `findTriangleArea` which accepts two parameters, the base length and height of a triangle, then calculates and displays the area of the triangle.
+Hint: As if you didn't know - the area of a triangle = 0.5 * base * height
 
 ### Ex 4
 Write a method called `findParaArea` which accepts two parameters, the base length and height of a parallelogram, then calculates and displays its area on screen.
+Hint: the area of a parallelogram = base * height 
 
 ### Ex 5
 Copy & paste the method for Ex 3 and rename it `findTrapeArea`. The method should now calculate the area of a given trapezium. What changes should you make?
+Hint: the area of a trapezium (top length + bottom length)/2 * height
 
 ## Non-static methods
 To define a non-static method, you have to - bet you can't guess - remove the `static` keyword. You can call non-static methods inside the main method like so:

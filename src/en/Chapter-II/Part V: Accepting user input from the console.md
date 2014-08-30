@@ -19,9 +19,9 @@ and secondly, store information inside the variable using:
 myString = myScanner.nextLine();
 ```
 
-By letting `myString` equal the `Scanner` object `.nextLine`, we’re telling the scanner input object to give us the entire line that was just typed in by the user and assign/store it in `myString`.
+By letting `myString` equal the `Scanner` object `.nextLine()`, we’re telling the scanner input object to give us the entire line that was just typed in by the user and assign/store it in `myString`.
 
-When placing the dot after `myScanner`, you should notice Eclipse provides you a bunch of options other than `nextLine()`. Depending on what kind of input you’d like to accept you can choose `nextInt()` to accept an integer input or `nextDouble()` to accept a double.
+When placing the dot after `myScanner`, you should notice Eclipse provides you a bunch of options other than `nextLine()`. Depending on what kind of input you’d like to accept, you can choose `nextInt()` to accept an integer input or `nextDouble()` to accept a double etc.
 
 You can also react to what the user inputs. One way to do this is to use the method `hasNextInt()`. This is also possible for doubles and floats and booleans etc. Add this to an if statement and you can react to what type of input the user inputted. So, you can create the following:
 
@@ -43,7 +43,7 @@ Following the method created on right-angled triangles, extend this by creating 
 Things to think about:
 -	What sort of prompts would you have to ask the user?
 -	What sort of input would you ask the user for? Think carefully!
--	Given we are trying to calculate the angle in a right-angled triangle, what sort of ‘cases’ do you have to account for?
+-	Given we are trying to calculate the angle in a right-angled triangle, what sort of 'cases' do you have to account for?
 
 HINTS: 
 - Remember to import the `math` package
@@ -69,7 +69,8 @@ Add a lives element to the game so that the user only has ten or so lives to get
 ### Ex 5 (Games): Hangman
 N.B. This exercise is designed to stretch your computational thinking.
 
-Use what you have been taught to create a command line version of the game, Hangman. For the sake of simplicity display the lives as a number, rather than drawing out a pretty diagram, unless you really want to. Use `.nextLine()` coupled with `.substring()` to get a `char`. Some of what you'll need:
+Use what you have been taught to create a command line version of the game, Hangman. For the sake of simplicity display the lives as a number, rather than drawing out a pretty diagram, unless you really want to. Use `.nextLine()` coupled with `.substring()` to get a `char`. This is some of what you'll need:
+
 - A global variable to store a series of possibilites
 - A variable (perhaps a boolean array) to store the characters that have been discovered
 - A method to filter out the word with underscores

@@ -200,6 +200,48 @@ add(btn4, gc);
 
 The code above should mean nothing to you but is actually very simple. I mentioned that GridBagLayout works based off of grid co-ordinates, and that is what the whole business with `gridx` and `gridy` is doing. `gridx = 0` and `gridy = 0` refers to the top left corner of the frame. Setting `gridx` to 1 would move it over one on the x axis; setting `gridy` to 1 would move it down one on the y axis. Also, it must be noted that when you add the component to the JFrame or JPanel, you must add it to the GridBagConstraints at the same time. So, instead of `add(btn4)`, you have to use `add(btn4, gc)`. It would be useful to remember that GridBagConstraints are also position-sensitive. Therefore you should add the button directly after you set the location. The fact that it is position-sensitive will become important later. Anyway, the above code will create the following:
 
-![GridBag 1](../../)
+![Basic gridbaglayout](../../Images/Chapter-IV/Layouts/gridbag1.png)
+
+You will notice that there are some problems with that frame. In other words, it doesn't look good. The first thing to do is to fix the differing sizes of the buttons. You can do this using `.fill`. To use this you need to do the following;
+
+```java
+gc.fill = 1;
+//forces the components to fill the grid spaces they are assigned to
+
+gc.fill = GridBagConstraints.VERTICAL;
+//forces the components to be the same height
+
+gc.fill = GridBagConstraints.HORIZONTAL
+//forces the components to be the same width
+```
+
+Using either the top one or the bottom two, you can fix the button size and make it look like the following picture:
+
+![Same size button gridbaglayout](../../Images/Chapter-IV/Layouts/gridbag2.png)
+
+Now, I've decided that I don't want all the buttons to be touching eachother, but I still want them to be the same size. So, I can use `.insets`:
+
+```java
+gc.insets = new Insets(5,5,5,5);
+//5,5,5,5 means 5 pixels of padding on each side
+```
+
+The following layout of buttons are therefore created:
+
+![Padded gridbaglayout](../../Images/Chapter-IV/Layouts/gridbag3.png)
+
+And finally, I've now decided that I want the third button to be the size of two buttons lengthwise. Therefore I will need it to fill up two columns. To do this you need to set the width of the component (or indeed the height if you want the buttons or component to span rows) :
+
+```java
+gc.gridwidth = 2;
+//sets the width of the component to be 2 columns
+
+gc.gridheight = 2;
+//I didn't use this, but would set the height of the component to be 2 rows.
+```
+
+Finally, and I prefer this layout of buttons to the first time we used GridBagLayout, this is what a combination of the above can acheive:
+
+![Different sized buttons in a gridbaglayout](../../Images/Chapter-IV/Layouts/gridbag4.png)
 
 [We've made passing mentions, but now it's time to study JTextFields in full &rarr;](./Part VI: Text Fields.html)

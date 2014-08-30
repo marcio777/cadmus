@@ -140,14 +140,14 @@ btn1.addActionListener(new ActionListener () {
 That code will call another class, or another file in the same folder to put it in other words, and set it to be visible. This particular file is called `redpanel`, and I gave it the identifier `red`. However, this file needs to exist, and it can be like the following:
 
 ```java
-public class redpanel extends JDialog {
+public class RedPanel extends JDialog {
 
-	public redpanel() {
+	public RedPanel() {
 		setSize(200,200);
 		setVisible(true);
 		getContentPane().setBackground(Color.RED);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-		setTitle("Red panel");
+		setTitle("RedPanel");
 	}
 }
 ```

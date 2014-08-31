@@ -88,7 +88,7 @@ char myChar = 'h';
 
 Bear in mind that when declaring chars, you must use quotation marks, not speech marks.
 
-#### Ex 2
+#### Ex 1
 Write a program in which you initialise an int, a double, a char, a boolean and a String to suitable values of you choice, then get the program to print out the values of each variable on a new line. So if the int is equal to 4, the first line to be printed would be:
 `The value of the int is 4`.
 

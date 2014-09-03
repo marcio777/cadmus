@@ -40,7 +40,7 @@ gulp.task("convert", ["clean"], function() {
 			renderer:renderer
 		}))
 		.pipe(rename(function(path) {
-			path.basename = encodeURIComponent(path.basename);
+			path.basename = path.basename.replace(/\s/g, "_");
 			path.extname = ".html";
 		}))/*
 		.pipe(ssg({

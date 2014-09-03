@@ -1,5 +1,5 @@
 {
-  "name": "cadmus",
+  "name": "java",
   "root": "dist",
   "clean_urls": false,
   "error_page": "error.html"

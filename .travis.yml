@@ -7,8 +7,7 @@ script: gulp
 deploy:
   provider: divshot
   skip_cleanup: true
-  on: production
-  api_key:
-    secure: mLuvEXM3vBTsh5QUg/KizvgwqxHGdOhrxtRfZ0tLLJJKNBhXDIB2XybrNjC2No4vLCN+wncNsAvMEuHQuqpPYkjgw7DazK73YgJDHk6bRQtTZ81PjeJ14FIx9haX+LbVng5/DnelnsnSSchJ52Os5/Hc7M/pa4+HxRBsnZj7Y5o=
   on:
     all_branches: true
+  api_key:
+    secure: na2HF37J5vt8RVlG921S5GxYCVK49VytJagNXH+cHEhuv1/xTNaSbz2jKNiq9aFUByWGPo0L7gvX7q1c0BekuFpBK5DZgesrqwXtra189FQiARXfKtk2qeXjkoG7bvO2lb77+iMUhgVc9ozJLutdt2zwlir3McC4LuN22/4gtO0=

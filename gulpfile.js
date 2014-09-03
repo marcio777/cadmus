@@ -1,7 +1,6 @@
 var gulp = require("gulp");
 var marked = require("gulp-markdown");
 var rename = require("gulp-rename");
-var connect = require("gulp-connect");
 var clean = require("gulp-clean");
 var dust = require("dustjs-linkedin");
 dust.helper = require("dustjs-helpers");
@@ -40,8 +39,9 @@ gulp.task("convert", ["clean"], function() {
 			},
 			renderer:renderer
 		}))
-		.pipe(rename({
-			extname:".html"
+		.pipe(rename(function(path) {
+			path.basename = encodeURIComponent(path.basename);
+			path.extname = ".html";
 		}))/*
 		.pipe(ssg({
 			title: "Cadmus"

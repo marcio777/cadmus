@@ -29,22 +29,31 @@ You are going to have to use the following method:
 ### Ex 4
 Create the following window:
 
-![Exercise 3](../../Images/Chapter-IV/Exercises/ex_4.png)
+![Exercise 4](../../Images/Chapter-IV/Exercises/ex_4.png)
 
 ### Ex 5
-Create a program that through the command line asks for an input which will then be added to a GUI. E.g.: If I input "hello there" the following is displayed:
+Create a program that through the command line asks for an input which will then be added to a GUI. E.g.: If I input "Hello there" the following is displayed:
+
+![Exercise 5](../../Images/Chapter-IV/Exercises/ex_5.png)
 
 Hint: you may want to have a quick look at how to use scanner again.
 
 ### Ex 6
 Create the following window:
 
+![Exercise 6](../../Images/Chapter-IV/Exercises/ex_6.png)
+
 ### Ex 7
-Create the following GUI. If the left button is clicked, it should open a new red window and 
-close the main window. If the right button is clicked a blue window should open and the main window should close.
+Create the following GUI. If the left button is clicked, it should open a new red window and close the main window. If the right button is clicked a blue window should open and the main window should close:
+
+![Exercise 7](../../Images/Chapter-IV/Exercises/ex_7.png)
 
 ### Ex 8
 Create the following window, and if the button is clicked it should create 10 red simple windows at 10 random locations (have fun closing them afterwards):
+
+![Exercise 8](../../Images/Chapter-IV/Exercises/ex_8_1.png)
+
+![Exercise 8](../../Images/Chapter-IV/Exercises/ex_8_2.png)
 
 **Tools:**
 - The random method is `Math.random()` it returns a double value between 0 and 1. Therefore, following the formula **minimum + (int)(Math.random()*maximum)** returns you a random integer between the minimum and maximum.
@@ -53,27 +62,37 @@ Create the following window, and if the button is clicked it should create 10 re
 ### Ex 9
 Create the following window:
 
+![Exercise 9](../../Images/Chapter-IV/Exercises/ex_9.png)
+
 Hint: you can set the background of a JTextArea just like you would for a JPanel or a JFrame.
 
 ### Ex 10
-Create the following window, and when the button is clicked it should change the question "how old are you?" to a phrase related to the age. E.g. if I write "18" the text is changed to "have you started UCAS?"
+Create the following window, and when the button is clicked it should change the question "how old are you?" to a phrase related to the age. E.g. if I write "18" the text is changed to "have you started UCAS?":
+
+![Exercise 10](../../Images/Chapter-IV/Exercises/ex_10.png)
 
 ### Ex 11
-Create the same window as exercise10 only this time use the `implements ActionListener` and the `public void actionPerformed(ActionEvent e) {}` method.
+Write a program that checks if a number is prime or not. You might want to create a method that returns a boolean if a number is prime or not:
+
+![Exercise 11](../../Images/Chapter-IV/Exercises/ex_11_1.png)
+![Exercise 11](../../Images/Chapter-IV/Exercises/ex_11_2.png)
 
 ### Ex 12
-Write a program that checks if a number is prime or not. You might want to create a method that returns a boolean if a number is prime or not.
+Inspiring yourself from exercise 11 create a program that displays the first 20 prime numbers. You will want to use JTextAreas:
+
+![Exercise 12](../../Images/Chapter-IV/Exercises/ex_12_1.png)
+
+![Exercise 12](../../Images/Chapter-IV/Exercises/ex_12_2.png)
 
 ### Ex 13
-Inspiring yourself from exercise 13 create a program that displays the first 20 prime numbers. You will want to use JTextAreas.
-
-### Ex 14
 Create the following window that converts values of temperature:
 
-### Ex 15
+![Exercise 13](../../Images/Chapter-IV/Exercises/ex_13.png)
+
+### Ex 14
 Just like the previous exercise, create a program that after asking you to choose between a temperature converter or an angle converter either displays an angle converter (degree/radian) or a temperature converter (the same as above) based on what the user chose.
 
-### Ex 16
+### Ex 15
 Create a program that, using scanner, asks you to input positive numbers until you input a negative one, after which it creates a GUI with the following information: 
 - the minimum value 
 - the maximum value 
@@ -81,15 +100,22 @@ Create a program that, using scanner, asks you to input positive numbers until y
 
 E.g. if you enter these numbers: 1.1, 2.3, 5.6, 7.8, -1 you have this returned to you:
 
-### Ex 17
+![Exercise 15](../../Images/Chapter-IV/Exercises/ex_15.png)
+
+### Ex 16
 Create a method calculator just like this one:
+
+![Exercise 16](../../Images/Chapter-IV/Exercises/ex_16_1.png)
+![Exercise 16](../../Images/Chapter-IV/Exercises/ex_16_1.png)
 
 The two methods here are the square root and cosine.
 
 HINT: For cosine apply the method `Math.cos(integer)`.
 
-### Ex 18-20
-Throughout these next exercise you will create the following calculator:
+### Ex 17-20
+Throughout these next exercises you will create the following calculator:
+
+![Exercises 17-20](../../Images/Chapter-IV/Exercises/ex_17-20.png)
 
 1. Just create the layout and the design of the calculator. Try to keep your code as 
 clear as possible.

@@ -56,19 +56,21 @@ As a note, you can also use substring where you only input one index and the str
 N.B. There are many many many more of these methods and I would advise looking them up if you need them.
 
 ## Integer methods
-Now, if you care to remember, I once told you that integers are primitive variables. Therefore, theoretically, I shouldn't be able to assign methods to them. But, Java is case-sensitive and these are **Integers** which are class variables. I told you that variable types with a capital are usually burdens, but it is perfectly accceptable to use their static methods i.e. `Integer.parseInt()` etc, because they do not actually involve instantiating those classes. 
+Now, if you care to remember, I once told you that integers are primitive variables. Therefore, theoretically, I shouldn't be able to assign methods to them. But, Java is case-sensitive and these are **Integers** which are class variables. I told you that variable types with a capital are usually burdens, but it is perfectly accceptable to use their non-static methods i.e. `Integer.parseInt()` etc, because they do not actually involve instantiating those classes. 
 
 ### toString
-You can convert an integer, or a boolean, or a double, to a string, by using `Integer.toString()`:
+You can convert an integer, or a boolean, or a double, to a string, by using `Integer.toString()`, or its equivalent:
 
 ```java
 int age = 13;
 double pi = 3.14159265359;
 Boolean bool = true;
 String ageAsString = Integer.toString(age);
-String piAsString = Double.toString(pi);
-String  boolAsString = Boolean.toString(bool);
 //Prints out "13"
+String piAsString = Double.toString(pi);
+//Prints out "3.14159265359"
+String  boolAsString = Boolean.toString(bool);
+//Prints out "true"
 ```
 
 ### parseInt
@@ -77,6 +79,7 @@ You can convert a string to an integer by using `Integer.parseInt()`:
 ```java
 String ageAsString = "13";
 int age = Integer.parseInt(ageAsString);
+//Prints out 13
 ```
 
 ## Boolean methods
@@ -84,7 +87,8 @@ Booleans work the same as integers, and the `toString()` method was shown above.
 
 ```java
 String aliveAsString = "true";
-alive = Boolean.parseBoolean(aliveAsString); 
+alive = Boolean.parseBoolean(aliveAsString);
+//Prints out true
 ```
 
 ## Double methods

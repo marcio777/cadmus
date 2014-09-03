@@ -2,6 +2,8 @@ Arithmetic
 ===
 
 ## Basic Arithmetic
+I really hope that you know how to do basic arithmetic already, so I'm going to skip through this quickly.
+ 
 Adding two ints x and y (given that they have already been initialised to a value):
 
 ```java
@@ -46,26 +48,25 @@ Write a program to work out what the power in watts of a device is if the voltag
 Hint: Power (W) = Current * Voltage
 
 #### Ex 2 (Physics)
-Turn the last exercise into a method that accepts parameters for current and voltage, then returns power in watts.  Then write a program that uses the power method to calculate the energy transferred in kWh, when the current is 5A, the voltage is 14V over the space of 2 hours and print the result.
-Hint: Energy transferred (kWh) = Power (kW) × Time (h)
-
+Write a program to work out the kinetic energy of an object with a mass of 500kg that has a velocity of 12 m/s, and print the result.
+Hint: Kinetic Energy = 0.5 * Mass * (Velocity)<sup>2</sup>
 
 #### Ex 3 (Physics)
-Write a program to work out the kinetic energy of an object with a mass of 500kg that has a velocity of 12 m/s, and print the result.
-Hint: Kinetic Energy = 0.5 * Mass * (Velocity)^2
-
-#### Ex 4 (Physics)
 Write a program to answer the following physics question and print the result.  If a car has a mass of 800 kg and moves with a velocity of 25 m/s, what force is needed to stop the car in 50 metres?
-Hint: You may want to turn the previous exercise into a method so you can easily work out the car's kinetic energy.  You will also need the equation Energy = Force * Distance.
+Hint: You will need the equation Energy = Force * Distance and the previous exercise.
 
-#### Ex 5 (Maths)
+#### Ex 4 (Maths)
 Write a program to work out the missing angle of a triangle which has two known angles of 108 degrees and 24 degrees.
 Hint: The angles of a triangle must sum up to 180 degrees.
 
-#### Ex 6 (Ecology)
+#### Ex 5 (Ecology)
 ![A quadrat](../../Images/Chapter-I/Arithmetic/Quadrants.png)
 
 A standard quadrat used in school has an area of 0.25m<sup>2</sup>. A quadrat is used to sample a random area of a field to estimate the abundance/variety/percentage coverage of a species. For a random sampling to be statistically viable, at least 3% of the area must be sampled. Write a program, given the size of an area, (say 2000m<sup>2</sup>) works out the amount of different samplings that must be done.
+
+### Ex 6 (Physics)
+Write a program in which you work out the percentage efficiency of a light bulb that is supplied with 50J (Joules), and uses 2J to produce light, leaving 48J wasted as thermal energy. Then, print the result.
+Hint: % efficiency = (useful power)/(total power).
 
 ## Advanced Arithmetic
 Advanced Arithmetic is one way to describe this, the other is endless Math functions. This will be mentioned again, but to import this you will need the import `java.lang.Math`. This contains a load of functions which do various mathematical things, which we will now explore.
@@ -74,16 +75,16 @@ Advanced Arithmetic is one way to describe this, the other is endless Math funct
 The first function turns a number into an absolute value. But for that to mean anything, we need to know what an absolute value is. The basic way of saying it is that it is a number regardless of its sign. Therefore -6 = 6 just as 6 = 6. To do this you will need the function `Math.abs()` which can be used in situations such as the following:
 
 ```java
-int a = 20
-int b = 27
-int c = 20 - 27
+int a = 20;
+int b = 27;
+int c = a - b;
 //in that case c = -7, or you could do the following:
 int c = Math.abs(20 - 27);
 //in which case c = 7
 ```
 
 ### Maximum & Minimum
-The maximum and the minimum functions take two values and returns either the maximum or the minimum value respectively. You could just do this using two values, which is what I will use as an example, or you could takes two numbers that the user inputted and return the maximum or minimum value. You will learn how to do this in the next chapter. Back on track, this is how they work:
+The maximum and the minimum functions take two values and returns either the biggest or the smallest value respectively. You could just do this using two values, which is what I will use as an example, or you could takes two numbers that the user inputted and return the maximum or minimum value. You will learn how to do this in the next chapter. Back on track, this is how they work:
 
 ```java
 int a = Math.max(27, 38);
@@ -93,21 +94,21 @@ int b = Math.min(27, 38);
 ```
 
 ### Rounding
-Rounding can be done in three forms using the `java.lang.Math` package. These three forms are `Math.ceil()`, `Math.floor()` and `Math.round()`. Let's do these in order. Math.ceil() will round a number up, no matter what the decimalis. So, this is possible:
+Rounding can be done in three forms using the `java.lang.Math` package. These three forms are `Math.ceil()`, `Math.floor()` and `Math.round()`. Let's do these in order. `Math.ceil()` will round a number up, no matter what the decimal is. So, this is possible:
 
 ```java
 Math.ceil(5.23);
 //prints out 6 despite 0.23 being under 0.5
 ```
 
-Math.floor() does the exact opposite and will always round down:
+`Math.floor()` does the exact opposite and will always round down:
 
 ```java
 Math.floor(5.76);
 //prints out 5
 ```
 
-Finally there is `Math.round()`, which actually works likerounding is supposed to!! It's a miracle:
+Finally there is `Math.round()`, which actually works like rounding is supposed to!! It's a miracle:
 
 ```java
 Math.round(5.23);
@@ -117,15 +118,7 @@ Math.round(5.76);
 ```
 
 ### Powers
-To get the value of a number to a given power you can use the `Math.pow()` function, which takes two parameters: a number and a power. To use this however, you must import the `java.lang.Math` package. A package is essentially a collection of functions. To import `java.lang.Math`, write this at the very top of your code:
-
-```java
-import java.lang.Math;
-//Alternatively you could write the Math.pow() function in Java without importing java.lang.Math.
-//An error will appear that will provide you with an option to import java.lang.Math() without you typing anything.
-```
-
-Then in your `main` method, you can write:
+To get the value of a number to a given power you can use the `Math.pow()` function, which takes two parameters: a number and a power. Then in your `main` method, you can write:
 
 ```java
 int number = 2;
@@ -138,11 +131,11 @@ System.out.println(Math.pow(number, power));
 Another function in that package is the `Math.sqrt()` that returns the square root of a number.
 
 ```java
-Sysem.out.println(Math.sqrt(25)); // Prints 5
+System.out.println(Math.sqrt(25)); // Prints 5
 ```
 
 ### Remainders
-To get the remainder of an int a when divided by another int b we can use `%` instead of `/` when dividing, so a%b, where a = 7 and b = 5...
+To get the remainder of an int a when divided by another int b we can use `%` instead of `/` when dividing, so `a % b`, where a = 7 and b = 5...
 
 ```java
 int n = 7 % 5;

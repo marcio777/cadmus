@@ -30,7 +30,7 @@ And to print it out:
 System.out.println(name);
 ```
 
-If you want to display two lines worth of text, for example in a JPanel (which you will discover in a long time), or even in the console, you can create this:
+If you want to display two lines worth of text, for example in a JPanel (which you will discover in a long time), or even in the console, you can use this:
 
 ```java
 System.out.println(name + "\n" + name);
@@ -61,14 +61,14 @@ While an integer is a whole number, a real number has a decimal point in it. To 
 double pi = 3.14159265359;
 ```
 
-You can convert a double into a string, and you will find out how to do that later. That is possible because the method simply sets it to be a piece of text. However, what if you wanted to convert a double into an integer? You will be finding out how to do that using `Integer.parseInt()` in Chapter II, but doing so here will make Java have a fit - it can't understand an integer with a decimal point. To convert it you would use something called "casting". This is the only time I will mention it, so listen carefully. Casting is very easy - all you have to do is write what you want to cast it to in brackets before the actual value. In other words, to turn pi into an int you would do the following:
+You can convert a double into a String, and you will find out how to do that later. That is possible because the method simply sets it to be a piece of text. However, what if you wanted to convert a double into an integer? You will be finding out how to do that using `Integer.parseInt()` in Chapter II, but doing so here will make Java have a fit - it can't understand an integer with a decimal point. To convert it you would use something called "casting". This is the only time I will mention it, so listen carefully. Casting is very easy - all you have to do is write what you want to cast it to in brackets before the actual value. In other words, to turn pi into an int you would do the following:
 
 ```java
 int pi = (int) (Math.random());
 //'pi' is now a random integer
 ```
 
-N.B. **DO NOT USE MATH.RAND(), YOU WILL FIND A BETTER OPTION IN ONE OF THE EXERCISES IN THE NEXT CHAPTER. I AM SIMPLY USING IT FOR DEMOSTRATORY PURPOSES.**
+N.B. **DO NOT USE MATH.RANDOM(), YOU WILL FIND A BETTER OPTION IN ONE OF THE EXERCISES IN THE NEXT CHAPTER. I AM SIMPLY USING IT FOR DEMOSTRATORY PURPOSES.**
 
 This can work with other things as well, and may serve as a faster way to convert between variable formats.
 
@@ -79,7 +79,20 @@ A boolean is a variable that has two possible values - `true` or `false`. That's
 boolean myBoolean = true;
 ```
 
-# Primitives versus Classes
+### Chars
+A cahr is defined as a single letter of a String. So, `"Hello"` is a String but the char at index 0 is `H`. Chars are declared as follows:
+
+```java
+char myChar = 'h';
+```
+
+Bear in mind that when declaring chars, you must use quotation marks, not speech marks.
+
+#### Ex 1
+Write a program in which you initialise an int, a double, a char, a boolean and a String to suitable values of you choice, then get the program to print out the values of each variable on a new line. So if the int is equal to 4, the first line to be printed would be:
+`The value of the int is 4`.
+
+## Primitives versus Classes
 You may have picked up on the fact that `String` is capitalised, while `int`, `double` and `boolean` are not. This is because `int`, `double` and `boolean` are all **primitive data types**, while  `String` is a **class data type**. These may not mean anything to you yet, but in essence there are 8 built-in primitives within Java. Primitives cannot be added or removed by the programmer; they are the DNA of the programming language. Primitives represent one scalar value. Classes are far more powerful than primitives. They shift the power to the programmer, allowing the programmer to create classes, which are composed from other datatypes. Java comes with a bunch of classes built in, namely `String`.
 
 But what about `Integer`, `Double`, and `Boolean` etc.? These are indeed classes, that wrap around their respective primitives. So the following would be perfectly valid:
@@ -92,8 +105,8 @@ Boolean alive = false;
 
 However using these instead of primitives has an unnecessary performance cost, and should not be used. There are valid reasons for using them, that will come up in Chapter II, but as for now they are a burden. 
 
-## Selection (Comparing values)
-You can compare values by using an `if/else` statement: 
+### Selection (Comparing values)
+You can compare and select values by using an `if/else` statement: 
 
 ```java
 int x = 5;
@@ -154,7 +167,7 @@ You don't necessarily need the `else` branch:
 boolean alive = true;
 
 if(alive == true) {
-  System.out.println("You're alive good for you");
+  System.out.println("You're alive, good for you");
 }
 ```
 

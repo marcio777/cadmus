@@ -91,6 +91,4 @@ gulp.task("styles", function() {
 		.pipe(gulp.dest("./dist/styles"));
 });
 
-gulp.task("default", ["styles", "convert", "copy"], function() {
-	gulp.start("server");
-});
+gulp.task("default", ["styles", "convert", "copy"]);

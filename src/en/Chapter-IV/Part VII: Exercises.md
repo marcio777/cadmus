@@ -78,7 +78,7 @@ Write a program that checks if a number is prime or not. You might want to creat
 ![Exercise 11](../../Images/Chapter-IV/Exercises/ex_11_2.png)
 
 ### Ex 12
-Inspiring yourself from exercise 13 create a program that displays the first 20 prime numbers. You will want to use JTextAreas:
+Inspiring yourself from exercise 11 create a program that displays the first 20 prime numbers. You will want to use JTextAreas:
 
 ![Exercise 12](../../Images/Chapter-IV/Exercises/ex_12_1.png)
 

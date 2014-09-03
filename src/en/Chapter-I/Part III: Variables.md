@@ -68,7 +68,7 @@ int pi = (int) (Math.random());
 //'pi' is now a random integer
 ```
 
-N.B. **DO NOT USE MATH.RANDom(), YOU WILL FIND A BETTER OPTION IN ONE OF THE EXERCISES IN THE NEXT CHAPTER. I AM SIMPLY USING IT FOR DEMOSTRATORY PURPOSES.**
+N.B. **DO NOT USE MATH.RANDOM(), YOU WILL FIND A BETTER OPTION IN ONE OF THE EXERCISES IN THE NEXT CHAPTER. I AM SIMPLY USING IT FOR DEMOSTRATORY PURPOSES.**
 
 This can work with other things as well, and may serve as a faster way to convert between variable formats.
 
@@ -79,7 +79,20 @@ A boolean is a variable that has two possible values - `true` or `false`. That's
 boolean myBoolean = true;
 ```
 
-# Primitives versus Classes
+### Chars
+A cahr is defined as a single letter of a String. So, `"Hello"` is a String but the char at index 0 is `H`. Chars are declared as follows:
+
+```java
+char myChar = 'h';
+```
+
+Bear in mind that when declaring chars, you must use quotation marks, not speech marks.
+
+#### Ex 1
+Write a program in which you initialise an int, a double, a char, a boolean and a String to suitable values of you choice, then get the program to print out the values of each variable on a new line. So if the int is equal to 4, the first line to be printed would be:
+`The value of the int is 4`.
+
+## Primitives versus Classes
 You may have picked up on the fact that `String` is capitalised, while `int`, `double` and `boolean` are not. This is because `int`, `double` and `boolean` are all **primitive data types**, while  `String` is a **class data type**. These may not mean anything to you yet, but in essence there are 8 built-in primitives within Java. Primitives cannot be added or removed by the programmer; they are the DNA of the programming language. Primitives represent one scalar value. Classes are far more powerful than primitives. They shift the power to the programmer, allowing the programmer to create classes, which are composed from other datatypes. Java comes with a bunch of classes built in, namely `String`.
 
 But what about `Integer`, `Double`, and `Boolean` etc.? These are indeed classes, that wrap around their respective primitives. So the following would be perfectly valid:
@@ -92,7 +105,7 @@ Boolean alive = false;
 
 However using these instead of primitives has an unnecessary performance cost, and should not be used. There are valid reasons for using them, that will come up in Chapter II, but as for now they are a burden. 
 
-## Selection (Comparing values)
+### Selection (Comparing values)
 You can compare and select values by using an `if/else` statement: 
 
 ```java

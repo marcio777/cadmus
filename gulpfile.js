@@ -24,7 +24,7 @@ dust.onLoad = function(name, cb) {
 };
 
 gulp.task("clean", function() {
-	return gulp.src("./.dist/**/*", {read:false})
+	return gulp.src("./dist/**/*", {read:false})
 		.pipe(clean());
 });
 
@@ -61,22 +61,22 @@ gulp.task("convert", ["clean"], function() {
 				}
 			});
 		}))
-		.pipe(gulp.dest("./.dist"));
+		.pipe(gulp.dest("./dist"));
 });
 
 gulp.task("copy", ["clean"], function() {
 	return gulp.src("./src/**/*")
-		.pipe(gulp.dest("./.dist"));
+		.pipe(gulp.dest("./dist"));
 });
 
 gulp.task("deploy", function() {
-	return gulp.src("./.dist/**/*").
+	return gulp.src("./dist/**/*").
 		pipe(pages());
 });
 
 gulp.task("server", function() {
 	connect.server({
-		root:".dist"
+		root:"dist"
 	});
 });
 
@@ -88,7 +88,7 @@ gulp.task("styles", function() {
 		.pipe(rename({
 			extname:".css"
 		}))
-		.pipe(gulp.dest("./.dist/styles"));
+		.pipe(gulp.dest("./dist/styles"));
 });
 
 gulp.task("default", ["styles", "convert", "copy"], function() {

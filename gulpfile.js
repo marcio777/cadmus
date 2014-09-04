@@ -27,7 +27,7 @@ gulp.task("clean", function() {
 		.pipe(clean());
 });
 
-gulp.task("convert", ["clean"], function() {
+gulp.task("convert", function() {
 	return gulp.src("./src/**/*.md")
 		.pipe(marked({
 			highlight: function(code, lang) {
@@ -40,7 +40,6 @@ gulp.task("convert", ["clean"], function() {
 			renderer:renderer
 		}))
 		.pipe(rename(function(path) {
-			path.basename = path.basename.replace(/\s/g, "_");
 			path.extname = ".html";
 		}))/*
 		.pipe(ssg({
@@ -64,7 +63,7 @@ gulp.task("convert", ["clean"], function() {
 		.pipe(gulp.dest("./dist"));
 });
 
-gulp.task("copy", ["clean"], function() {
+gulp.task("copy", function() {
 	return gulp.src("./src/**/*")
 		.pipe(gulp.dest("./dist"));
 });
@@ -91,4 +90,7 @@ gulp.task("styles", function() {
 		.pipe(gulp.dest("./dist/styles"));
 });
 
-gulp.task("default", ["styles", "convert", "copy"]);
+gulp.task("default", ["styles", "convert", "copy"], function() {
+	var fs = require("fs");
+	console.log(fs.readdirSync("./dist/en/Chapter-I"));
+});

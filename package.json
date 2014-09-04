@@ -23,7 +23,6 @@
   "devDependencies": {
     "gulp-rename": "~1.2.0",
     "gulp": "~3.8.1",
-    "gulp-connect": "~2.0.5",
     "gulp-clean": "~0.3.0",
     "dustjs-linkedin": "~2.4.0",
     "dustjs-helpers": "~1.2.0",

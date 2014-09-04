@@ -92,5 +92,5 @@ gulp.task("styles", function() {
 
 gulp.task("default", ["styles", "convert", "copy"], function() {
 	var fs = require("fs");
-	console.log(fs.readdirSync("./dist/en/Chapter-I"));
+	console.log(fs.readdirSync("./dist/en/Chapter_I"));
 });

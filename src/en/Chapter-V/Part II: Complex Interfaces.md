@@ -220,3 +220,15 @@ That is a very long explanantion but it all coalesces into this:
 ![Progress bar halfway](../../Images/Chapter-V/Complex_Interfaces/halfway_progress.png)
 
 ![Finished progress bar](../../Images/Chapter-V/Complex_Interfaces/finished_progress.png)
+
+## JToolTip
+Before telling you how to use JToolTips, I first want to reinforce what a tooltip is. You know whenever you hold the mouse cursor over a button, and sometimes a little text box appears telling you what it is? That is an example of a tool tip, and they can be constructed in Java too. For the sake fo demonstratory purposes, I am going to be adding my tool tip to a button. However, bear in mind that you can add tool tips to almost every component there is. With that in mind, let me tell you that it is really easy to make tool tips. To do so you simply add this to your code:
+
+```java
+btn.setToolTipText("This is a button");
+//where 'btn' is the identifier of a button
+```
+
+And that is that. The tool tip will now display whenever you hold your mouse over the button. If you are using this and are worried that it hasn't worked, hold your mouse over the component a bit longer because you may have just moved the mouse off of the component too soon. With that in mind, here is an example:
+
+![A JToolTip](../../Images/Chapter-V/Complex_Interfaces/tooltip.png)

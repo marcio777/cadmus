@@ -229,6 +229,6 @@ btn.setToolTipText("This is a button");
 //where 'btn' is the identifier of a button
 ```
 
-And that is that. The tool tip will now display whenever you hold your mouse over the button. If you are using this and are worried that it hasn't worked, hold your mouse over the component a bit longer because you may have just moved the mouse off of the component too soon. With that in mind, here is an example:
+And that is that. The tool tip will now display whenever you hold your mouse over the button. If you are using this and are worried that it hasn't worked, hold your mouse over the component a bit longer because you may have just moved the mouse off of the component too soon. With that in mind, here is an example (you may not be able to see my cursor, but it is hovering over the button):
 
 ![A JToolTip](../../Images/Chapter-V/Complex_Interfaces/tooltip.png)

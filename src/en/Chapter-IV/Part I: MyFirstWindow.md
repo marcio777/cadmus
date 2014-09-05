@@ -1,7 +1,7 @@
 MyFirstWindow
 ===
 
-Chapter 2 is all about Graphics. To make your first GUI (graphical user interface) application you need to import the package `javax.swing.JFrame`. Here is an example of an empty window:
+Chapter 4 is all about Java Swing. To make your first GUI (graphical user interface) application you need to import the package `javax.swing.JFrame`. Here is an example of an empty window:
 
 ```java
 public class MyFirstWindow extends JFrame {
@@ -19,7 +19,7 @@ public class MyFirstWindow extends JFrame {
 }
 ```
 
-Here, the class `MyFirstWindow` inherits, thanks to the `extends` keyword, all of properties and methods of the `JFrame`. That means an object of a `MyFirstWindow` is also, in essense, and object of `JFrame`. The difference is in the custom methods of `MyFirstWindow` such as the constructor, where the title, size, and visibility are set. You may say that `setTitle`, `setSize`, and `setVisible` do not exist, but they are extended `JFrame` methods. `setDefaultCloseOperation(EXIT_ON_CLOSE)`, meanwhile just ensures that the Java app doesn't lay running hidden in the background.
+Here, the class `MyFirstWindow` inherits, thanks to the `extends` keyword, all of properties and methods of the `JFrame`. That means an object of a `MyFirstWindow` is also, in essense, and object of `JFrame`. But what is `JFrame`? A JFrame is one of the main JComponents in Java Swing, and you will be using it for all of your GUIs. And, just as a frame of reference, a JComponent is another, more scientific, way of saying every component you will ever use. The difference is in the custom methods of `MyFirstWindow` such as the constructor, where the title, size, and visibility are set. You may say that `setTitle`, `setSize`, and `setVisible` do not exist, but they are extended `JFrame` methods. `setDefaultCloseOperation(EXIT_ON_CLOSE)`, meanwhile just ensures that the Java app doesn't lay running hidden in the background.
 
 The code above should output this when run:
 

@@ -131,7 +131,7 @@ The title of this portion is not strictly correct, because this covers three thi
 ```java
 	setJMenuBar(menu);
 	//where 'menu' is the name of the JMenuBar
-	```
+```
 	
 This sets the menubar up, but it currently has nothing in it. So, you need to add JMenus. These are the actual buttons that you click in order to display the drop-down. To do this you need to declare JMenus and name them, then add them to the JMenuBar. As if you need a reminder, this is how you would do it:
 

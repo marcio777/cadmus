@@ -1,7 +1,7 @@
 Extra Things
 ===
 
-This part is exclusively for those parts of Java that cannot be fitted into anywhere else. This is a safe haven for such pieces of code, but that doesn't change the fact that they can at times be completely unecessary. Nevertheless, they have a right to be documented, and they will be as here.
+This part is exclusively for those parts of Java that cannot be fitted into anywhere else. This is a safe haven for such pieces of code, but that doesn't change the fact that they can at times be completely unecessary. Nevertheless, they have a right to be documented, and they will be here.
 
 ## Cursor
 `Cursor` simply sets the cursor you are using to be a default shape, or a custom shape if you so wish. Bear in ming that there will be no pictures here because you don't actually see my cursor. As a result it is completely pointless to look at a button and not be able to see the use. Anyway, you can change a cursor in the following way:

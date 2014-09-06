@@ -251,4 +251,4 @@ panel.setComponentPopupMenu(popupmenu);
 
 That will add the pop-up menu to the panel or component in question, and once you've added the items you can create something like this:
 
-![A pop-up menu](../../Images/Chapter-V/Complex Interfaces/popup.png)
+![A pop-up menu](../../Images/Chapter-V/Complex_Interfaces/popup.png)

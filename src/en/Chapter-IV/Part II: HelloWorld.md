@@ -40,6 +40,17 @@ This should be outputted:
 ### Ex 1
 Play around with it. Try adding another `JLabel` with a different greeting. You may have to change the second parameter, the height parameter, of `setSize()` to fit it in. You will have to add another call to the `add()` method.
 
+## Customising text
+As you have probably noticed, with the code you currently know there is no way to change the size or font of the text on a JLabel. This does not mean that it is not possible. It is done using `Font`, and is done as follows:
+
+```java
+label.setFont(new Font("Serif", Font.PLAIN, 45));
+```
+
+There are a few things to be defined here. `label` is the identifier of a JLabel that I had delared and instantiated above. Then you have the `new Font`, which has 3 parameters. The first of which is the font type. I ahve used "Serif" here, but you could just as easily use something like "Times New Roman". The second id the format of the font. What I mean by that is that this includes things like italics, bold, plain etc. A full list can be found if you were to use this once you write the `.` after `Font`. The thirs and final one is possibly the most important, as it sets the size of the text. I have set mine to 45. Using the above code, and a bit more, I have created the following:
+
+![Custom text](../../Images/Chapter-IV/HelloWorld/custom_text.png)
+
 ## Adding Pictures to JLabels
 It may not say it outright, but this part is desgined to show you how to create something and add it to a JFrame, in particular, JLabels. But these JLabels are far more useful than just displaying a line of text. They can be changed on the push of a button, can be attached to almost anything and can display images, which is what this is about.
 

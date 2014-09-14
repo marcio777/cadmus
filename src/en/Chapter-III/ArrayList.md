@@ -17,3 +17,4 @@ The full declration of the ArrayList class is as follows:
 ```java
 public class ArrayList<E> extends AbstractList<E> implements List<E>,RandomAccess,Clonable,Serializable
 ```
+This means it can be cloned and it can be put into persistent storage.

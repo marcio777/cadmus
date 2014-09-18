@@ -17,11 +17,25 @@ can be used to clone it. Otherwise the `CloneNotSupportedException` is thrown. F
 Constructors
 ------------
 ```java
-ArrayList al1 = new ArrayList(); // New ArrayList with a capacity of 10 at instantisation
-ArrayList al2 = new ArrayList(int intialCapacity); // New ArrayList but a the parameter of this constructor indicates the capacity
+ArrayList al1 = new ArrayList(); //New ArrayList with a capacity of 10 at instantisation
+ArrayList al2 = new ArrayList(int intialCapacity); //Same as above but the parameter of this constructor determines the capacity
 ```
 
-However, it needs a parameter during it's construction. This is in the form of `ArrayList<E>`. Normally the `<E>` part is not added to an import statement but it is needed when constructing an ArrayList. The `E` is replaced with the data type you would use to make the ArrayList. However, it is not a primitive. The `E` has to be replaced with an actual class and for the primitives, you would use the class versions. For example:  
+A Few Useful Methods
+--------------------
+1.
+```java
+public boolean add(E e) //Adds an element at the end
+```
+The `E` is replaced with the data type you would like to insert. However, it is not a primitive. The `E` has to be replaced with an actual class and for the primitives, you would use the class versions. For example:  
 > int:Integer  
 > char:Character  
-> boolean:Boolean  
+> boolean:Boolean 
+
+2.
+```java
+public void clear() //Clears the entire ArrayList
+```
+
+3.
+```

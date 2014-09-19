@@ -17,7 +17,7 @@ ArrayList al2 = new ArrayList(5);
 ArrayList al3 = new ArrayList(initialCapacity);
 ```
 
-The first way assumes that the length is going to be 10, because you have not declared otherwise. The second one however does declare a length, which is 5. The third one also has the same effect, setting the length to whatever `initialCapacity` turns out to be.
+The first way assumes that the length is going to be 10, because you have not stated otherwise. The second one however does declare a length, which is 5. The third one also has the same effect, setting the length to whatever `initialCapacity` turns out to be.
 
 ## A Few Useful Methods
 

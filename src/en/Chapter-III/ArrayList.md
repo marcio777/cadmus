@@ -21,7 +21,7 @@ The first way assumes that the length is going to be 10, because you have not st
 
 ## A Few Useful Methods
 
-- Adding an element:
+1) Adding an element:
 
 ```java
 public boolean add(E e) //Adds an element at the end
@@ -32,7 +32,7 @@ The `E` is replaced with the data type you would like to insert. However, you ca
 > char:Character  
 > boolean:Boolean 
 
-- Removing all the data
+2) Removing all the data
 
 ```java
 public void clear();

@@ -21,10 +21,10 @@ The first way assumes that the length is going to be 10, because you have not st
 
 ## A Few Useful Methods
 
-1) Adding an element:
+*1) Adding an element:*
 
 ```java
-public boolean add(E e) //Adds an element at the end
+al.add(E e) //Adds an element at the end, where 'al' is the name of an ArrayList
 ```
 
 The `E` is replaced with the data type you would like to insert. However, you cannot use a primitive data type. We mentioned the difference earlier and that there is no need to use the class type versions. Well, now they need to be used. For example:  
@@ -32,10 +32,10 @@ The `E` is replaced with the data type you would like to insert. However, you ca
 > char:Character  
 > boolean:Boolean 
 
-2) Removing all the data
+*2) Removing all the data:*
 
 ```java
-public void clear();
+al.clear(); //'al' is the name of an ArrayList
 ```
 
 Have a guess what that does.

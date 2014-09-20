@@ -160,7 +160,7 @@ I may not have mentioned it, but these don't need to be wrapped in anything and 
 
 ```java
 keyPressed
-keyTyped (if it is a letter)
+keyTyped //if the key is a letter
 keyReleased
 ```
 

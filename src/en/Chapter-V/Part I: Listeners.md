@@ -139,4 +139,46 @@ public class colours extends JFrame{
 
 This will create a frame that changes colour everytime it gets clicked.
 
+## KeyListener
+When you play a game, more often than not the keys are used to control the character or sprite. Sometimes the mouse is used to control the game, but that is rarer. If you want to replicate this, you would have to use a KeyListener. First and foremost, before you do anything else, you will have to add the KeyListener to a panel that has been added to the JFrame. This will mean that the panel now has a KeyListener, but you should know that by now. But, you will also have to use the `setFocusable()` method on the panel, and set it to true. This actually lets the KeyListener work. With that out of the way, KeyListener has three methods, which are listed below:
+
+```java
+public void keyPressed(KeyEvent e) {
+
+}
+
+public void keyTyped(KeyEvent e) {
+
+}
+
+public void keyReleased(KeyEvent e) {
+
+}
+```
+
+I may not have mentioned it, but these don't need to be wrapped in anything and are stand-alone. They should therefore be out of both the constructor and main method. Of the methods above, the top one (keyPressed) is the msot common, and activates on any key being pressed. `keyTyped` works when a key is typed, and only works when there is a valid Unicode character. In other words that one is mostly used for actual letters. Finally `keyReleased` is invoked when the key id let go of. So, the computer would execute the methods in this order:
+
+```java
+keyPressed
+keyTyped (if it is a letter)
+keyReleased
+```
+
+However, you most likely want to know what keys are being pressed, and respond accordingly. Each key in Java has its own unique code, which you are not expected to know. As a result you will probably have to look them up if you wish to use them. The way to use them is to first find out what the key's code was. You could do so by setting an integer variable to be the value of the key, by using:
+
+```java
+int keyin = e.getKeyCode();
+//this would be done inside of the relevant method
+```
+
+You would then have to use an if statement to check if the right key has been pressed, and if so, react.To do this you will need to compare `keyin` to the right key code, and you do so as follows:
+
+```java
+if (keyin == KeyEvent.VK_UP) {
+	//code
+}
+```
+
+That if statement checked if the key pressed was the up arrow key, but equally you could use any other by replacing `VK_UP`. I will not be listing all of them, as it will take too long, but you can find them out on Oracle's website under the page on KeyEvent. Just know that the names are usually sensible, for example the other arrows keys are called `VK_RIGHT`,`VK_LEFT` and `VK_DOWN`.
+
 [If you think what you've seen so far is complex - you've got a surprise waiting for you &rarr;](./Part II: Complex Interfaces.html)

@@ -54,6 +54,6 @@ Copy & run the code. Play around with `setSize`, `setTitle`, `setVisible` and `s
 
 ### Ex 2
 Research the `setResizable()` method and create another window called `MySecondWindow` which cannot be resized.
-HINT: You don't actually need to research it, it either can or cannot be resized.
+HINT: You don't actually need to research it, it either can or cannot be resized (think about how `setVisible` works).
 
 [Well that's nice, but what can you put in these frames? &rarr;](./Part II: HelloWorld.html)

@@ -264,3 +264,5 @@ colour = JColorChooser.showDialog(null, "A colour chooser!!", colour);
 the first line is the decalration and instantiation of a `Color`, which has been set to white. The second line, the important one, sets `colour` to be the value of a JColorChooser with the parameters `null` (which is just there); `"A colour chooser!!"` (which is the title of the colour chooser) and `colour` (which is the colour the chooser starts with i.e. white). I would put the second line inside an ActionListener connected to a button, because you can then click the button to bring up the JColorChooser. Now that's explained, here is the elusive JColorChooser:
 
 ![A colour chooser](../../Images/Chapter-V/Complex_Interfaces/colourchooser.png)
+
+[Finally, some extra things &rarr;](./Part III: Extra Things.html)

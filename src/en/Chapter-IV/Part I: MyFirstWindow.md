@@ -54,6 +54,108 @@ Copy & run the code. Play around with `setSize`, `setTitle`, `setVisible` and `s
 
 ### Ex 2
 Research the `setResizable()` method and create another window called `MySecondWindow` which cannot be resized.
-HINT: You don't actually need to research it, it either can or cannot be resized.
+HINT: You don't actually need to research it, it either can or cannot be resized (think about how `setVisible` works).
 
-[Well that's nice, but what can you put in these frames? &rarr;](./Part II: HelloWorld.html)
+# JPanels
+The thing we just did used frames, but a frame is the entire space taken up by the program. But what if you want to put many different thing on one frame in various different places. To so this you can use fancy layouts (which I will mention later) but you could also use the `JPanel`. A JPanel can be seen as a "mini-frame". In most ways, these panels work the same as frames, and can do the same things as frames. They also work the same as most components (which you haven't met any of yet). Therefore you can add them to the frame, colour them, resize them etc. A Jpanel has to be declared and initialised, which you do as follows:
+
+```java
+JPanel panel = new JPanel();
+//where 'panel' is the name of the JPanel, for later use. The name 'panel' is not necessary; you could call it anything.
+```
+
+As another point, you will need to import `javax.swing.JPanel`. Then you have to actually add the panel to the frame, which you do as follows:
+
+```java
+add(panel);
+```
+
+Once the panel has been added to the frame, you can use it as a smaller frame. As I said, you can add things to it, recolour it and resize it, to name a few things. For example, copy this code and see what you get (if you do not understand what the code means, do not worry, as it will all be explained in time):
+
+```java
+public class panels extends JFrame {
+	JPanel panel1  = new JPanel();
+	JPanel panel2 = new JPanel();
+	JPanel panel3 = new JPanel();
+	JLabel message1 = new JLabel("Hello from panel1");
+	JLabel message2 = new JLabel("Hello from panel2");
+	JLabel message3 = new JLabel("Hello from panel3");
+	
+	public panels() {
+		setTitle("JPanels");
+		setSize(1000,1000);
+		setLayout(new GridLayout(1,3));
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+
+		panel1.setBackground(Color.CYAN);
+		panel1.add(message1);
+		// this is adding message1 to panel1.
+		add(panel1);
+		
+		panel2.setBackground(Color.PINK);
+		panel2.add(message2);
+		add(panel2);
+		
+		panel3.setBackground(Color.GREEN);
+		panel3.add(message3);
+		add(panel3);
+
+	}
+	
+	public static void main(String[] args) {
+		new panels();
+	}
+}
+```
+
+You will also need to import `java.awt.GridLayout` and `javax.swing.JLabel`. But that is not all - as I've mentioned many a time you can customise these panels. Once again if you don't understand this code, don't worry:
+
+```java
+public class panels extends JFrame{
+	JPanel panel1  = new JPanel();
+	JPanel panel2 = new JPanel();
+	JPanel panel3 = new JPanel();
+	JPanel panel3one = new JPanel();
+	JPanel panel3two = new JPanel();
+	JLabel message1 = new JLabel("Hello from panel1");
+	JLabel message2 = new JLabel("Hello from panel2");
+	JLabel message3 = new JLabel("Hello from panel3");
+	JLabel atext = new JLabel("I am a panel inside a panel");
+	
+	public panels() {
+		setTitle("JPanels");
+		setSize(1000,1000);
+		setLayout(new GridLayout(1,3));
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+
+		panel1.setBackground(Color.CYAN);
+		panel1.add(message1);
+		add(panel1);
+		
+		panel2.setBackground(Color.PINK);
+		panel2.add(message2);
+		add(panel2);
+		
+		panel3.setLayout(new GridLayout(1,2));
+		
+		panel3one.setBackground(Color.WHITE);
+		panel3one.add(atext);
+		
+		panel3two.setBackground(Color.YELLOW);
+		
+		panel3.add(panel3one);
+		panel3.add(panel3two);
+		
+		add(panel3);
+
+	}
+	
+	public static void main(String[] args) {
+		new panels();
+	}
+}
+```
+
+[Well that's nice, but what can you put in these frames and panels? &rarr;](./Part II: HelloWorld.html)

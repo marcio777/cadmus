@@ -47,7 +47,7 @@ As you have probably noticed, with the code you currently know there is no way t
 label.setFont(new Font("Serif", Font.PLAIN, 45));
 ```
 
-There are a few things to be defined here. `label` is the identifier of a JLabel that I had delared and instantiated above. Then you have the `new Font`, which has 3 parameters. The first of which is the font type. I have used "Serif" here, but you could just as easily use something like "Times New Roman". The second id the format of the font. What I mean by that is that this includes things like italics, bold, plain etc. A full list can be found if you were to use this once you write the `.` after `Font`. The thirs and final one is possibly the most important, as it sets the size of the text. I have set mine to 45. Using the above code, and a bit more, I have created the following:
+There are a few things to be defined here. `label` is the identifier of a JLabel that I had delared and instantiated above. Then you have the `new Font`, which has 3 parameters. The first of which is the font type. I have used "Serif" here, but you could just as easily use something like "Times New Roman". The second is the format of the font. What I mean by that is that this includes things like italics, bold, plain etc. A full list can be found if you were to use this once you write the `.` after `Font`. The third and final one is possibly the most important, as it sets the size of the text. I have set mine to 45. Using the above code, and a bit more, I have created the following:
 
 ![Custom text](../../Images/Chapter-IV/HelloWorld/custom_text.png)
 
@@ -62,7 +62,7 @@ Then choose your file source, which will most likely be General->File System. Th
 
 ![Choosing your image](../../Images/Chapter-IV/HelloWorld/imports2.png)
 
-I have already filled this in. I have taken my pictures from the Sample Pictures folder, which I got when I clicked the Browse button (bordered in black) and followed the path Libraries->Pictures->Public Pictures->Sample Pictures. However you could store your images anywhere and find them. I then chose the folder to import them to using the **Browse** button (bordered in blue) and chose the folder JavaKS4, which is simply one of my folders.
+I have already filled this in. Iblack have taken my pictures from the Sample Pictures folder, which I got when I clicked the Browse button (bordered in blue) and followed the path Libraries->Pictures->Public Pictures->Sample Pictures. However you could store your images anywhere and find them. I then chose the folder to import them to using the **Browse** button (bordered in blue) and chose the folder JavaKS4, which is simply one of my folders.
 
 That will import your images and make them easy to access. Now, back to the point. To create an image you will need to import `javax.swing.ImageIcon` and use code similar to this:
 
@@ -108,7 +108,7 @@ Then adding this to the constructor:
 
 ```java
 scroller = new JScrollPane(label);
-//where 'scroller' is the name of the JScrollPane and 'image' is the name of the JLabel with an image on it
+//where 'scroller' is the name of the JScrollPane and 'label' is the name of the JLabel with an image on it
 
 scroller.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 //sets the vertical scroll bar to always be showing, regardless whether or not it is in use
@@ -120,7 +120,7 @@ add(scroller);
 //adds the scroller and therefore the image too
 ```
 
-You have just added the image to the scroll pane and added the scroll pane to the JFrame. This means that now, however big the image is, you can now see it. You can also, if you so wish, shorten the first three lines to: 
+You have just added the image to the scroll pane and added the scroll pane to the JFrame. This means that now, however big the image is, you can see it. You can also, if you so wish, shorten the first three lines to: 
 
 ```java
 scroller.setViewportView(image);

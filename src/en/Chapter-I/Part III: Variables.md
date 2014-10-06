@@ -61,7 +61,7 @@ While an integer is a whole number, a real number has a decimal point in it. To 
 double pi = 3.14159265359;
 ```
 
-You can convert a double into a String, and you will find out how to do that later. That is possible because the method simply sets it to be a piece of text. However, what if you wanted to convert a double into an integer? You will be finding out how to do that using `Integer.parseInt()` in Chapter II, but doing so here will make Java have a fit - it can't understand an integer with a decimal point. To convert it you would use something called "casting". This is the only time I will mention it, so listen carefully. Casting is very easy - all you have to do is write what you want to cast it to in brackets before the actual value. In other words, to turn pi into an int you would do the following:
+You can convert a double into a String, and you will find out how to do that later. That is possible because the method simply sets it to be a piece of text. However, what if you wanted to convert a double into an integer? You will be finding out how to do that using `Integer.parseInt()` in Chapter II, but doing so here will make Java have a fit - it can't understand an integer with a decimal point. To convert it you would use something called "casting". This is the only time I will mention it, so listen carefully. Casting is very easy - all you have to do is write what you want to cast it to in brackets before the actual value. In other words, to make a random number (for example) an int, and not a double,  you would do the following:
 
 ```java
 int pi = (int) (Math.random());

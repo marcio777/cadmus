@@ -37,7 +37,7 @@ Write a program, that prints the lyrics of [99 Bottles of Beer](http://99-bottle
 Extension: Add a variable to change the number of bottles.
 
 #### Ex 6 (Morphology)
-Write a program, that given a word, returns the syllable count. To do this count the number of vowels including `y`, excluding two or more vowels that are in a row (dipthongs).
+Write a program that, given a word, returns the syllable count. To do this count the number of vowels including `y`, excluding two or more vowels that are in a row (dipthongs).
 
 ## While loops
 

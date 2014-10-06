@@ -46,8 +46,8 @@ int age = 15;
 You can increment and decrement variables by one, by using unary operators, that is to say operators that take one value:
 
 ```java
-age++; // Age now equals 14
-age--; // Age is back to 13
+age++; // Age now equals 16
+age--; // Age is back to 15, as java works sequentially, that is to say, line-by-line.
 ```
 
 Binary operators like `+`, `-`, `/` and `*` take two int values.

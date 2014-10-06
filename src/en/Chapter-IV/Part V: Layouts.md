@@ -143,7 +143,7 @@ At the beginning of this part I mentioned four basic layouts, but they are not t
 CardLayout cl = new CardLayout();
 ```
 
-So, to use the card layout, you ahve to have a few things. Firstly, you need the panels, but you need one more than you will be showing. In other words, if you plan to house three panels in the same place, you need to declare four. This fourth extra panel is the container for all the other panels. Once you have that, you need the components to put in the panels, and I will be using buttons so I can change the panels. Then you will need the following code:
+So, to use the card layout, you have to have a few things. Firstly, you need the panels, but you need one more than you will be showing. In other words, if you plan to house three panels in the same place, you need to declare four. This fourth extra panel is the container for all the other panels. Once you have that, you need the components to put in the panels, and I will be using buttons so I can change the panels. Then you will need the following code:
 
 ```java
 cont.add(panel1, "1");

@@ -28,7 +28,7 @@ As expected, the first one creates an ArrayList with Strings, and the second one
 
 ## A Few Useful Methods
 
-*1) Adding an element:*
+**1) Adding an element:**
 
 ```java
 al.add(e) //Adds an element at the end, where 'al' is the name of an ArrayList
@@ -36,7 +36,7 @@ al.add(e) //Adds an element at the end, where 'al' is the name of an ArrayList
 
 As mentioned in the comment, whatever `e` turns out to be (a number, a String, a char etc) will be added to the end of the ArrayList. It is worth mentioning that `e` must be the same data type as the ArrayList itself, as in you cant add an int to a String ArrayList.
 
-*2) Removing all the data:*
+**2) Removing all the data:**
 
 ```java
 al.clear(); //'al' is the name of an ArrayList
@@ -44,7 +44,7 @@ al.clear(); //'al' is the name of an ArrayList
 
 Have a guess what that does.
 
-*3) Finding the size of the ArrayList:*
+**3) Finding the size of the ArrayList:**
 
 ```java
 al.size();
@@ -52,7 +52,7 @@ al.size();
 
 You wouldn't just use that on its own however, you would need to set a variable to be that value or print that value out. 
 
-*4) Removing single elements:*
+**4) Removing single elements:**
 
 ```java
 al.remove("F");
@@ -61,7 +61,7 @@ al.remove(2);
 
 The first command above removes the letter F from the ArrayList (bearing in mind that the letter F is in the ArrayList). The second one removes the value at index 2.
 
-*5) Finding the contents of the ArrayList:*
+**5) Finding the contents of the ArrayList:**
 
 ```java
 System.out.println(al);
@@ -73,8 +73,34 @@ So, using the above concepts you could create a chain of manipulation of an Arra
 
 ```java
 ArrayList<String> al = new ArrayList<String>();
-System.out.println("The size of the list: " + al);
+System.out.println("The size of the list: " + al.size());
 
 al.add("A");
-al.add("A");
-al.add("A");
+al.add("B");
+al.add("C");
+al.add("D");
+System.out.println("New size: " + al.size());
+
+System.out.println("The contents of the list: " + al);
+
+al.add(1, "100000000000");
+System.out.println("The new contents of the list: " + al);
+
+al.remove("D");
+al.remove(2);
+System.out.println("The contents after deletion: " + al);
+
+al.clear();
+System.out.println("The size after complete deletion: " + al.size());
+```
+
+This would print out:
+
+```java
+The size of the list: 0
+New size: 4
+The contents of the list: [A, B, C, D]
+The new contents of the list: [A, 100000000000, C, D]
+The contents after deletion: [A, 100000000000]
+The size after complete deletion: 0
+```

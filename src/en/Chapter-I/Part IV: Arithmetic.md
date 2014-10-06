@@ -35,7 +35,7 @@ double r = p / q;
 
 If, however, `p` and `q` are integers, `r` will equal `1.0`, because the `/` operator works irresepective of anything other than `p` and `q`, and their datatypes.
 
-To multiply two integers x and y:
+Multiplying two integers x and y:
 
 ```java
 int z = x * y;

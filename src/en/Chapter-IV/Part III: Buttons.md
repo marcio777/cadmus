@@ -79,7 +79,7 @@ Doing this will set the button to have an image on it instead of text. Add a pan
 
 And yes, you have permission to scream 'CUUUUUUUUTTTTEEEEE' in a very high-pitched voice. 
 
-### Ex 1 
+### Ex 2 
 Make a JButton yourself. Have it change a label from "No buttons pressed" to "The button has been pressed" using the ActionListener. If, you want a challenge, add more than one button or make them contain pictures.
 
 N.B. not all pictures require a tag of 'cute'.
@@ -108,7 +108,7 @@ in the constructor to add the button to the button group.Therefore the following
 
 ![Radio buttons](../../Images/Chapter-IV/Buttons/radio.png)
 
-### Ex 2
+### Ex 3
 Make 3 radio buttons with different names of subjects (History, Computing, Maths etc.) and have a JLabel ask which is the user's favourite. Also have the JLabel respond to that with an appropriate message.
 
 ## JCheckBoxes
@@ -122,7 +122,7 @@ Using these you can create things like the following:
 
 ![Some check boxes](../../Images/Chapter-IV/Buttons/check_boxes.png)
 
-### Ex 3
+### Ex 4
 Create 3 check boxes with custom names, and use ActionListener to display an appropriate message depending on which box has been checked.
 
 ## Arrow Buttons

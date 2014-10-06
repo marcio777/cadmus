@@ -37,7 +37,7 @@ It should look something like the screen shot below:
 
 ![Eclipse interface](../../Images/Chapter-I/Introduction/Opening_eclipse.png)
 
-The green icon which looks like this is used to run your programs. It can be found in the top bar and you have to click it to run the current program you are working in. Provided that your program has no errors, your program should run.
+The green icon, which looks like the picture below, is used to run your programs. It can be found in the top bar and you have to click it to run the current program you are working in. Provided that your program has no errors, your program should run.
 
 ![This appears in the top bar](../../Images/Chapter-I/Introduction/Eclipse_run_button.png)
 

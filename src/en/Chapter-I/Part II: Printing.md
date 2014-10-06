@@ -39,14 +39,14 @@ You can also print out variables (which you will encounter next). When you print
 int n = 5;
 
 System.out.println(n);
-// which would output: 5
+// which would output 5
 ```
 
 You could also print out variables and strings at the same time, you simply separate them with a `+` sign as shown below:
 
 ```java
 System.out.println("The value of n is " + n);
-// which would output: The value of n is 5
+// which would output The value of n is 5
 ```
 
 Don't worry if that makes no sense, you will be meeting variables next.

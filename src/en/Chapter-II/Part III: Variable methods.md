@@ -83,7 +83,7 @@ int age = Integer.parseInt(ageAsString);
 ```
 
 ## Boolean methods
-Booleans work the same as integers, and the `toString()` method was shown above. But there is a method that turns a String into a boolean `.parseDouble()`:
+Booleans work the same as integers, and the `toString()` method was shown above. But there is a method that turns a String into a boolean `.parseBoolean()`:
 
 ```java
 String aliveAsString = "true";

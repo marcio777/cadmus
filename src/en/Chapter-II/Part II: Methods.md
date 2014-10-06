@@ -47,13 +47,13 @@ Following the method name comes the **parameter list** (the contents of the brac
 For now, you are going to have to accept that there is something called an **access modifier** that will be at the start of every method you write. In this case, we will always be using the access modifier `public`. For the curious, access modifiers are related to classes (a key feature of an object-orientated language like Java), and other 'access modifiers', apart from public, exist, such as `private` and `protected`. It is also not actually a requirement to have an access modifier at the beginning of a method. 
 
 ## Static methods
-Hitherto you've only met static methods, methods that belong to a class, as opposed to an instance of a class. For instance, the method `Integer.parseInt()` is a static method. If I, however, create an integer like so:
+Hitherto you've only met static methods, which are methods that belong to a class, as opposed to an instance of a class. For instance, the method `Integer.parseInt()` (which is in the next part) is a static method. If I, however, create an integer like so:
 
 ```java
 Integer age = 5;
 ```
 
-`age` does not have the method `.parseInt()`. You will meet many of these methods soon. Indeed, the methods you've created with the `static` keyword are also static methods. If you were to remove the `static` keyword from them they would not be able to be called by the `main` method.
+`age` does not have the method `.parseInt()`. What I'm trying to say is that when you meet many of these methods the bit after the full stop is a static method. Similarly, the methods you've created and will create with the `static` keyword are also static methods. If you were to remove the `static` keyword from them they would not be able to be called by the `main` method.
 
 N.B.: `Math.abs()`, and `Math.sqrt()` are also statics, as are other methods inside the `Math` package, such as trigonometric functions `Math.sin()`, `Math.cos()`, and `Math.tan()`.
 

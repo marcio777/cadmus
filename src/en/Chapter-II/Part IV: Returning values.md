@@ -14,7 +14,7 @@ public int divideBy4(int num) {
 
 In the example above, note that the return type has changed from `void` to `int`. Because it is not `void` anymore, this means that we’re specifying the method to return something, and we've specified it to return an integer value.
 
-Given that your methods now return a value other than void, you have to store the value returned in a new variable of the same type, else you can’t use it. For instance, to call a method and use the value returned from it in the main method, you would have to:
+Given that your methods now return a value other than void, you have to store the value returned in a new variable of the same type, or else you can’t use it. For instance, to call a method and use the value returned from it in the main method, you would have to:
 
 i) First, create an object:
 

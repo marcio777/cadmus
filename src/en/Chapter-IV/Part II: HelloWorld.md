@@ -62,7 +62,7 @@ Then choose your file source, which will most likely be General->File System. Th
 
 ![Choosing your image](../../Images/Chapter-IV/HelloWorld/imports2.png)
 
-I have already filled this in. Iblack have taken my pictures from the Sample Pictures folder, which I got when I clicked the Browse button (bordered in blue) and followed the path Libraries->Pictures->Public Pictures->Sample Pictures. However you could store your images anywhere and find them. I then chose the folder to import them to using the **Browse** button (bordered in blue) and chose the folder JavaKS4, which is simply one of my folders.
+I have already filled this in. I have taken my pictures from the Sample Pictures folder, which I got when I clicked the Browse button (bordered in black) and followed the path Libraries->Pictures->Public Pictures->Sample Pictures. However you could store your images anywhere and find them. I then chose the folder to import them to using the **Browse** button (bordered in blue) and chose the folder JavaKS4, which is simply one of my folders.
 
 That will import your images and make them easy to access. Now, back to the point. To create an image you will need to import `javax.swing.ImageIcon` and use code similar to this:
 

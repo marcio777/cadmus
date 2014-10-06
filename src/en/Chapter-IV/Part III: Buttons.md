@@ -104,7 +104,7 @@ to create the buttongroup, and then:
 buttons.add(btn1);
 ```
 
-in the constructor to add the button to the button group.Therefore the following would be outputted:
+would be used in the constructor to add the button to the button group. Therefore the following would be outputted:
 
 ![Radio buttons](../../Images/Chapter-IV/Buttons/radio.png)
 

@@ -84,7 +84,7 @@ Use your program from Ex 4 plus a while loop, to create a program that prints th
 
 ## Do loops
 
-Now onto the do loop.  This loop is nearly exactly the same as the while loop.  However the piece of code within the loop is run before checking to see if the condition is met.  This guarantees that the do loop is always run at least once.  Here is an example of the do loop.
+Now onto the do loop.  This loop is nearly exactly the same as the while loop.  However the piece of code within the loop is run before checking to see if the condition is met.  This guarantees that the code is always run at least once.  Here is an example of a do loop.
 
 ```java
 public void countTenWithDoLoop() {

@@ -57,7 +57,7 @@ Research the `setResizable()` method and create another window called `MySecondW
 HINT: You don't actually need to research it, it either can or cannot be resized (think about how `setVisible` works).
 
 # JPanels
-The thing we just did used frames, but a frame is the entire space taken up by the program. But what if you want to put many different thing on one frame in various different places. To so this you can use fancy layouts (which I will mention later) but you could also use the `JPanel`. A JPanel can be seen as a "mini-frame". In most ways, these panels work the same as frames, and can do the same things as frames. They also work the same as most components (which you haven't met any of yet). Therefore you can add them to the frame, colour them, resize them etc. A Jpanel has to be declared and initialised, which you do as follows:
+The thing we just did used frames, but a frame is the entire space taken up by the program. But what if you want to put many different thing on one frame in various different places. To so this you can use fancy layouts (which I will mention later) but you could also use the `JPanel`. A JPanel can be seen as a "mini-frame". In most ways, these panels work the same as frames, and can do the same things as frames. They also work the same as most components (which you haven't met any of yet). Therefore you can add them to the frame, colour them, resize them etc. A JPanel has to be declared and initialised, which you do as follows:
 
 ```java
 JPanel panel = new JPanel();

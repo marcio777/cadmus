@@ -50,7 +50,7 @@ The following would be outputted if this is combined with the other pieces of co
 
 ![An uneditable text field](../../Images/Chapter-IV/Text_Fields/uneditable_text_field.png)
 
-Finally, you can colour your text fields. I'm not going to give an example of this because the code is identical to how you would colour a JFrame, only you don't have to include the `getContentPane()`. If yuo were to colour your text filed orange, then it would look like this:
+Finally, you can colour your text fields. I'm not going to give an example of this because the code is identical to how you would colour a JFrame, only you don't have to include the `getContentPane()`. If you were to colour your text field orange, then it would look like this:
 
 ![A coloured text field](../../Images/Chapter-IV/Text_Fields/orange_text_field.png)
 

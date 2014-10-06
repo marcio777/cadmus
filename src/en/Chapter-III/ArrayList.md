@@ -104,3 +104,5 @@ The new contents of the list: [A, 100000000000, C, D]
 The contents after deletion: [A, 100000000000]
 The size after complete deletion: 0
 ```
+
+[Now for a thing I believe is useless, but that is not a reason to skip it &rarr;](./Part II: Switch statements.html)

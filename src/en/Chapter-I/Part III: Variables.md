@@ -140,7 +140,7 @@ There are also things called logical operators, and there are another 4 of those
 
 | Operator        | Meaning
 | ------------- |-------------|
-| !    | NOT OPERATOR - turns true into false |
+| !    | NOT OPERATOR - returns true if the value is false and vice versa |
 | && | AND operator - returns true if both values next to it are true |
 | ^  | XOR OPERATOR - returns true if one value is true and one is false |
 

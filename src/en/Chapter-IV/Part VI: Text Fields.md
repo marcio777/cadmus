@@ -12,7 +12,7 @@ import javax.swing.JTextField;
 
 public class TexFields extends JFrame {
 	JTextField normal = new JTextField();
-	// The empty brackets can be filled with an integer to dictate the preffered size of the text field.
+	// The empty brackets can be filled with an integer to dictate the preferred size of the text field.
 	
 	public TexFields() {
 		add(normal);

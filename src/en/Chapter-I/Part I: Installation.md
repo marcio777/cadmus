@@ -41,7 +41,7 @@ The green icon, which looks like the picture below, is used to run your programs
 
 ![This appears in the top bar](../../Images/Chapter-I/Introduction/Eclipse_run_button.png)
 
-Now right-click Outreach then click New->Class and you should see the following pop-up:
+Now right-click Outreach (which is the name of a folder which has been already created - your teacher should have told you how to make one) then click New->Class and you should see the following pop-up:
 ![A new class](../../Images/Chapter-I/Introduction/Eclipse_new_class.png)
 
 Where it says name type in Example then click Finish, and so your screen should look like this:

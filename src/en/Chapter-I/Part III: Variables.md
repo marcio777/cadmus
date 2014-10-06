@@ -80,7 +80,7 @@ boolean myBoolean = true;
 ```
 
 ### Chars
-A cahr is defined as a single letter of a String. So, `"Hello"` is a String but the char at index 0 is `H`. Chars are declared as follows:
+A char is defined as a single letter of a String. So, `"Hello"` is a String but the char at index 0 is `H`. Chars are declared as follows:
 
 ```java
 char myChar = 'h';

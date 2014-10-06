@@ -93,7 +93,7 @@ Write a program in which you initialise an int, a double, a char, a boolean and 
 `The value of the int is 4`.
 
 ## Primitives versus Classes
-You may have picked up on the fact that `String` is capitalised, while `int`, `double`, `char` and `boolean` are not. This is because `int`, `double`, `char` and `boolean` are all **primitive data types**, while  `String` is a **class data type**. These may not mean anything to you yet, but in essence there are 8 built-in primitives within Java. Primitives cannot be added or removed by the programmer; they are the DNA of the programming language. Primitives represent one scalar value. Classes are far more powerful than primitives. They shift the power to the programmer, allowing the programmer to create classes, which are composed from other datatypes. Java comes with a bunch of classes built in, namely `String`.
+You may have picked up on the fact that `String` is capitalised, while `int`, `double`, `char` and `boolean` are not. This is because `int`, `double`, `char` and `boolean` are all **primitive data types**, while  `String` is a **class data type**. These may not mean anything to you yet, but in essence there are 8 built-in primitives within Java. Primitives cannot be added or removed by the programmer; they are the DNA of the programming language. Primitives represent one scalar value. Classes are far more powerful than primitives. They shift the power to the programmer, allowing the programmer to create classes, which are composed from other data types. Java comes with a bunch of classes built in, namely `String`.
 
 But what about `Integer`, `Double`, and `Boolean` etc.? These are indeed classes, that wrap around their respective primitives. So the following would be perfectly valid:
 

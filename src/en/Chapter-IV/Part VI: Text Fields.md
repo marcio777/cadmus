@@ -112,7 +112,7 @@ spin3 = new JSpinner(new SpinnerListModel(days));
 //where 'days' is the name of a String array containing the days of the week
 ```
 
-The 'SpinnerListModel' is need for that to work, as if it wouldn't be. So, doing that will create the following:
+The `SpinnerListModel` is need for that to work, as opposed to `SpinnerNumberModel`. So, doing that will create the following:
 
 ![A customised spinner](../../Images/Chapter-IV/Text_Fields/day_spin.png)
 

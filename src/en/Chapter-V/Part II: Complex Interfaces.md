@@ -100,7 +100,7 @@ These sliders can be added to ChangeListeners and you can create something like 
 ![A Slider at a high value](../../Images/Chapter-V/Complex_Interfaces/slider3.png)
 
 ## JToolBar
-A useful toll is the JToolBar. It is exactly what it says on the tin, it is a toolbar which can have various components put onto it. To create a JToolBar you have to declare and instantiate it as usual. The, inside the main constructor, you add components to the toolbar. Bear in mind that this is position-sensitive - if you add a button, then a text field then a label, then the button will be on the left, then the text field, then the label on the right. You can therefore make something like the following:
+A useful tool is the JToolBar. It is exactly what it says on the tin, it is a toolbar which can have various components put onto it. To create a JToolBar you have to declare and instantiate it as usual. The, inside the main constructor, you add components to the toolbar. Bear in mind that this is position-sensitive - if you add a button, then a text field then a label, then the button will be on the left, then the text field, then the label on the right. You can therefore make something like the following:
 
 ![The various toolbar positions](../../Images/Chapter-V/Complex_Interfaces/toolbar_positions.png)
 

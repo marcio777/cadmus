@@ -234,7 +234,7 @@ And that is that. The tool tip will now display whenever you hold your mouse ove
 ![A JToolTip](../../Images/Chapter-V/Complex_Interfaces/tooltip.png)
 
 ## JPopupMenu
-Right click right now. As you can see, a menu comes up with a variety of items on it. That is a pop-up menu. You create as usual, i.e. you declare and instantiate them as normal. But there is something different about them. Firstly, you use `JMenuItem` to create the items on the pop-up menu. If you have forgotten, you use them like this:
+Right click right now. As you can see, a menu comes up with a variety of items on it. That is a pop-up menu. You create these as usual, i.e. you declare and instantiate them as normal. But there is something different about them. Firstly, you use `JMenuItem` to create the items on the pop-up menu. If you have forgotten, you use them like this:
 
 ```java
 JMenuItem cut = new JMenuItem("Cut");
@@ -242,7 +242,7 @@ popupmenu.add(cut);
 //where 'popupmenu' is the identifier of a pop-up menu
 ```
 
-So, that's how you add items, and the line between them is created using `addSeparator()`, as before. But there is something different you have to do with pop-up menus. You basically have to add them to various components. If you add it to the JFrame however, something weird will happen which I will leave for you to discover. Similarly if you add it normally to a component it will not work. So, how do you add them? Well, what you have to do is use the `setComponentPopupMenu()` method. I would advise using this on a panel that covers the whole JFrame, but you can add it to specific components. Just as a visual representation, the code would look like this:
+So, that's how you add items, and the line between them is created using `addSeparator()`, as before. I mentioned something different you have to do with pop-up menus. You basically have to add them to various components. If you add it to the JFrame however, something weird will happen which I will leave for you to discover. Similarly if you add it normally to a component it will not work. So, how do you add them? Well, what you have to do is use the `setComponentPopupMenu()` method. I would advise using this on a panel that covers the whole JFrame, but you can add it to specific components. Just as a visual representation, the code would look like this:
 
 ```java
 panel.setComponentPopupMenu(popupmenu);

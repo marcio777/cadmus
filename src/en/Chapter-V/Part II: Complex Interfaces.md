@@ -9,7 +9,7 @@ JSplitPane split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, new JScrollPane(l
 //where 'label1' and 'label2' are predeclared labels.
 ```
 
-Then, in the constructor, you set those labels to be your images of choice and add the split pane to the JFrame. This particular piece of code, along with all of the other things needed for it to function, cretes this:
+Then, in the constructor, you set those labels to be your images of choice and add the split pane to the JFrame. This particular piece of code, along with all of the other things needed for it to function, creates this:
 
 ![A horizontally split pane](../../Images/Chapter-V/Complex_Interfaces/horizontal_split.png)
 

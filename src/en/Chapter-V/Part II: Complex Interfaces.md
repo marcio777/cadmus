@@ -158,7 +158,7 @@ As you did with the toolbar. Once again, put it in the right place. So, if you h
 ![A menubar with items](../../Images/Chapter-V/Complex_Interfaces/menuitems.png)
 
 ## JTable
-In our quest to discover more complex components, we find the JTable. This is exactly as it souns - it is a table. You will need a JTable and a ScrollPane, which you have met before. This ScrollPane is simply for use if the table has too much data in it. First thing you will need to do it set a flow layout. Then you need two arrays, one for the column names and one for the actual contents. These are the arrays that I used:
+In our quest to discover more complex components, we find the JTable. This is exactly as it sounds - it is a table. You will need a JTable and a ScrollPane, which you have met before. This ScrollPane is simply for use if the table has too much data in it. First thing you will need to do it set a flow layout. Then you need two arrays, one for the column names and one for the actual contents. These are the arrays that I used:
 
 ```java
 String[] columnnames = {"Name","Age", "Gender"};

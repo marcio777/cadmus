@@ -143,7 +143,7 @@ menu.add(file);
 menu.add(edit);
 ```
 
-This would create the following, but notice the lack of items, that is our next job:
+This would create the following, but notice the lack of items. That is our next job:
 
 ![ A menu bar with titles](../../Images/Chapter-V/Complex_Interfaces/menu&bar.png)
 

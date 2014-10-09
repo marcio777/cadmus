@@ -254,7 +254,7 @@ That will add the pop-up menu to the panel or component in question, and once yo
 ![A pop-up menu](../../Images/Chapter-V/Complex_Interfaces/popup.png)
 
 ## JColorChooser
-As a first and foremost, I have not mispelled colour in the title, but am using the official syntax for java, which spells colour in that way. Moving on, a JColorChooser is very difficult to explain without the use of an image. Nevertheless I will try, but if you can't visualise what I am, then don't worry as there will be a picture later. A colour chooser is a pre-formatted component that you choose colours from. As fopr what it looks like, if you've ever used a program with a 'more colours' option, then that will bring up one form or another of colour chooser. You'll recognise it when you see it. To create these you use the following code:
+As a first and foremost, I have not mispelled colour in the title, but am using the official syntax for java, which spells colour in that way. Moving on, a JColorChooser is very difficult to explain without the use of an image. Nevertheless I will try, but if you can't visualise what I am, then don't worry as there will be a picture later. A colour chooser is a pre-formatted component that you choose colours from. As for what it looks like, if you've ever used a program with a 'more colours' option, then that will bring up one form or another of colour chooser. You'll recognise it when you see it. To create these you use the following code:
 
 ```java
 Color colour = (Color.WHITE);

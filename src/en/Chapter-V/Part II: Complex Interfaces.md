@@ -29,7 +29,7 @@ tabbedPane.add("Second pane", panel2);
 add(tabbedPane);
 ```
 
-This will create the following:
+This will create the following if you were to put labels on the JPanels:
 
 ![A tabbed pane](../../Images/Chapter-V/Complex_Interfaces/tabbedpane.png)
 

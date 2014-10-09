@@ -37,7 +37,7 @@ This will create the following if you were to put labels on the JPanels:
 Create your own `JTabbedPane` with two tabs, one with a message on it and one with a button that creates a message upon clicking.
 
 ## JInternalFrame
-Next on the list of random trinkets is the JInternalFrame. As the name suggests this is a fram inside of a frame, or, quite literally, an internal frame. To do this you will need the following imports:
+Next on the list of random trinkets is the `JInternalFrame`. As the name suggests this is a frame inside of a frame, or, quite literally, an internal frame. To do this you will need the following imports:
 
 ```java
 import javax.swing.JDesktopPane;

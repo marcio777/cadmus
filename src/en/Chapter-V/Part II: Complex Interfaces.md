@@ -24,7 +24,7 @@ Assume you have two windows, and wish to be able to switch between them at will,
 
 ```java
 tabbedPane.add("First pane", panel1);
-//where 'panel1' is the name of the panel and '"First pane"' is what will be displayed on the tabs themselves
+//where 'tabbedPane' is the name of the JTabbedPane, 'panel1' is the name of the panel and '"First pane"' is what will be displayed on the tab itself
 tabbedPane.add("Second pane", panel2);
 add(tabbedPane);
 ```

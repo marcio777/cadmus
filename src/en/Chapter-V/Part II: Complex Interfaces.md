@@ -171,7 +171,7 @@ Object[] [] data = {
 };
 ```
 
-Thes second array looks more complicated, and that's because it is an array of arrays. Each of the arrays inside of the data arrays represents a row, and the contents represents the data. To actaully make the table, now that you have the things inside of it, you will need ths follwing lines of code:
+The second array looks more complicated, and that's because it is an array of arrays. Each of the arrays inside of the data arrays represents a row, and the contents represents the data. To actaully make the table, now that you have the things inside of it, you will need ths follwing lines of code:
 
 ```java
 table1 = new JTable(data, columnnames);

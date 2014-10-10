@@ -146,12 +146,16 @@ CardLayout cl = new CardLayout();
 So, to use the card layout, you have to have a few things. Firstly, you need the panels, but you need one more than you will be showing. In other words, if you plan to house three panels in the same place, you need to declare four. This fourth extra panel is the container for all the other panels. Once you have that, you need the components to put in the panels, and I will be using buttons so I can change the panels. Then you will need the following code:
 
 ```java
+cont.setLayout(cl);
+//the container panel has the card layout assigned to it.
 cont.add(panel1, "1");
 //'cont' is the container panel, 'panel1' is the panel's name and '"1"' is the identifier for the card layout.
 cont.add(panel2, "2");
 cont.add(panel3, "3");
 cl.show(cont, "1");
 //the card layout will show the container panel with the panel with the identifier '"1"' first.
+add(cont);
+//adds the container panel to the JFrame.
 ```
 
 Once you have that, you have to actually make the buttons switch the panels. So, add ActionListeners to each, and use the following code, which includes the `show()` method:

@@ -40,6 +40,7 @@ gulp.task("convert", function() {
 			renderer:renderer
 		}))
 		.pipe(rename(function(path) {
+			path.basename = path.basename.replace(/\s+/g, '-');
 			path.extname = ".html";
 		}))/*
 		.pipe(ssg({
@@ -90,7 +91,4 @@ gulp.task("styles", function() {
 		.pipe(gulp.dest("./dist/styles"));
 });
 
-gulp.task("default", ["styles", "convert", "copy"], function() {
-	var fs = require("fs");
-	console.log(fs.readdirSync("./dist/en/Chapter_I"));
-});
+gulp.task("default", ["styles", "convert", "copy"]);

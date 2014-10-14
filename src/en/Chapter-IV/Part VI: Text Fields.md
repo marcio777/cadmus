@@ -238,4 +238,4 @@ You will meet JSplitPanes when you get to the comples interfaces part of Chapter
 
 ![A split pane with text areas](../../Images/Chapter-IV/Text_Fields/text_area_split.png)
 
-[Now for some challenging exercises!! &rarr;](./Part VII: Exercises.html)
+[Now for some challenging exercises!! &rarr;](./Part-VII:-Exercises.html)

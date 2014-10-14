@@ -158,4 +158,4 @@ public class panels extends JFrame{
 }
 ```
 
-[Well that's nice, but what can you put in these frames and panels? &rarr;](./Part II: HelloWorld.html)
+[Well that's nice, but what can you put in these frames and panels? &rarr;](./Part-II:-HelloWorld.html)

@@ -171,4 +171,4 @@ if(alive == true) {
 }
 ```
 
-[Time to do some maths &rarr;](./Part IV: Arithmetic.html)
+[Time to do some maths &rarr;](./Part-IV:-Arithmetic.html)

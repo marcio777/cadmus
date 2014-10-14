@@ -149,4 +149,4 @@ Write a programs that given four numbers *x<sub>1</sub>*, *y<sub>1</sub>*, *x<su
 
 This is very useful in collision dectection, in scientific models and game programming.
 
-[Let's go see some arrays &rarr;](./Part V: Arrays.html)
+[Let's go see some arrays &rarr;](./Part-V:-Arrays.html)

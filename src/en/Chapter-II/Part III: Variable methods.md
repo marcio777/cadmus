@@ -103,4 +103,4 @@ System.out.println(myDouble.isNaN());
 
 This converts `d` into a double and then checks if it is a number. However, if d was "hrglbrgl", then it would output true.
 
-[How to use the outputs of methods &rarr;](./Part IV: Returning values.html)
+[How to use the outputs of methods &rarr;](./Part-IV:-Returning-values.html)

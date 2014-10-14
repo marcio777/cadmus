@@ -39,4 +39,4 @@ try {
 
 There are a great number of exceptions, and to work out which one you need to use you mainly just have to create the error and read the report generated in the console. As a result I cannot list them, and will leave it up to you to work them out.
 
-[Time to create some pretty interfaces &rarr;](../Chapter-IV/Part I: MyFirstWindow.html)
+[Time to create some pretty interfaces &rarr;](../Chapter-IV/Part-I:-MyFirstWindow.html)

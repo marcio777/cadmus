@@ -166,4 +166,4 @@ The astute will notice two things different with this. 1) There is no main metho
  
 ![Red panel button](../../Images/Chapter-IV/Buttons/calling_panel.png)
 
-[I hope you've been listening - we've got a challenge coming up &rarr;](./Part IV: Temperature.html)
+[I hope you've been listening - we've got a challenge coming up &rarr;](./Part-IV:-Temperature.html)

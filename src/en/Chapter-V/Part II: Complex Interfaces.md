@@ -265,4 +265,4 @@ The first line is the declaration and instantiation of a `Color`, which has been
 
 ![A colour chooser](../../Images/Chapter-V/Complex_Interfaces/colourchooser.png)
 
-[Finally, some extra things &rarr;](./Part III: Extra Things.html)
+[Finally, some extra things &rarr;](./Part-III:-Extra-Things.html)

@@ -19,6 +19,15 @@ You could also change the `HORIZONTAL_SPLIT` to `VERTICAL_SPLIT`, but that would
 
 He seems to now have a massive mound of rock instead of a body.
 
+You may notice when you create the split pane that the middle bar is immediately placed on the left side of the frame. You won't see this in the pictures below because I have moved that bar by dragging it, but that is not always an acceptable solution. Luckily, there is a way to change the position of the bar by default. To do so you will have to use the following code:
+
+```java
+split.setResizableWeight(0.5);
+//where 'split' is the split pane declared earlier
+```
+
+Bear in mind that the 0.5 used in this example is not a necessity and can be changed. This changing is pretty intuitive if I tell you that 0.5 represents the middle of the frame.
+
 ## JTabbedPane
 Assume you have two windows, and wish to be able to switch between them at will, because they have different pieces of information for example. To do this you could use a variety of things, but one of the better ones is a `JTabbedPane`. This is not the most useful way of doing this - it would be far more useful to use the card layout. However, I think that this looks slightly better. To use a JTabbedPane you have to declare and instantiate a `JTabbedPane`, as you would do with anything else. Then you have to create two panels and two labels (or two of what you were going to put on the tabs). Then add as many tab panes as you want. Finally, add these panels to the JTabbedPane. You do this as normal, i.e. like this:
 

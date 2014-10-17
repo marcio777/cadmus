@@ -136,6 +136,19 @@ Bear this in mind: because `String` isn't a primitive data type, the `==` operat
 
 N.B. Don't mix up `==` and `=`. One is for comparison, the other is for assignment.
 
+On a separate point, the following code would work:
+
+```java
+int x = 5;
+int y = 4;
+
+if(x < y); {
+  System.out.println("x is smaller than y");
+}
+```
+
+Now, if you look at that closely you will see that there is a semi-colon before the opening brace of the if statement. By all means, that could be easily mistaken as an error, but is not. If you **do not** have an `else` branch with this if statement, the code would work. However, there is no need to ever use this as the statement will work perfectly well without the semi-colon. This is just a passing statement, and there is no problem if this little thing is forgotten.
+
 There are also things called logical operators, and there are another 4 of those. These are them, amd they mostly work with boolean values:
 
 | Operator        | Meaning

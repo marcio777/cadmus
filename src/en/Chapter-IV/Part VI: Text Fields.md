@@ -176,7 +176,7 @@ public static void main(String[] args) {
 	//sets a variable to be the width
 		
 	String height = JOptionPane.showInputDialog("Rectangle Height", "Enter the height of your rectangle");
-	//sets a variable to be the heiht
+	//sets a variable to be the height
 		
 	int area = Integer.parseInt(width) * Integer.parseInt(height);
 	//converts the strings into ints and works out the area

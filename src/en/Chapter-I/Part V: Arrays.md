@@ -81,4 +81,4 @@ System.out.println("There are " + primaryColours.length + " primary colours.");
 // Prints: There are 3 primary colours.
 ```
 
-[I'm feeling a bit loopy &rarr;](./Part VI: Loops.html)
+[I'm feeling a bit loopy &rarr;](./Part-VI:-Loops.html)

@@ -143,10 +143,10 @@ int n = 7 % 5;
 ```
 
 #### Ex 7 (Geometry, Physics, Chemistry, Game Programming)
-Write a programs that given four numbers *x<sub>1</sub>*, *y<sub>1</sub>*, *x<sub>2</sub>* and *y<sub>2</sub>*, that are points on a graph, and calculates the distance between them, using the formula:
+Write a program that, given four numbers *x<sub>1</sub>*, *y<sub>1</sub>*, *x<sub>2</sub>* and *y<sub>2</sub>* that are points on a graph, calculates the distance between them using the formula:
 
 ![Distance formula](../../Images/Chapter-I/Arithmetic/calculations_for_points_on_a_graph.png)
 
 This is very useful in collision dectection, in scientific models and game programming.
 
-[Let's go see some arrays &rarr;](./Part V: Arrays.html)
+[Let's go see some arrays &rarr;](./Part-V:-Arrays.html)

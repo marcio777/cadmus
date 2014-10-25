@@ -248,4 +248,4 @@ Finally, and I prefer this layout of buttons to the first time we used GridBagLa
 
 ![Different sized buttons in a gridbaglayout](../../Images/Chapter-IV/Layouts/gridbag4.png)
 
-[We've made passing mentions, but now it's time to study JTextFields in full &rarr;](./Part VI: Text Fields.html)
+[We've made passing mentions, but now it's time to study JTextFields in full &rarr;](./Part-VI:-Text-Fields.html)

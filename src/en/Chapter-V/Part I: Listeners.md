@@ -181,4 +181,4 @@ if (keyin == KeyEvent.VK_UP) {
 
 That if statement checked if the key pressed was the up arrow key, but equally you could use any other by replacing `VK_UP`. I will not be listing all of them, as it will take too long, but you can find them out on Oracle's website under the page on KeyEvent. Just know that the names are usually sensible, for example the other arrows keys are called `VK_RIGHT`,`VK_LEFT` and `VK_DOWN`.
 
-[If you think what you've seen so far is complex - you've got a surprise waiting for you &rarr;](./Part II: Complex Interfaces.html)
+[If you think what you've seen so far is complex - you've got a surprise waiting for you &rarr;](./Part-II:-Complex-Interfaces.html)

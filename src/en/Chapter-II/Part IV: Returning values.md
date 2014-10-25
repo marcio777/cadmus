@@ -100,4 +100,4 @@ The method body could be something like:
 
 Writing `a = a/2` is OK because we’ve already declared it as a  parameter of type `double` in the parameter list. Note that `a` only exists within the method body, due to its **scope**. Essentially this means is that `a` can only be used within the `divideBy2` method; if you try to do something like `a = ...` somewhere else in the program, it won’t work.
 
-[Accepting user input &rarr;](./Part V: Accepting user input from the console.html)
+[Accepting user input &rarr;](./Part-V:-Accepting-user-input-from-the-console.html)

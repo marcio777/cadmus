@@ -125,6 +125,6 @@ clear as possible.
 
 HINT: Create two labels, one that shows the intermediate results and the final result whereas the other shows what number you have entered. You can then fetch the numbers clicked from the second label. Each operation should have a boolean variable that activates itself once the operation is activated and at the next operation should do the calculations with the new number entered.
 
-[You may think that I'm heartless for making you do more, and you are correct. &rarr;](../Chapter-V/Part I: Listeners.html)
+[You may think that I'm heartless for making you do more, and you are correct. &rarr;](../Chapter-V/Part-I:-Listeners.html)
 
-[Or you can read the addendum &rarr;](./Addendum I: History of Object-Oriented Programming.html)
+[Or you can read the addendum &rarr;](./Addendum-I:-History-of-Object-Oriented-Programming.html)

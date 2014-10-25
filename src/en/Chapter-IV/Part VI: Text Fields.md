@@ -176,7 +176,7 @@ public static void main(String[] args) {
 	//sets a variable to be the width
 		
 	String height = JOptionPane.showInputDialog("Rectangle Height", "Enter the height of your rectangle");
-	//sets a variable to be the heiht
+	//sets a variable to be the height
 		
 	int area = Integer.parseInt(width) * Integer.parseInt(height);
 	//converts the strings into ints and works out the area
@@ -238,4 +238,4 @@ You will meet JSplitPanes when you get to the comples interfaces part of Chapter
 
 ![A split pane with text areas](../../Images/Chapter-IV/Text_Fields/text_area_split.png)
 
-[Now for some challenging exercises!! &rarr;](./Part VII: Exercises.html)
+[si vis pacem, para bellum &rarr;](./Part-VII:-Exercises.html)

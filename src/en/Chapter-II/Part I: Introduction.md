@@ -12,4 +12,4 @@ Methods are generally created in order to carry out some specified task, to chec
 ## Hitherto
 Hitherto all you've met is the `main` method. This is the method Java calls internally when your program is first run. However you can make others, which is what you will find out how to do next.
 
-[How to create a method &rarr;](./Part II: Methods.html)
+[How to create a method &rarr;](./Part-II:-Methods.html)

@@ -69,7 +69,11 @@ Write a program in which you work out the percentage efficiency of a light bulb 
 Hint: % efficiency = (useful power)/(total power).
 
 ## Advanced Arithmetic
-Advanced Arithmetic is one way to describe this, the other is endless Math functions. This will be mentioned again, but to import this you will need the import `java.lang.Math`. This contains a load of functions which do various mathematical things, which we will now explore.
+Advanced Arithmetic is one way to describe this, the other is endless Math functions. This will be mentioned again, but to import this you will need the import `java.lang.Math`. 
+
+However, what is an import you ask? In Java there are things called packages, which are pre-made pieces of code. For example, in the `Math` package there is the function `Math.max()`, which takes two arguments and finds the biggest one. That can be done in one line, but somewhere there is a piece of code that makes this function work. The code which makes it work is held in the package. So, you could write out the code yourself, and take a load of lines, or import the code, and save a lot of time. To import a package you have to use the following syntax: `import <insert package name here>;`.
+
+The `java.lang.Math` package contains a load of functions which do various mathematical things, which we will now explore.
 
 ### Absolute values
 The first function turns a number into an absolute value. But for that to mean anything, we need to know what an absolute value is. The basic way of saying it is that it is a number regardless of its sign. Therefore -6 = 6 just as 6 = 6. To do this you will need the function `Math.abs()` which can be used in situations such as the following:

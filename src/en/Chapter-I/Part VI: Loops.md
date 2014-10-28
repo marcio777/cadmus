@@ -33,7 +33,7 @@ Write a program, that given a number `n`, calculates whether it is a prime numbe
 Write a program, that given a number `n`, prints an array of all its factors.
 
 #### Ex 5 (Music)
-Write a program, that prints the lyrics of [99 Bottles of Beer](http://99-bottles-of-beer.net/lyrics.html), with a loop.
+Write a program, that prints the lyrics of [10 green bottles](http://www.madacademy.com/02/2012/childrens-song-lyrics/ten-green-bottles.html), with a loop.
 Extension: Add a variable to change the number of bottles.
 
 #### Ex 6 (Morphology)

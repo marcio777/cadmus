@@ -68,7 +68,7 @@ public static void main(String[] args) {
 ```
 
 ### Ex 1
-Write a method called `pizzazzYo` which accepts one integer and displays `Pizzazz` on the terminal if the integer is fully divisible by 7. If the integer isn’t divisible by 7, display `A tragic number has been entered` instead.
+Write a method called `pizzazz` which accepts one integer and displays `Pizzazz` on the terminal if the integer is fully divisible by 7. If the integer isn’t divisible by 7, display `A tragic number has been entered` instead.
 
 ### Ex 2
 Write a method called `checkEvenOdd` which accepts one integer and checks if it is odd or even. If the integer is odd, `The number is odd` will be displayed on the terminal. 

@@ -39,10 +39,7 @@ gulp.task("convert", function() {
 			},
 			renderer:renderer
 		}))
-		.pipe(rename(function(path) {
-			path.basename = path.basename.replace(/\s+/g, '-');
-			path.extname = ".html";
-		}))/*
+		/*
 		.pipe(ssg({
 			title: "Cadmus"
 		}, {
@@ -50,8 +47,9 @@ gulp.task("convert", function() {
 			baseUrl:"/.dist/"
 		}))*/
 		.pipe(es.map(function(file, cb) {
+			var x = file.path.split("/");
 			var contents = String(file.contents);
-			dust.render("./templates/page.dust", {contents:contents}, function(err, contents) {
+			dust.render("./templates/page.dust", {contents:contents, title: x[x.length -1].split(".")[0]}, function(err, contents) {
 				if(err) {
 					console.log(err);
 					cb(err);
@@ -60,6 +58,10 @@ gulp.task("convert", function() {
 					cb(null, file);
 				}
 			});
+		}))
+		.pipe(rename(function(path) {
+			path.basename = path.basename.replace(/\s+/g, '-');
+			path.extname = ".html";
 		}))
 		.pipe(gulp.dest("./dist"));
 });

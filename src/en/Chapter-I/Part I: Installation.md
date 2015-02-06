@@ -27,7 +27,7 @@ Next, click where it says "[United Kingdom] UK Mirror Service (http)":
 
 Now save the file. Once it has finished downloading, open and extract it.
 
-Now simply double click on the eclipse file and Eclipse will now open. If you have had any problems during installation, please consult your School's IT department or your teacher.
+Now simply double click on the eclipse file and Eclipse will now open.
 
 ## What this course entails
 In this course you will learn how to program in Java and then Swing.  You can think of programming as a way of making your computer do things - and anything that you create and run on your computer is called a program.  Programs can be seen as a set of instructions that get executed when you run the program. The instructions for programs cannot be written in plain English; they must be written in different languages, one of which is Java.  Anything you write in Java is called code, and lines of code look very similar to sentences.  However there are some key differences, such as that lines of code end in a semi-colon (;) not a full-stop. Eclipse is very nice and will highlight different bits of your code so that you can see the different bits of code more clearly. The code you write in Eclipse will tell your program what you want it to do when you run your code.  With that explained, on with the programming!

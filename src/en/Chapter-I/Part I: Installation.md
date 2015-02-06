@@ -32,7 +32,7 @@ Now simply double click on the eclipse file and Eclipse will now open. If you ha
 ## What this course entails
 In this course you will learn how to program in Java and then Swing.  You can think of programming as a way of making your computer do things - and anything that you create and run on your computer is called a program.  Programs can be seen as a set of instructions that get executed when you run the program. The instructions for programs cannot be written in plain English; they must be written in different languages, one of which is Java.  Anything you write in Java is called code, and lines of code look very similar to sentences.  However there are some key differences, such as that lines of code end in a semi-colon (;) not a full-stop. Eclipse is very nice and will highlight different bits of your code so that you can see the different bits of code more clearly. The code you write in Eclipse will tell your program what you want it to do when you run your code.  With that explained, on with the programming!
 
-1) Open up Eclipse (your teacher should have explained how to do this).
+1) Open up Eclipse
 It should look something like the screen shot below:
 
 ![Eclipse interface](../../Images/Chapter-I/Introduction/Opening_eclipse.png)
@@ -41,7 +41,7 @@ The green icon, which looks like the picture below, is used to run your programs
 
 ![This appears in the top bar](../../Images/Chapter-I/Introduction/Eclipse_run_button.png)
 
-Now right-click Outreach (which is the name of a folder which has been already created - your teacher should have told you how to make one) then click New->Class and you should see the following pop-up:
+Click on File->New->Java Project. Call the project name "cadmus" and click "Finish". Now right-click "cadmus" in the sidebar, then click New->Class and you should see the following pop-up:
 ![A new class](../../Images/Chapter-I/Introduction/Eclipse_new_class.png)
 
 Where it says name type in Example then click Finish, and so your screen should look like this:

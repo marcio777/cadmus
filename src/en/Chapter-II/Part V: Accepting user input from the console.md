@@ -45,12 +45,12 @@ Things to think about:
 -	What sort of input would you ask the user for? Think carefully!
 -	Given we are trying to calculate the angle in a right-angled triangle, what sort of 'cases' do you have to account for?
 
-HINTS: 
-- Remember to import the `math` package
-- Also for methods in the `math` package you can refer to [the official documents](http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html)
+#### Hints 
+- Remember to import the `Math` package
+- Also for methods in the `Math` package you can refer to [the official documents](http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html)
 - The sin/tan/cos methods in Java give back a result in radians. What method (that you have previously made) will you have to utilise?
 
-### Ex 4 (Games): Guess that number:
+### Ex 4 (Games): Guess that number
 Use what you have been taught to create the game, Guess that number. The computer will generate a random number and the player will have to guess it till he/she gets it right. After each attempt the computer says whether it's higher or lower until he/she gets it right. 
 
 To generate a random number:
@@ -69,10 +69,17 @@ Add a lives element to the game so that the user only has ten or so lives to get
 ### Ex 5 (Games): Hangman
 N.B. This exercise is designed to stretch your computational thinking.
 
-Use what you have been taught to create a command line version of the game, Hangman. For the sake of simplicity display the lives as a number, rather than drawing out a pretty diagram, unless you really want to. Use `.nextLine()` coupled with `.substring()` to get a `char`. This is some of what you'll need:
+Use what you have been taught to create a command line version of the game, Hangman. For the sake of simplicity display the lives as a number, rather than drawing out a pretty diagram, unless you want to. 
 
-- A global variable to store a series of possibilites
+#### Hints
+- Use `.nextLine()` coupled with `.substring()` to get a one-letter string
+- Store all the possibilities in lower case, and then use `.toLowerCase()` on the user input
+- Have a global variable to store a series of possibilites
+- Have a global variable with the selected word
 - A variable (perhaps a boolean array) to store the characters that have been discovered
 - A method to filter out the word with underscores
+
+#### Other Resources
+- http://ascii.co.uk/art/hangman
 
 [And finally, more on classes &rarr;](./Part-VI:-Classes.html)

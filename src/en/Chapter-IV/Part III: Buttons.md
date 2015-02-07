@@ -125,17 +125,6 @@ Using these you can create things like the following:
 ### Ex 4
 Create 3 check boxes with custom names, and use ActionListener to display an appropriate message depending on which box has been checked.
 
-## Arrow Buttons
-In many games there are buttons with arrows on them that usually signify which direction the game character will move upon pressing. These buttons are also available in Java Swing. To use these you will need to import something we haven't used so far: `javax.swing.plaf.basic`. It is up to you whether you import the entire library by using `.*` at the end or just `BasicArrowButton` itself, but you will need one of them. In my experience, it is always better to import the whole library. Anyway, these buttons are different to normal buttons as in they don't need to be declared and instantiated before adding. You do it all as one. To add a arrow button to an inherited JFrame, you do the following:
-
-```java
-add(new BasicArrowButton(BasicArrowButton.NORTH));
-```
-
-That is all pretty self-explanatory, but bear in mind that `BasicArrowButton.NORTH` creates a up-facing arrow, as `WEST` would create a right-facing one. The next image is an example of all 4 of them used together. I have made these in such a way as to make them look like they would in a game. More likely than not your ones will not end up like this because I used a very complex layout that you will discover when you get to the part about layouts. Suffice to say, it can be made like this:
-
-![Arrow Buttons](../../Images/Chapter-IV/Buttons/arrow_buttons.png)
-
 ## Calling another class
 Another thing you can do with a button is display another frame on screen when it is clicked. So, for example, if I wanted a red panel to appear when I clicked a button, what should I do? Well, the first thing is to create the button and add an ActionListener, but that goes without saying. What you have to do beyond that is something like the following:
 

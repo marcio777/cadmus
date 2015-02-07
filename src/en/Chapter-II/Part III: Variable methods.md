@@ -93,15 +93,16 @@ alive = Boolean.parseBoolean(aliveAsString);
 ```
 
 ## Double methods
-Doubles have three major methods, one of which has been shown i.e. the `toString()` method. There is also the `parseDouble()` method, which I'm not going to even show because you know what it means. The third major one that Oracle itself lists is the `isNaN()` method. I do not agree that it is exclusively a double method however, because `isNaN()` stands for 'is not a number'. So, this could apply to integers as well. This outputs true if the input is not a number, and false otherwise:
+Doubles have three major methods, one of which has been shown i.e. the `toString()` method. There is also the `parseDouble()` method, which I'm not going to even show because you know what it means. The third major one is the `isNaN()` method. This outputs true if the input is not a number, and false otherwise:
 
 ```java
 String d = "3.1232";
 double myDouble = Double.parseDouble(d);
-System.out.println(myDouble.isNaN());
-//outputs false
-```
+System.out.println(Double.isNaN(myDouble)); // prints false
 
-This converts `d` into a double and then checks if it is a number. However, if d was "hrglbrgl", then it would output true.
+String f  = "hrglbrgl";
+String myOtherDouble = Double.parseDouble(f);
+System.out.println(Double.isNaN(myOtherDouble)); // prints true
+```
 
 [How to use the outputs of methods &rarr;](./Part-IV:-Returning-values.html)

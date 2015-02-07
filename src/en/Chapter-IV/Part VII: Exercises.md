@@ -11,14 +11,6 @@ When programming in Java Swing, here are a few things you want to be careful abo
 While this list of tasks may be daunting, bear in mind that all you nede can be found in this chapter and the chapters before it. You can do it. With that in mind, have a go!
 
 ### Ex 1
-Create the following window without using panels:
-
-![Exercise 1](../../Images/Chapter-IV/Exercises/ex_1.png)
-
-### Ex 2 
-Create the same window but this time use panels.
-
-### Ex 3
 Create the following window:
 
 ![Exercise 3](../../Images/Chapter-IV/Exercises/ex_3.png)
@@ -27,29 +19,29 @@ Create the following window:
 You are going to have to use the following method:
 `setBorder(BorderFactory.createEmptyBorder(integer, integer, integer, integer))`. You apply it to any JPanel or JFrame and it creates an inner empty border with the parameters (top, left, bottom, right).
 
-### Ex 4
+### Ex 2
 Create the following window:
 
 ![Exercise 4](../../Images/Chapter-IV/Exercises/ex_4.png)
 
-### Ex 5
+### Ex 3
 Create a program that through the command line asks for an input which will then be added to a GUI. E.g.: If I input "Hello there" the following is displayed:
 
 ![Exercise 5](../../Images/Chapter-IV/Exercises/ex_5.png)
 
 Hint: you may want to have a quick look at how to use scanner again.
 
-### Ex 6
+### Ex 4
 Create the following window:
 
 ![Exercise 6](../../Images/Chapter-IV/Exercises/ex_6.png)
 
-### Ex 7
+### Ex 5
 Create the following GUI. If the left button is clicked, it should open a new red window and close the main window. If the right button is clicked a blue window should open and the main window should close:
 
 ![Exercise 7](../../Images/Chapter-IV/Exercises/ex_7.png)
 
-### Ex 8
+### Ex 6
 Create the following window, and if the button is clicked it should create 10 red simple windows at 10 random locations (have fun closing them afterwards):
 
 ![Exercise 8](../../Images/Chapter-IV/Exercises/ex_8_1.png)
@@ -60,35 +52,35 @@ Create the following window, and if the button is clicked it should create 10 re
 - The random method is `Math.random()` it returns a double value between 0 and 1. Therefore, following the formula **minimum + (int)(Math.random()*maximum)** returns you a random integer between the minimum and maximum.
 - The method `setLocation(integer, integer)` is applied to JFrames and it sets their location at the specified coordinates.
 
-### Ex 9
+### Ex 7
 Create the following window:
 
 ![Exercise 9](../../Images/Chapter-IV/Exercises/ex_9.png)
 
 Hint: you can set the background of a JTextArea just like you would for a JPanel or a JFrame.
 
-### Ex 10
+### Ex 8
 Create the following window, and when the button is clicked it should change the question "how old are you?" to a phrase related to the age. E.g. if I write "18" the text is changed to "have you started UCAS?":
 
 ![Exercise 10](../../Images/Chapter-IV/Exercises/ex_10.png)
 
-### Ex 11
+### Ex 9
 Write a program that checks if a number is prime or not. You might want to create a method that returns a boolean if a number is prime or not:
 
 ![Exercise 11](../../Images/Chapter-IV/Exercises/ex_11_1.png)
 ![Exercise 11](../../Images/Chapter-IV/Exercises/ex_11_2.png)
 
-### Ex 12
+### Ex 10
 Inspiring yourself from exercise 11 create a program that displays the first 20 prime numbers. You will want to use JTextAreas:
 
 ![Exercise 12](../../Images/Chapter-IV/Exercises/ex_12_1.png)
 
 ![Exercise 12](../../Images/Chapter-IV/Exercises/ex_12_2.png)
 
-### Ex 13
+### Ex 11
 Create a program that after asking you to choose between a temperature converter or an angle converter either displays an angle converter (degree/radian) or a temperature converter (the same as Part IV) based on what the user chose.
 
-### Ex 14
+### Ex 12
 Create a program that, using scanner, asks you to input positive numbers until you input a negative one, after which it creates a GUI with the following information: 
 - the minimum value 
 - the maximum value 
@@ -98,7 +90,7 @@ E.g. if you enter these numbers: 1.1, 2.3, 5.6, 7.8, -1 you have this returned t
 
 ![Exercise 15](../../Images/Chapter-IV/Exercises/ex_15.png)
 
-### Ex 15
+### Ex 13
 Create a method calculator just like this one:
 
 ![Exercise 16](../../Images/Chapter-IV/Exercises/ex_16_1.png)
@@ -108,7 +100,7 @@ The two methods here are the square root and cosine.
 
 HINT: For cosine apply the method `Math.cos(integer)`.
 
-### Ex 16-19
+### Ex 14-17
 Throughout these next exercises you will create the following calculator:
 
 ![Exercises 17-20](../../Images/Chapter-IV/Exercises/ex_17-20.png)

@@ -49,7 +49,7 @@ Create the following window, and if the button is clicked it should create 10 re
 ![Exercise 8](../../Images/Chapter-IV/Exercises/ex_8_2.png)
 
 **Tools:**
-- The random method is `Math.random()` it returns a double value between 0 and 1. Therefore, following the formula **minimum + (int)(Math.random()*maximum)** returns you a random integer between the minimum and maximum.
+- Generating random numbers is covered in Chapter II, Part V, Exercise 4
 - The method `setLocation(integer, integer)` is applied to JFrames and it sets their location at the specified coordinates.
 
 ### Ex 7

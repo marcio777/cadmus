@@ -36,6 +36,6 @@ In many games there are buttons with arrows on them that usually signify which d
 add(new BasicArrowButton(BasicArrowButton.NORTH));
 ```
 
-That is all pretty self-explanatory, but bear in mind that `BasicArrowButton.NORTH` creates a up-facing arrow, as `WEST` would create a right-facing one. The next image is an example of all 4 of them used together. I have made these in such a way as to make them look like they would in a game. More likely than not your ones will not end up like this because I used a very complex layout that you will discover when you get to the part about layouts. Suffice to say, it can be made like this:
+That is all pretty self-explanatory, but bear in mind that `BasicArrowButton.NORTH` creates a up-facing arrow, as `WEST` would create a right-facing one. The next image is an example of all 4 of them used together. I have made these in such a way as to make them look like they would in a game:
 
 ![Arrow Buttons](../../Images/Chapter-IV/Buttons/arrow_buttons.png)

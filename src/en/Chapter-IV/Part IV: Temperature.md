@@ -38,7 +38,7 @@ Set the text of label to farenheitValue.
 #### Help
 - To get the value of `input`, use the `getText()` method.
 - You must remember to use `Integer.parseInt()` and `Integer.toString()` appropriately.
-- To do a degree symbol in Java use `\u00b0` - I know it is weird.
+- To do a degree symbol in Java use `"\u00b0"` - I know it is weird.
 
 #### Extension
 Modify the code to convert Farenheit to Celsius. You will have to add another button, and use `.getSource()` in `actionPerformed` to check which button was pressed.

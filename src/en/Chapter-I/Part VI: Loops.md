@@ -23,7 +23,7 @@ So in the brackets of the for loop we initialise a variable called `n` to 0, and
 Use a loop of your choice to print out all the multiples of 9 within the range 0-108.
 Hint: x is a multiple of 9 if `x % 9` is 0.
 
-### Ex 2 (Maths)
+#### Ex 2 (Maths)
 Modify the last exercise so that you print the sum of all the multiples of 9. Hint: You will need to use `+=`.
  
 #### Ex 3 (Maths)

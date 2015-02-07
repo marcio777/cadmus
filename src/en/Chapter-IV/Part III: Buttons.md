@@ -129,12 +129,10 @@ Create 3 check boxes with custom names, and use ActionListener to display an app
 Another thing you can do with a button is display another frame on screen when it is clicked. So, for example, if I wanted a red panel to appear when I clicked a button, what should I do? Well, the first thing is to create the button and add an ActionListener, but that goes without saying. What you have to do beyond that is something like the following:
 
 ```java
-btn1.addActionListener(new ActionListener () {
-	public void actionPerformed(ActionEvent e) {
-		RedPanel red = new RedPanel();
-		red.setVisible(true);
-	}
-});
+public void actionPerformed(ActionEvent e) {
+	RedPanel red = new RedPanel();
+	red.setVisible(true);
+}
 ```
 
 That code will call another class, or another file in the same folder to put it in other words, and set it to be visible. This particular file is called `RedPanel`, and I gave it the identifier `red`. However, this file needs to exist, and it can be like the following:

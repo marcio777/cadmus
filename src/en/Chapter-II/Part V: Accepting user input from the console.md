@@ -1,4 +1,4 @@
-Accepting user input from the console
+Accepting user input
 ===
 
 In order to accept user input from the console, one must first import `java.util.Scanner`. Then have some statement such as `System.out.println("Enter number:");` in order to prompt the user to enter a number. Otherwise they won’t know! Then instantiate a new `Scanner` object by following this rule: 
@@ -35,7 +35,9 @@ if(myScan.hasNextInt()) {
 Create a method that will continually prompt the user for an integer until a valid integer is entered. That valid integer is a multiple of 13.
 
 ### Ex 2 (Maths)
-Modify Ex 4 of Part IV, so that the method can now calculate any side of a triangle given two of its sides are known. 
+Write a program to calculate a person's Body Mass Index (or BMI).
+
+BMI = weight / height&#178;
 
 ### Ex 3 (Maths)
 Following the method created on right-angled triangles, extend this by creating another method which calculates the angle of a right-angled triangle given the lengths of two of its sides and returns this value in degrees.

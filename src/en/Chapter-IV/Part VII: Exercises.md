@@ -86,14 +86,9 @@ Inspiring yourself from exercise 11 create a program that displays the first 20 
 ![Exercise 12](../../Images/Chapter-IV/Exercises/ex_12_2.png)
 
 ### Ex 13
-Create the following window that converts values of temperature:
-
-![Exercise 13](../../Images/Chapter-IV/Exercises/ex_13.png)
+Create a program that after asking you to choose between a temperature converter or an angle converter either displays an angle converter (degree/radian) or a temperature converter (the same as Part IV) based on what the user chose.
 
 ### Ex 14
-Just like the previous exercise, create a program that after asking you to choose between a temperature converter or an angle converter either displays an angle converter (degree/radian) or a temperature converter (the same as above) based on what the user chose.
-
-### Ex 15
 Create a program that, using scanner, asks you to input positive numbers until you input a negative one, after which it creates a GUI with the following information: 
 - the minimum value 
 - the maximum value 
@@ -103,7 +98,7 @@ E.g. if you enter these numbers: 1.1, 2.3, 5.6, 7.8, -1 you have this returned t
 
 ![Exercise 15](../../Images/Chapter-IV/Exercises/ex_15.png)
 
-### Ex 16
+### Ex 15
 Create a method calculator just like this one:
 
 ![Exercise 16](../../Images/Chapter-IV/Exercises/ex_16_1.png)
@@ -113,7 +108,7 @@ The two methods here are the square root and cosine.
 
 HINT: For cosine apply the method `Math.cos(integer)`.
 
-### Ex 17-20
+### Ex 16-19
 Throughout these next exercises you will create the following calculator:
 
 ![Exercises 17-20](../../Images/Chapter-IV/Exercises/ex_17-20.png)

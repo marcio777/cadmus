@@ -94,7 +94,7 @@ Create a frame with six buttons that are oriented using the grid layout. You wil
 
 ![The grid layout in Java](../../Images/Chapter-IV/Layouts/the_grid_layout.png)
 
-### Ex 3: Tic-Tac-Toe
+### Ex 4: Tic-Tac-Toe
 Create a game of tic-tac-toe, where a human plays against a computer. Use the code from the last exercise to create a 3x3 grid of buttons. Set the height and width of the frame to be identical, so the height and width of the buttons are identical. The buttons should contain no text until they are clicked. When they are clicked they should change to X, and the button should be disabled (using the `setEnabled()` method). Then the computer takes its turn, and selects an (empty) button, turning its contents to O. Then the human goes again until either the person or the computer wins (or there is a draw), at which point use `JOptionPane` to display a message and disable all buttons.
 
 To create the artifical intelligence i.e. to calculate what the computer does, use the following algorithm:

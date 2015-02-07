@@ -44,7 +44,7 @@ System.out.println(a.substring(0,1));
 As a note, you can also use substring where you only input one index and the string keeps everything after and including the value of that index.
 
 ### indexOf
-Searches a string for another string. If the string cannot be found, -1 is returned. 
+Searches a string for another string and returns the position at which it starts. If the string cannot be found, -1 is returned. 
 
 ```java
 String needle = "world";

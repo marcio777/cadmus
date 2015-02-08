@@ -49,7 +49,7 @@ Hint: Power (W) = Current * Voltage
 
 #### Ex 2 (Physics)
 Write a program to work out the kinetic energy of an object with a mass of 500kg that has a velocity of 12 m/s, and print the result.
-Hint: Kinetic Energy = 0.5 * Mass * (Velocity)<sup>2</sup>
+Hint: Kinetic Energy = 0.5 \* Mass \* (Velocity)<sup>2</sup>
 
 #### Ex 3 (Physics)
 Write a program to answer the following physics question and print the result.  If a car has a mass of 800 kg and moves with a velocity of 25 m/s, what force is needed to stop the car in 50 metres?

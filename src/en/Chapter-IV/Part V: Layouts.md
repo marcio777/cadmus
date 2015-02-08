@@ -7,30 +7,27 @@ Basically, a **layout manager** is a way of presenting and displaying the elemen
 Flow Layout, which is the only layout manager you have seen before, is the simplest layout you can choose because it arranges the components one after another, going from left to right, in the order in which you add them.
 
 ```java
-import java.awt.FlowLayout;
-//you will have to do this for the other layouts using their respective imports
+import java.awt.*;
+import javax.swing.*;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-
-public class FloLayout extends JFrame{
+public class FloLayout extends JFrame {
 	JButton btn1 = new JButton("Component 1");
 	JButton btn2 = new JButton("Component 2");
 	JButton btn3 = new JButton("Component 3");
-	
+
 	public FloLayout() {
 		setLayout(new FlowLayout());
 		add(btn1);
 		add(btn2);
 		add(btn3);
-		
+
 		setTitle("The Flow Layout");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		pack();
-		//makes sure that the window is as big as the space taken up by the buttons 
+		//makes sure that the window is as big as the space taken up by the buttons
 		setVisible(true);
 	}
-	
+
 	public static void main(String[] args) {
 		new FloLayout();
 	}

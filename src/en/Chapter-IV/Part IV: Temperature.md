@@ -1,7 +1,16 @@
-Celsius to Farenheit Converter
+Temperature Converter
 ===
 
-For this part, the imports will be identical to the last part's, except for the addition of `import javax.swing.JTextField;`. Also in this part I'll give you the first few lines of **the class**, and then I'll give the rest as pseudocode, which is just normal text that you have to translate into Java yourself:
+In this part you will write the code for a temperature converter.
+
+## Stage 1
+I will give you the imports free of charge:
+```java
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+```
+The `*` means everything, so `java.awt.*` includes `java.awt.FlowLayout`, etc. You will need these imports in all the other parts as well. Also in this part I'll give you the first few lines of **the class**, and then I'll give the rest as pseudocode, which is just normal text that you have to translate into Java yourself:
 
 ```java
 JTextField input = new JTextField(15);
@@ -40,7 +49,18 @@ Set the text of label to farenheitValue.
 - You must remember to use `Integer.parseInt()` and `Integer.toString()` appropriately.
 - To do a degree symbol in Java use `"\u00b0"` - I know it is weird.
 
-#### Extension
+## Stage 2
 Modify the code to convert Farenheit to Celsius. You will have to add another button, and use `.getSource()` in `actionPerformed` to check which button was pressed.
+
+## Stage 3
+To do the final part you will have to use a `JOptionPane`. `JOptionPane` is essentially a class with lots of static methods of getting user input and displaying message. A `JOptionPane` can be used as an alert box. Here is an example:
+
+```java
+JOptionPane.showMessageDialog(this, "This is a message");
+// the first parameter is the frame to which the alert box belongs (or null if there isn't one)
+// the second parameter is the message
+```
+
+The final stage of the challenge is to show an alert box, using `JOptionPane`, if the value entered is not an integer. You will need to use a try-catch block.
 
 [That was tough - but there is no rest for the wicked; or the programmer &rarr;](./Part-V:-Layouts.html)

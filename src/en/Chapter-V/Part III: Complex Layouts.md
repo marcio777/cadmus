@@ -1,7 +1,49 @@
 Complex Layouts
 ===
 
-In Chapter IV, I mentioned four basic layouts, but they are not the only ones.
+In Chapter IV, I mentioned three basic layouts, but they are not the only ones.
+
+## The Box Layout
+The Box Layout us basically a better flow layout, because the flow layout allows for horizontal alignment of components whereas the box layout allows for that, horizontally aligned components and a better manipulation of these components. To use this layout you will need a panel and some buttons, or other components. You then have to use the following code:
+
+```java
+panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+//where panel is the name of a JPanel
+panel.add(btn1);
+panel.add(btn2);
+panel.add(btn3);
+add(panel);
+```
+
+The first line is the important one when using the Box Layout. You set the layout to the panel, as with all the others, but the contents of the parameters is what's important. The first word is the parent component i.e. the panel. Then the `BoxLayout.PAGE_AXIS` sets the components to be aligned vertically, which is one of the reasons the box layout is better than the flow layout. However if you do want to align the components horizontally, you just replace `PAGE_AXIS` with `LINE_AXIS`. Anyway, using the code above, you create something like this:
+
+![A box layout](../../Images/Chapter-IV/Layouts/plain_box_layout.png)
+
+But this is not the extent of the box layout. The first thing that we can do is separate the components. To do this you have to use the following code:
+
+```java
+panel.add(Box.createRigidArea(new Dimension(0,5)));
+```
+
+This will separate the two components that it is placed in between with a gap of '5', which can be interpreted as 5px. This is created by the `new Dimension(0,5)`, which would be replaced by `new Dimension(5,0)` if you were using the `LINE_AXIS`. The separation looks like this:
+
+![A separated box layout](../../Images/Chapter-IV/Layouts/separated_box_layout.png)
+
+One final thing that you can do with the box layout is 'glue' the components to the top or bottom of the frame. To use this you will need the following:
+
+```java
+panel.add(Box.createVerticalGlue());
+```
+
+This is placed between the first and second button, and it is a vertical glue, which, quite literally, glues everything after the first button to the bottom. If you wanted to use this with a `LINE_AXIS` then you will simply have to use this:
+
+```java
+panel.add(Box.createHorizontalGlue());
+```
+
+The vertical glue will create the following layout:
+
+![Vertically-glued box layout](../../Images/Chapter-IV/Layouts/glued_box_layout.png)
 
 ## The Card Layout
 This layout allows for two panels to occupy the same place. This is not the only way, but is the best. As a point of reference, the least experienced will use JFrames, the more experienced will use JTabbedPanes (which you will experience in Complex Interfaces) but the best will use this. To use a card layout, you have to actually declare and instantiate it - which is brand new for a layout. As a reminder:

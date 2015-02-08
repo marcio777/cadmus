@@ -10,7 +10,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 ```
-The `*` means everything, so `java.awt.*` includes `java.awt.FlowLayout`, etc. You will need these imports in all the other parts as well. Also in this part I'll give you the first few lines of **the class**, and then I'll give the rest as pseudocode, which is just normal text that you have to translate into Java yourself:
+The `*` means everything, so `java.awt.*` includes `java.awt.FlowLayout`, etc. You will need these imports in all the other parts of this chapter as well. Also in this part I'll give you the first few lines of **the class**, and then I'll give the rest as pseudocode, which is just normal text that you have to translate into Java yourself:
 
 ```java
 JTextField input = new JTextField(15);

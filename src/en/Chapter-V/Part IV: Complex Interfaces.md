@@ -2,7 +2,7 @@ Complex Interfaces
 ===
 
 ## JSplitPane
-You have known how to put an image onto the screen and add scroll bars to it if it is too big since Chapter IV part II. But, what if you want to put two images on to the screen next to each other, and want to be able to dictate just how much space each image takes up? For that purpose you can use a `JSplitPane`. This is a pane that contains two images and has a functionality with which you can change how much of the screen each image takes. To do this you will have to import `javax.swing.JSplitPane`, and will have to declare a new `JSplitPane`. Inside the parameters however, you will have to add some other things, including scroll bars (because otherwise you will not be able to dictate how much of each picture you see). The declaration will end up looking like this:
+You have known how to put an image onto the screen and add scroll bars to it if it is too big since Chapter IV part II. But, what if you want to put two images (or panels) on to the screen next to each other, and want to be able to dictate just how much space each image takes up? For that purpose you can use a `JSplitPane`. This is a pane that contains two images and has a functionality with which you can change how much of the screen each image takes. To do this you will have to import `javax.swing.JSplitPane`, and will have to declare a new `JSplitPane`. Inside the parameters however, you will have to add some other things, including scroll bars (because otherwise you will not be able to dictate how much of each picture you see). The declaration will end up looking like this:
 
 ```java
 JSplitPane split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, new JScrollPane(label1), new JScrollPane(label2));
@@ -28,6 +28,10 @@ split.setResizableWeight(0.5);
 
 Bear in mind that the 0.5 used in this example is not a necessity and can be changed. This changing is pretty intuitive if I tell you that 0.5 represents the middle of the frame.
 
+Here is an example with text areas instead of images:
+
+![A split pane with text areas](../../Images/Chapter-IV/Text_Fields/text_area_split.png)
+
 ## JTabbedPane
 Assume you have two windows, and wish to be able to switch between them at will, because they have different pieces of information for example. To do this you could use a variety of things, but one of the better ones is a `JTabbedPane`. This is not the most useful way of doing this - it would be far more useful to use the card layout. However, I think that this looks slightly better. To use a JTabbedPane you have to declare and instantiate a `JTabbedPane`, as you would do with anything else. Then you have to create two panels and two labels (or two of what you were going to put on the tabs). Then add as many tab panes as you want. Finally, add these panels to the JTabbedPane. You do this as normal, i.e. like this:
 
@@ -44,69 +48,6 @@ This will create the following if you were to put labels on the JPanels:
 
 ### Ex 1
 Create your own `JTabbedPane` with two tabs, one with a message on it and one with a button that creates a message upon clicking.
-
-## JInternalFrame
-Next on the list of random trinkets is the `JInternalFrame`. As the name suggests this is a frame inside of a frame, or, quite literally, an internal frame. To do this you will need the following imports:
-
-```java
-import javax.swing.JDesktopPane;
-import javax.swing.JFrame;
-import javax.swing.JInternalFrame;
-```
-
-You need JFrame and JInternalFrame for obvious reasons, and you need the DesktopPane for reasons that you need not delve in to. Be satisfied with the knowledge that it is necessary. To set up your internal frame, you will have to extend your JFrame as usual and then declare a DesktopPane and a JInternalFrame, with the parameters for the JInternalFrame containing the title of the internal frame. Then, inside the constructor use the following code, where 'frame' is the identifier of the JInternalFrame and 'desktop' is the identifier of, you guessed it, the DesktopPane:
-
-```java
-frame.setSize(320,240);
-frame.setVisible(true);
-
-frame.setMaximizable(true);;
-//can be maximised
-frame.setIconifiable(true);
-//can be reduced to an icon
-frame.setResizable(true);
-//can be resized
-frame.setClosable(true);
-//can be shut down
-frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
-desktop.add(frame);
-add(desktop);
-```
-
-Set up the main JFrame as usual and you can get something like this:
-
-![A JInternalFrame](../../Images/Chapter-V/Complex_Interfaces/internal_frame2.png)
-
-As a point of reference, if you were to not use the code from `setMaximizable` to `setClosable`, you would get the following:
-
-![A worse JInternalFrame](../../Images/Chapter-V/Complex_Interfaces/internal_frame1.png)
-
-## JSlider
-So, in the part labelled 'Listeners', the ChangeListener was explained in the context of JSliders. Now, you will find out how to make them. A JSlider is exactly what you think it is, and needs to be added to a JFrame, which I shouldn't have to tell you to extend by now. This is an example of declaring a JSlider:
-
-```java
-JSlider slide = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
-```
-
-The contents of the parameters are necessary for this component. The HORIZONTAL refers to the positioning of the slider i.e. horizontally or vertically. The first 0 dictates the number the slider starts at and the 255 is the number the slider ends at. The second 0 dicates where the pointer will be when you start the program. And that's pretty much it, adding that to a JFrame will create a slider. You can however further customise the slider. Including the following code in the constructor will change the slider:
-
-```java
-slide.setMajorTickSpacing(10);
-//every big number comes along every 10.
-slide.setMinorTickSpacing(1);
-//every small number is shown every 1.
-slide.setPaintLabels(true);
-//creates the numbers.
-slide.setPaintTicks(true);
-//creates the lines
-```
-
-These sliders can be added to ChangeListeners and you can create something like the following which changes the colour of a label based on the value of the slider:
-
-![A Slider at no value](../../Images/Chapter-V/Complex_Interfaces/slider1.png)
-![A Slider at a low value](../../Images/Chapter-V/Complex_Interfaces/slider2.png)
-![A Slider at a high value](../../Images/Chapter-V/Complex_Interfaces/slider3.png)
 
 ## JToolBar
 A useful tool is the JToolBar. It is exactly what it says on the tin, it is a toolbar which can have various components put onto it. To create a JToolBar you have to declare and instantiate it as usual. The, inside the main constructor, you add components to the toolbar. Bear in mind that this is position-sensitive - if you add a button, then a text field then a label, then the button will be on the left, then the text field, then the label on the right. You can therefore make something like the following:
@@ -262,16 +203,4 @@ That will add the pop-up menu to the panel or component in question, and once yo
 
 ![A pop-up menu](../../Images/Chapter-V/Complex_Interfaces/popup.png)
 
-## JColorChooser
-As a first and foremost, I have not mispelled colour in the title, but am using the official syntax for java, which spells colour in that way. Moving on, a JColorChooser is very difficult to explain without the use of an image. Nevertheless I will try, but if you can't visualise what I am, then don't worry as there will be a picture later. A colour chooser is a pre-formatted component that you choose colours from. As for what it looks like, if you've ever used a program with a 'more colours' option, then that will bring up one form or another of colour chooser. You'll recognise it when you see it. To create these you use the following code:
-
-```java
-Color colour = (Color.WHITE);
-colour = JColorChooser.showDialog(null, "A colour chooser!!", colour);
-```
-
-The first line is the declaration and instantiation of a `Color`, which has been set to white. The second line, the important one, sets `colour` to be the value of a JColorChooser with the parameters `null` (which is just there); `"A colour chooser!!"` (which is the title of the colour chooser) and `colour` (which is the colour the chooser starts with i.e. white). I would put the second line inside an ActionListener connected to a button, because you can then click the button to bring up the JColorChooser. Now that's explained, here is the elusive JColorChooser:
-
-![A colour chooser](../../Images/Chapter-V/Complex_Interfaces/colourchooser.png)
-
-[Complex Layouts &rarr;](./Part-III:-Complex-Layouts.html)
+[Finally, some extra things &rarr;](./Part-V:-Extra-Things.html)

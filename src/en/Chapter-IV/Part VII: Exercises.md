@@ -7,7 +7,7 @@ When programming in Java Swing, here are a few things you want to be careful abo
 - Do not forget to set your window to be visible.
 - Check that you have correctly added each component to their correct element.
 - Be careful that you correctly declare your layouts and that nothing oversteps.
- 
+
 While this list of tasks may be daunting, bear in mind that all you nede can be found in this chapter and the chapters before it. You can do it. With that in mind, have a go!
 
 ### Ex 1
@@ -15,7 +15,7 @@ Create the following window:
 
 ![Exercise 3](../../Images/Chapter-IV/Exercises/ex_3.png)
 
-**Tools:** 
+**Tools:**
 You are going to have to use the following method:
 `setBorder(BorderFactory.createEmptyBorder(integer, integer, integer, integer))`. You apply it to any JPanel or JFrame and it creates an inner empty border with the parameters (top, left, bottom, right).
 
@@ -81,9 +81,9 @@ Inspiring yourself from exercise 11 create a program that displays the first 20 
 Create a program that after asking you to choose between a temperature converter or an angle converter either displays an angle converter (degree/radian) or a temperature converter (the same as Part IV) based on what the user chose.
 
 ### Ex 12
-Create a program that, using scanner, asks you to input positive numbers until you input a negative one, after which it creates a GUI with the following information: 
-- the minimum value 
-- the maximum value 
+Create a program that, using scanner, asks you to input positive numbers until you input a negative one, after which it creates a GUI with the following information:
+- the minimum value
+- the maximum value
 - the average
 
 E.g. if you enter these numbers: 1.1, 2.3, 5.6, 7.8, -1 you have this returned to you:
@@ -105,13 +105,13 @@ Throughout these next exercises you will create the following calculator:
 
 ![Exercises 17-20](../../Images/Chapter-IV/Exercises/ex_17-20.png)
 
-1. Just create the layout and the design of the calculator. Try to keep your code as 
+1. Just create the layout and the design of the calculator. Try to keep your code as
 clear as possible.
 2. Try to make the plus, equal and reset button operational.
 3. Apply the same technique as previously and make all the buttons active.
 
 HINT: Create two labels, one that shows the intermediate results and the final result whereas the other shows what number you have entered. You can then fetch the numbers clicked from the second label. Each operation should have a boolean variable that activates itself once the operation is activated and at the next operation should do the calculations with the new number entered.
 
-[You may think that I'm heartless for making you do more, and you are correct. &rarr;](../Chapter-V/Part-I:-Listeners.html)
+[You may think that I'm heartless for making you do more, and you are correct. &rarr;](../Chapter-V/Part-I:-Form-Controls.html)
 
 [Or you can read the addendum &rarr;](./Addendum-I:-History-of-Object-Oriented-Programming.html)

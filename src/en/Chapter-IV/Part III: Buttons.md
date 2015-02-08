@@ -77,52 +77,14 @@ Doing this will set the button to have an image on it instead of text. Add a pan
 
 ![CUTE KITTEN BUTTON!!!!!!](../../Images/Chapter-IV/Buttons/image_buttons.png)
 
-And yes, you have permission to scream 'CUUUUUUUUTTTTEEEEE' in a very high-pitched voice. 
+And yes, you have permission to scream 'CUUUUUUUUTTTTEEEEE' in a very high-pitched voice.
 
-### Ex 2 
+### Ex 2
 Make a JButton yourself. Have it change a label from "No buttons pressed" to "The button has been pressed" using the ActionListener. If, you want a challenge, add more than one button or make them contain pictures.
 
 N.B. not all pictures require a tag of 'cute'.
 
-## JRadioButtons
-A radio button is a button that you often see on multiple choice quizzes, the ones that are circular and fill in when you click them. To create these you have to use `JRadioButtons`, which work exactly the same as normal buttons. To create one you would have to do this:
-
-```java
-JRadioButton btn1 = new JRadioButton("One");
-//where "One" is the label of the button.
-```
-
-Adding this to the JFrame will create a radio button. These buttons also interact with ActionListener. However, what use would a radio button be if you could click more than one at the same time? Anything that requires only one option being selected would be broken. To fix this you have to add the buttons ot a `ButtonGroup`. This makes sure that only one option works at a time. The following code would be used:
-
-```java
-ButtonGroup buttons = new ButtonGroup();
-```
-
-to create the buttongroup, and then:
-
-```java
-buttons.add(btn1);
-```
-
-would be used in the constructor to add the button to the button group. Therefore the following would be outputted:
-
-![Radio buttons](../../Images/Chapter-IV/Buttons/radio.png)
-
 ### Ex 3
-Make 3 radio buttons with different names of subjects (History, Computing, Maths etc.) and have a JLabel ask which is the user's favourite. Also have the JLabel respond to that with an appropriate message.
-
-## JCheckBoxes
-Check boxes are exactly the same a radio buttons, only look slightly different. These, instead of becoming a filled circle upon  being clicked, become a ticked box. To use these you will require a ButtonGroup, as before, and to import JCheckBoxes. These also interact with ActionListeners. The code for these is pretty intuitive, but I'll display it anyway:
-
-```java
-JCheckBox one = new JCheckBox("Noodles");
-```
-
-Using these you can create things like the following:
-
-![Some check boxes](../../Images/Chapter-IV/Buttons/check_boxes.png)
-
-### Ex 4
 Create 3 check boxes with custom names, and use ActionListener to display an appropriate message depending on which box has been checked.
 
 ## Calling another class
@@ -150,7 +112,7 @@ public class RedPanel extends JDialog {
 }
 ```
 The astute will notice two things different with this. 1) There is no main method. This is because it is being called from another class, so that main method was the first to be looked at by the computer. Therefore it is not needed. 2) The class extends `JDialog`, not JFrame. This is just something that you have to accept - a JFrame would not work, so we use JDialog. Using this something like this can be made:
- 
+
 ![Red panel button](../../Images/Chapter-IV/Buttons/calling_panel.png)
 
 [I hope you've been listening - we've got a challenge coming up &rarr;](./Part-IV:-Temperature.html)

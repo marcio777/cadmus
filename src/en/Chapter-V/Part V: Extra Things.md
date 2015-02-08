@@ -39,3 +39,15 @@ add(new BasicArrowButton(BasicArrowButton.NORTH));
 That is all pretty self-explanatory, but bear in mind that `BasicArrowButton.NORTH` creates a up-facing arrow, as `WEST` would create a right-facing one. The next image is an example of all 4 of them used together. I have made these in such a way as to make them look like they would in a game:
 
 ![Arrow Buttons](../../Images/Chapter-IV/Buttons/arrow_buttons.png)
+
+## JColorChooser
+As a first and foremost, I have not mispelled colour in the title, but am using the official syntax for java, which spells colour in that way. Moving on, a JColorChooser is very difficult to explain without the use of an image. Nevertheless I will try, but if you can't visualise what I am, then don't worry as there will be a picture later. A colour chooser is a pre-formatted component that you choose colours from. As for what it looks like, if you've ever used a program with a 'more colours' option, then that will bring up one form or another of colour chooser. You'll recognise it when you see it. To create these you use the following code:
+
+```java
+Color colour = (Color.WHITE);
+colour = JColorChooser.showDialog(null, "A colour chooser!!", colour);
+```
+
+The first line is the declaration and instantiation of a `Color`, which has been set to white. The second line, the important one, sets `colour` to be the value of a JColorChooser with the parameters `null` (which is just there); `"A colour chooser!!"` (which is the title of the colour chooser) and `colour` (which is the colour the chooser starts with i.e. white). I would put the second line inside an ActionListener connected to a button, because you can then click the button to bring up the JColorChooser. Now that's explained, here is the elusive JColorChooser:
+
+![A colour chooser](../../Images/Chapter-V/Complex_Interfaces/colourchooser.png)

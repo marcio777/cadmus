@@ -17,6 +17,7 @@
   </head>
   <body>
 	<main class="markdown-body">
+    <a href="/">&#8592; Home</a>
 	  {contents|s}
 	</main>
   </body>

@@ -115,4 +115,4 @@ Finally, and I prefer this layout of buttons to the first time we used GridBagLa
 
 ![Different sized buttons in a gridbaglayout](../../Images/Chapter-IV/Layouts/gridbag4.png)
 
-[Finally, some extra things &rarr;](./Part-IV:-Extra-Things.html)
+[If you think what you've seen so far is complex - you've got a surprise waiting for you &rarr;](./Part-IV:-Complex-Interfaces.html)

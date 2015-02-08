@@ -4,32 +4,7 @@ Text Fields
 In Java there are are 3 main types of text field - the normal textfield, the password field and the drop-down menu. What these are and how they work will be explained in this chapter. As an introduction, if there is any doubt as to what a text field is, a text field is a box that lets the user input a small amount of text. As a passing statement, these textfields interact with the layouts introduced in that last part just as buttons do.
 
 ## JTextField
-What a normal text field is was just explained, it is a way for the user to input text. (Identical to the `<input>` tag in HTML). To create one, copy out the following:
-
-```java
-import javax.swing.JFrame;
-import javax.swing.JTextField;
-
-public class TexFields extends JFrame {
-	JTextField normal = new JTextField();
-	// The empty brackets can be filled with an integer to dictate the preferred size of the text field.
-	
-	public TexFields() {
-		add(normal);
-		
-		setTitle("Normal Text Box");
-		setVisible(true);
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		pack();
-	}
-	
-	public static void main(String[] args) {
-		new TexFields();
-	}
-}
-```
-
-This displays a normal text field that text can be inputted into. Inside the brackets on Line 5 you can enter a few things. If you enter a string, you will create the background text that you first get when you run the program. If you were to enter an integer, this would dictate the size of the text field. You can enter both of course, and you would do so using the following code:
+You already know what a standard `JTextField` is. There several constructors for a JTextField. You can pass in a string, which will be the default text. You can pass in a number which will be the width. Or you can pass in both.
 
 ```java
 JTextField normal = new JTextField("Your word here", 15);
@@ -39,7 +14,7 @@ This would output the following:
 
 ![A text field with its size and underlay designated](../../Images/Chapter-IV/Text_Fields/better_text_field.png)
 
-You can also make these text fields uneditable. Therefore you could, theoretically, have the user input something and then lock the text field to prevent anything else being inputted. You can stop the text fields accepting text using the following code:
+You can also make these text fields uneditable:
 
 ```java
 normal.setEditable(false);
@@ -66,7 +41,7 @@ Create a password field and see what happens when you try to type something in. 
 ![A password field](../../Images/Chapter-IV/Text_Fields/password_field.png)
 
 ## JComboBox
-A JComboBox, otherwise known as a drop-down menu, is a text field that lets you choose from a preset list of options that, quite literally, drop down when you click a button. To do this you will have to import and use `JComboBox`. To use this you will have to declare an array which includes all of the options. You can see how to declare an array in Chapter 1 Part V. You will then have to put the name of the array in the parameters that the `JComboBox` has. In other words: 
+A JComboBox, otherwise known as a drop-down menu, is a text field that lets you choose from a preset list of options that, quite literally, drop down when you click a button. To do this you will have to import and use `JComboBox`. To use this you will have to declare an array which includes all of the options. You can see how to declare an array in Chapter 1 Part V. You will then have to put the name of the array in the parameters that the `JComboBox` has. In other words:
 
 ```java
 JComboBox DoctorWho = new JComboBox(monsters);
@@ -116,7 +91,7 @@ The `SpinnerListModel` is need for that to work, as opposed to `SpinnerNumberMod
 
 ![A customised spinner](../../Images/Chapter-IV/Text_Fields/day_spin.png)
 
-The final thing I want to tell you about including JSpinners is how to make one that cycles through the date. To do this you will need to import both `Date` and `Calendar`. Then you copy out the following code and you have created a date-cycling spinner: 
+The final thing I want to tell you about including JSpinners is how to make one that cycles through the date. To do this you will need to import both `Date` and `Calendar`. Then you copy out the following code and you have created a date-cycling spinner:
 
 ```java
 Date todaysDate = new Date();
@@ -165,7 +140,7 @@ JOptionPanes are another option for accepting the user's input. They are essenti
 
 ```java
 width = JOptionPane.showInputDialog("Width", "Enter the width");
-//the first parameter is the title and the second is the background text. 
+//the first parameter is the title and the second is the background text.
 ```
 
 This will create a pane, you don't have to add it, and it stores the input as soon as the OK button is pressed. For that matter, it comes pre-styled and with its own buttons. Whereas you would have to set a title; set the frame to be visible; set a DefaultCloseOperation etc with a JTextField, you don't have to do any of that with JOptionPanes. You can therefore use these easily. Since they can be used to manipulate inputs, they could be compared to methods. For example, you could use a method to work out the area of a rectangle based on two inputs in Eclipse. This, however, looks bad, and the user needs to have a GUI to work with. So, a JOptionPane could be used as a method that looks good and does not require access to the base code. To work out the area of a rectangle based on the inputs the user gives using a JoptionPane can be done with this code:
@@ -174,21 +149,21 @@ This will create a pane, you don't have to add it, and it stores the input as so
 public static void main(String[] args) {
 	String width = JOptionPane.showInputDialog("Rectangle Width", "Enter the width of your rectangle");
 	//sets a variable to be the width
-		
+
 	String height = JOptionPane.showInputDialog("Rectangle Height", "Enter the height of your rectangle");
 	//sets a variable to be the height
-		
+
 	int area = Integer.parseInt(width) * Integer.parseInt(height);
 	//converts the strings into ints and works out the area
-		
+
 	String answer = "The area is " + area + "cm²";
 	//sets a variable to be what the JOptionPane will output
-		
+
 	JOptionPane.showMessageDialog(null, answer, "The Area", JOptionPane.INFORMATION_MESSAGE);
-	// sets what the JOptionPane will output 
+	// sets what the JOptionPane will output
 	// null is needed
 	// answer is the variable; "The Area" is the title and the final part is the image shown (see example)
-		
+
 	System.exit(0); //Closes the Pane on exit.
 }
 ```
@@ -225,17 +200,7 @@ This will create a functioning JTextArea (if you combine it with other things of
 ### Ex 8
 Create your own text are and write something extended into it.
 
-## Scrollable JTextArea
-These text areas are better than text fields, but one major problem is that they have no borders. In other words you can continue writing off of the page and not be able to access it. To fix this you can use scroll bars. You may remember these from making images with scroll bars, and it works exactly the same. You simply set the JScrollPane to be the name of the JTextArea and then add the JScrollPane. Using this you can create the following:
-
-![A scrollable text area](../../Images/Chapter-IV/Text_Fields/scroll_text_area.png)
-
-### Ex 9 
-Create another text area, only this time include scroll bars.
-
-## Split Text Areas
-You will meet JSplitPanes when you get to the comples interfaces part of Chapter V, and they are used to display two things on a screen, lettting you dictate how much space each one takes. So, as you can probably guess from the title, they can also apply to JTextAreas. Let it be known that they work exactly the same as the code you will see when you come across them in chapter V. Therefore be content with knowing that it is possible, at least until you get to the relevant part. As a taster, you can produce this:
-
-![A split pane with text areas](../../Images/Chapter-IV/Text_Fields/text_area_split.png)
+### Ex 9
+These text areas are better than text fields, but one major problem is that they have no borders. In other words you can continue writing off of the page and not be able to access it. Create another text area, only this time include scroll bars. In Part II, we showed you how to use images with scroll bars; here it works the same. Simply set the JScrollPane to be the name of the JTextArea and then add the JScrollPane.
 
 [si vis pacem, para bellum &rarr;](./Part-VII:-Exercises.html)

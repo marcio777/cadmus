@@ -49,7 +49,7 @@ gulp.task("convert", function() {
 		.pipe(es.map(function(file, cb) {
 			var x = file.path.split("/");
 			var contents = String(file.contents);
-			dust.render("./templates/page.dust", {contents:contents, title: x[x.length -1].split(".")[0]}, function(err, contents) {
+			dust.render("./templates/page.dust", {contents:contents, title: x[x.length -1].split(".")[0].split(":")[1]}, function(err, contents) {
 				if(err) {
 					console.log(err);
 					cb(err);

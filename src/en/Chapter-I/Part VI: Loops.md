@@ -3,21 +3,34 @@ Loops
 
 Loops are very important to programmers as they allow us to do complicated, long-winded calculations in a short amount of time.
 
-There are four main loops in Java, the **for loop**, **while loop**, **do loop**, and **array loop**.  With each loop you have an initial condition, a final condition, and a set of instructions.  The set of instructions will continue to run until the final condition is met.
+There are four main loops in Java, the **for loop**, **while loop**, **do loop**, and **array loop**. 
 
 ## For loops
+For loops are mostly used for counting up or down in steps, usually in steps of one. There are 3 parts: initialisation, a condition and a step-change.  
 
-For loops are mostly used for counting up or down in steps, usually in steps of one.  The initial condition is an integer which you can initialise to a value of your choice (most of the time we use 0 if counting up to a certain value), and the final condition is the value you want to count up or down to.  We also have a function to increase the number of steps, for increasing by one we will use ++ (as described previously), and for decreasing by one we will use --.  So now you know how a for loop works it is time to show you what one looks like.  Below is a for loop which starts at 0, counts up by 1 each step, and prints out the number of each step, until 10 steps have been reached.  (Notice the parameters of the method countTen says `void`, this is because the method does not require any parameters, and putting void is clearer than simply leaving the parameters blank).
+The initialisation is where you declare a counter to a value of your choice (most of the time we use 0 if counting up to a certain value).
+
+The condition is the statement which must be true for the loop to continue, usually a less than or greater than statement, involving the counter.  
+
+We also have a step-change part to change the counter after each iteration, for increasing by one we will use ++ (as described previously), and for decreasing by one we will use --.  So now you know how a for loop works it is time to show you what one looks like.  
+
+Below is a for loop which starts at 0, counts up by 1 each step, and prints out the number of each step, until 10 steps have been reached.
 
 ```java
-public void countTen() {
-	for(int n = 0; n <= 10; n++) {
-		System.out.println(n);
-	}
+for(int n = 0; n <= 10; n++) {
+	System.out.println(n);
 }
 ```
 
-So in the brackets of the for loop we initialise a variable called `n` to 0, and we use `n++` to increase n by 1 each step, and we continue to do this for when n is less than or equal to 10.  So, firstly the loop will run the program to check to see whether the value of n meets the final condition (n<=10), and since 0 is less than 10, n meets the condition, which means that the piece of code within the {} is run once, and then n is increased by one, then the program checks to see whether the new value of n meets the final condition, and since 1 is still less than 10 the code inside of the {} of the for loop is run once again, and this process continues until n is no longer less than or equal to 10, so the loop will stop when n is 11 (and breathe).  Once this occurs the for loop finishes and the code inside of the loop is no longer run.  Once you understand how a for loop works, the rest of the loops are fairly easy to pick up!
+Here is what will happen:
+
+1. In the brackets of the for loop we initialise a variable called `n` to 0, and we use `n++` to increase n by 1 after each iteration, and we continue to do this while `n` is less than or equal to 10.  
+2. So, at first, the loop will run the program to check to see whether the value of `n` meets the condition `n<=10`, and since 0 is less than 10, `n` meets the condition, which means that the piece of code within the {} is run once. 
+3. `n` is increased by 1. 
+4. The program checks to see whether the new value of `n` meets the condition, and since 1 is still less than 10 the code inside of the {} of the for loop is run once again.
+5. This process continues until `n` is no longer less than or equal to 10, so the loop will stop when `n` is 11 (and breathe). 
+
+Once this occurs the for loop finishes and the code inside of the loop is no longer run.  Once you understand how a for loop works, the rest of the loops are fairly easy to pick up!
 
 #### Ex 1 (Maths)
 Use a loop of your choice to print out all the multiples of 9 within the range 0-108.
@@ -27,17 +40,10 @@ Hint: x is a multiple of 9 if `x % 9` is 0.
 Modify the last exercise so that you print the sum of all the multiples of 9. Hint: You will need to use `+=`.
  
 #### Ex 3 (Maths)
-Write a program, that given a number `n`, calculates whether it is a prime number.
+Write a program, that given a number `n`, calculates whether it is a prime number. `n` should be declared at the beginning.
 
-#### Ex 4 (Maths)
-Write a program, that given a number `n`, prints an array of all its factors.
-
-#### Ex 5 (Music)
-Write a program, that prints the lyrics of [(Some) green bottles](https://www.dropbox.com/s/vufuktyobzhoy1e/Green%20bottles.txt), with a loop.
-Extension: Add a variable to change the number of bottles.
-
-#### Ex 6 (Morphology)
-Write a program that, given a word, returns the syllable count. To do this count the number of vowels including `y`, excluding two or more vowels that are in a row (dipthongs).
+#### Ex 4 (Morphology)
+Write a program that returns the syllable count of a given word. The word should be defined at the beginning. To do this count the number of vowels including `y` (unless it is at the start of a word), excluding two or more vowels that are in a row (dipthongs).
 
 ## While loops
 
@@ -72,15 +78,8 @@ while(true) {
 }
 ```
 
-#### Ex 7 (Maths)
+#### Ex 5 (Maths)
 Write a program, that prints all the multiples of a given number, while they are under a hundred.
-
-#### Ex 8 (Maths)
-The sequence of triangle numbers is generated by adding the natural numbers. So the 7th triangle number would be 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28. The first ten terms would be:
-
-1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...
-
-Use your program from Ex 4 plus a while loop, to create a program that prints the first triangular number with more than 20 factors.
 
 ## Do loops
 
@@ -107,19 +106,6 @@ public void printIntArray() {
 	for(int n : nameOfArray) {
 		System.out.println(n);
 	}
-}
-```
-
-Now that you have covered all of the different types of loops I will give you an example of a more complicated loop which will sum the numbers from 0 to 20:
-
-```java
-public void sumFirstFifteenNumbers() {
-	int sum = 0;
-	// we must initialise sum outside the loop, otherwise it would keep getting initialised to 0 each time the loop runs
-	for (int n = 0; n <= 20; n++) {
-		sum = sum + n;
-	}
-	System.out.println(sum); // this prints out the final sum
 }
 ```
 

@@ -41,7 +41,7 @@ getContentPane().setBackground(Color.YELLOW);
 
 As you can see, you can change the colour of your background using the method `setBackground(Colour)`. There are wide range of existing colours like:
 
-Color.PINK, Color.GREEN, Color.BLACK, Color.Yellow, Color.BLUE, Color.RED, Color.WHITE, Color.CYAN, Color.ORANGE
+Color.PINK, Color.GREEN, Color.BLACK, Color.YELLOW, Color.BLUE, Color.RED, Color.WHITE, Color.CYAN, Color.ORANGE
 
 N.B. American spellings apply here.
 

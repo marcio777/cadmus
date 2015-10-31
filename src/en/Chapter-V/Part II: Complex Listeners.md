@@ -1,42 +1,7 @@
 Listeners
 ===
 
-As an introduction, an **event listener** is something that listens for a certain action and then executes some code if that action takes place. You have met one before, the `ActionListener`, but there are many others.
-
-## ActionListener
-If you think back to when you discovered buttons, in that tutorial you had to write this into the class: `implements ActionListener`. Then you created another method that went along the lines of:
-
-```java
-public void actionPerformed(ActionEvent e) {
-    // code
-}
-```
-
-In this method you then coded what should happen when you press the button. Components can pass events on to action listeners by using:
-
-```java
-component.addActionListener(this); 
-// where 'component' could be the identifier of a button or any other component
-```
-
-The method `.addActionListener()` accepts any object that implements the interface `ActionListener`. Because it implements the interface `ActionListener` the event-emitting component knows the object will implement the method `actionPerformed(ActionEvent e)`.
-
-
-Overall, the `ActionListener` listens for events i.e. the clicking of a button. The listener then executes any code within the block `actionPerformed(ActionEvent e)`.
-
-## ChangeListener
-The ChangeListener is the next listener to discover. This listener is used to, rather unimaginably, listen for a change. Shock horror it is named sensibly!!!! This can be used mainly with the `JSlider`, as you will discover in the next part. A slider is a visual representation of changing a value. This listener can therefore be used to detect a change in values and execute a block of code. On that note this is the syntax required:
-
-```java
-component.addChangeListener(new ChangeListener() {
-//where 'component' is the identifier of a component, possibly a slider
-    public void stateChanged(ChangeEvent e) {
-        //code
-    }
-});
-```
-
-I will not be giving an example of this working, because you will meet this exact code when you meet JSliders. Bear in mind that if you use the above code, you do not need to implement ChangeListener. So, as a final recap, the ChangeListener listens for a change in a value and executes some code when it finds it.
+As an introduction, an **event listener** is something that listens for a certain action and then executes some code if that action takes place. You have alredy met the `ActionListener` and `ChangeListener`, but there are many others.
 
 ## MouseListener
 The MouseListener is yet another sensibly named listener which listens for the mouse doing something. This particular listener has a lot of methods to implement, namely the following:
@@ -64,7 +29,7 @@ You by no means have to memorise these, when you create the listener Eclipse wil
 ```java
 public class event implements MouseListener {
 	public void mouseClicked(MouseEvent e) {
-	
+
 	}
 }
 ```
@@ -85,53 +50,53 @@ So, what is the point of this? Well, the mouse listener can be used for a multit
 ```java
 public class colours extends JFrame{
 	JPanel panel = new JPanel();
-	
+
 	public colours() {
 		panel.setBackground(newColour());
 		add(panel);
-		
+
 		RGB e = new RGB();
 		panel.addMouseListener(e);
-		
+
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
 		setSize(300,300);
 		setTitle("Random Colours!");
 	}
-	
+
 	public Color newColour() {
 		int R = (int) (Math.random()*256);
 		int G = (int) (Math.random()*256);
 		int B = (int) (Math.random()*256);
 		return(new Color(R, G, B));
 	}
-	
+
 	public class RGB implements MouseListener {
 
 		public void mouseClicked(MouseEvent e) {
 			panel.setBackground(newColour());
-			
-			
+
+
 		}
-		
+
 		public void mouseEntered(MouseEvent e) {
-			
+
 		}
 
 		public void mouseExited(MouseEvent e) {
-			
+
 		}
 
 		public void mousePressed(MouseEvent e) {
-			
+
 		}
 
 		public void mouseReleased(MouseEvent e) {
-			
+
 		}
 
 	}
-	
+
 	public static void main (String[] args) {
 		new colours();
 	}
@@ -181,4 +146,4 @@ if (keyin == KeyEvent.VK_UP) {
 
 That if statement checked if the key pressed was the up arrow key, but equally you could use any other by replacing `VK_UP`. I will not be listing all of them, as it will take too long, but you can find them out on Oracle's website under the page on KeyEvent. Just know that the names are usually sensible, for example the other arrows keys are called `VK_RIGHT`,`VK_LEFT` and `VK_DOWN`.
 
-[If you think what you've seen so far is complex - you've got a surprise waiting for you &rarr;](./Part II: Complex Interfaces.html)
+[Complex Layouts &rarr;](./Part-III:-Complex-Layouts.html)

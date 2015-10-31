@@ -35,7 +35,7 @@ double r = p / q;
 
 If, however, `p` and `q` are integers, `r` will equal `1.0`, because the `/` operator works irresepective of anything other than `p` and `q`, and their datatypes.
 
-To multiply two integers x and y:
+Multiplying two integers x and y:
 
 ```java
 int z = x * y;
@@ -49,7 +49,7 @@ Hint: Power (W) = Current * Voltage
 
 #### Ex 2 (Physics)
 Write a program to work out the kinetic energy of an object with a mass of 500kg that has a velocity of 12 m/s, and print the result.
-Hint: Kinetic Energy = 0.5 * Mass * (Velocity)<sup>2</sup>
+Hint: Kinetic Energy = 0.5 \* Mass \* (Velocity)<sup>2</sup>
 
 #### Ex 3 (Physics)
 Write a program to answer the following physics question and print the result.  If a car has a mass of 800 kg and moves with a velocity of 25 m/s, what force is needed to stop the car in 50 metres?
@@ -64,12 +64,16 @@ Hint: The angles of a triangle must sum up to 180 degrees.
 
 A standard quadrat used in school has an area of 0.25m<sup>2</sup>. A quadrat is used to sample a random area of a field to estimate the abundance/variety/percentage coverage of a species. For a random sampling to be statistically viable, at least 3% of the area must be sampled. Write a program, given the size of an area, (say 2000m<sup>2</sup>) works out the amount of different samplings that must be done.
 
-### Ex 6 (Physics)
+#### Ex 6 (Physics)
 Write a program in which you work out the percentage efficiency of a light bulb that is supplied with 50J (Joules), and uses 2J to produce light, leaving 48J wasted as thermal energy. Then, print the result.
 Hint: % efficiency = (useful power)/(total power).
 
 ## Advanced Arithmetic
-Advanced Arithmetic is one way to describe this, the other is endless Math functions. This will be mentioned again, but to import this you will need the import `java.lang.Math`. This contains a load of functions which do various mathematical things, which we will now explore.
+Advanced Arithmetic is one way to describe this, the other is endless Math functions. This will be mentioned again, but to import this you will need the import `java.lang.Math`. 
+
+However, what is an import you ask? In Java there are things called packages, which are pre-made pieces of code. For example, in the `Math` package there is the function `Math.max()`, which takes two arguments and finds the biggest one. That can be done in one line, but somewhere there is a piece of code that makes this function work. The code which makes it work is held in the package. So, you could write out the code yourself, and take a load of lines, or import the code, and save a lot of time. To import a package you have to use the following syntax: `import <insert package name here>;`.
+
+The `java.lang.Math` package contains a load of functions which do various mathematical things, which we will now explore.
 
 ### Absolute values
 The first function turns a number into an absolute value. But for that to mean anything, we need to know what an absolute value is. The basic way of saying it is that it is a number regardless of its sign. Therefore -6 = 6 just as 6 = 6. To do this you will need the function `Math.abs()` which can be used in situations such as the following:
@@ -143,10 +147,10 @@ int n = 7 % 5;
 ```
 
 #### Ex 7 (Geometry, Physics, Chemistry, Game Programming)
-Write a programs that given four numbers *x<sub>1</sub>*, *y<sub>1</sub>*, *x<sub>2</sub>* and *y<sub>2</sub>*, that are points on a graph, and calculates the distance between them, using the formula:
+Write a program that, given four numbers *x<sub>1</sub>*, *y<sub>1</sub>*, *x<sub>2</sub>* and *y<sub>2</sub>* that are points on a graph, calculates the distance between them using the formula:
 
 ![Distance formula](../../Images/Chapter-I/Arithmetic/calculations_for_points_on_a_graph.png)
 
 This is very useful in collision dectection, in scientific models and game programming.
 
-[Let's go see some arrays &rarr;](./Part V: Arrays.html)
+[Let's go see some arrays &rarr;](./Part-V:-Arrays.html)

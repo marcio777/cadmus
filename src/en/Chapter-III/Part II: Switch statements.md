@@ -40,3 +40,5 @@ switch (myGrade) {
 ```
 
 That is not the full statement as seen above, but you get the picture.
+
+[Once you've done the next bit, errors should have much less of an impact &rarr;](./Part-III:-Try-catch-blocks.html)

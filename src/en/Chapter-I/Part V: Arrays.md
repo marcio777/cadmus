@@ -34,7 +34,7 @@ String[] girlfriends = {"Jessica", "Abbey", "Zoey", "Daisy"};
 ```
 
 ### Ex 1
-Create an array containing consisting of all your (imaginery) boyfriends/girlfriends.
+Create an array containing consisting of all your (real or imaginery) boyfriends/girlfriends.
 
 ## Accessing Arrays
 You access arrays in Java using square bracket notation. For instance:
@@ -81,4 +81,4 @@ System.out.println("There are " + primaryColours.length + " primary colours.");
 // Prints: There are 3 primary colours.
 ```
 
-[I'm feeling a bit loopy &rarr;](./Part VI: Loops.html)
+[I'm feeling a bit loopy &rarr;](./Part-VI:-Loops.html)

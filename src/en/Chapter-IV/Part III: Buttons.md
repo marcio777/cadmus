@@ -62,7 +62,7 @@ These are what should be outputted at the start; when the first button is clicke
 ![What happens when button 2 is clicked](../../Images/Chapter-IV/Buttons/btn2_clicked.png)
 
 ### Ex 1
-Use what you have been taught here to create a random number generator that generates a number between 1 to 100.
+Use what you have been taught here to create a random number generator that generates a number between 1 to 100 when a button is pressed.
 
 ## Adding Images
 These buttons are all well and good, but to be honest, they don't look very good. For that reason, it's time to find out how to add images to buttons. You do this in much the same way that you add images to labels, using ImageIcons. So, to do this you would include the following code:
@@ -77,75 +77,24 @@ Doing this will set the button to have an image on it instead of text. Add a pan
 
 ![CUTE KITTEN BUTTON!!!!!!](../../Images/Chapter-IV/Buttons/image_buttons.png)
 
-And yes, you have permission to scream 'CUUUUUUUUTTTTEEEEE' in a very high-pitched voice. 
+And yes, you have permission to scream 'CUUUUUUUUTTTTEEEEE' in a very high-pitched voice.
 
-### Ex 1 
+### Ex 2
 Make a JButton yourself. Have it change a label from "No buttons pressed" to "The button has been pressed" using the ActionListener. If, you want a challenge, add more than one button or make them contain pictures.
 
 N.B. not all pictures require a tag of 'cute'.
 
-## JRadioButtons
-A radio button is a button that you often see on multiple choice quizzes, the ones that are circular and fill in when you click them. To create these you have to use `JRadioButtons`, which work exactly the same as normal buttons. To create one you would have to do this:
-
-```java
-JRadioButton btn1 = new JRadioButton("One");
-//where "One" is the label of the button.
-```
-
-Adding this to the JFrame will create a radio button. These buttons also interact with ActionListener. However, what use would a radio button be if you could click more than one at the same time? Anything that requires only one option being selected would be broken. To fix this you have to add the buttons ot a `ButtonGroup`. This makes sure that only one option works at a time. The following code would be used:
-
-```java
-ButtonGroup buttons = new ButtonGroup();
-```
-
-to create the buttongroup, and then:
-
-```java
-buttons.add(btn1);
-```
-
-in the constructor to add the button to the button group.Therefore the following would be outputted:
-
-![Radio buttons](../../Images/Chapter-IV/Buttons/radio.png)
-
-### Ex 2
-Make 3 radio buttons with different names of subjects (History, Computing, Maths etc.) and have a JLabel ask which is the user's favourite. Also have the JLabel respond to that with an appropriate message.
-
-## JCheckBoxes
-Check boxes are exactly the same a radio buttons, only look slightly different. These, instead of becoming a filled circle upon  being clicked, become a ticked box. To use these you will require a ButtonGroup, as before, and to import JCheckBoxes. These also interact with ActionListeners. The code for these is pretty intuitive, but I'll display it anyway:
-
-```java
-JCheckBox one = new JCheckBox("Noodles");
-```
-
-Using these you can create things like the following:
-
-![Some check boxes](../../Images/Chapter-IV/Buttons/check_boxes.png)
-
 ### Ex 3
 Create 3 check boxes with custom names, and use ActionListener to display an appropriate message depending on which box has been checked.
 
-## Arrow Buttons
-In many games there are buttons with arrows on them that usually signify which dirsction the game character will move upon pressing. These buttons are also available in Java Swing. To use these you will need to import something we haven't used so far: `javax.swing.plaf.basic`. It is up to you whether you import the entire library by using `.*` at the end or just `BasicArrowButton` itself, but you will need one of them. In my experience, it is always better to import the whole library. Anyway, these buttons are different to normal buttons as in they don't need to be declared and instantiated before adding. You do it all as one. To add a arrow button to an inherited JFrame, you do the following:
-
-```java
-add(new BasicArrowButton(BasicArrowButton.NORTH));
-```
-
-That is all pretty self-explanatory, but bear in mind that `BasicArrowButton.NORTH` creates a up-facing arrow, as `WEST` would create a right-facing one. The next image is an example of all 4 of them used together. I have made these in such a way as to make them look like they would in a game. More likely than not your ones will not end up like this because I used a very complex layout that you will discover when you get to the part about layouts. Suffice to say, it can be made like this:
-
-![Arrow Buttons](../../Images/Chapter-IV/Buttons/arrow_buttons.png)
-
 ## Calling another class
-Another thing you can do with a button is display another frame on screen when it is clicked. So, for example, if I wanted a red panel to appear whn I clicked a button, what should I do? Well, the first thing is to create the button and add an ActionListener, but that goes without saying. What you have to do beyond that is something like the following:
+Another thing you can do with a button is display another frame on screen when it is clicked. So, for example, if I wanted a red panel to appear when I clicked a button, what should I do? Well, the first thing is to create the button and add an ActionListener, but that goes without saying. What you have to do beyond that is something like the following:
 
 ```java
-btn1.addActionListener(new ActionListener () {
-	public void actionPerformed(ActionEvent e) {
-		RedPanel red = new RedPanel();
-		red.setVisible(true);
-	}
-});
+public void actionPerformed(ActionEvent e) {
+	RedPanel red = new RedPanel();
+	red.setVisible(true);
+}
 ```
 
 That code will call another class, or another file in the same folder to put it in other words, and set it to be visible. This particular file is called `RedPanel`, and I gave it the identifier `red`. However, this file needs to exist, and it can be like the following:
@@ -163,7 +112,7 @@ public class RedPanel extends JDialog {
 }
 ```
 The astute will notice two things different with this. 1) There is no main method. This is because it is being called from another class, so that main method was the first to be looked at by the computer. Therefore it is not needed. 2) The class extends `JDialog`, not JFrame. This is just something that you have to accept - a JFrame would not work, so we use JDialog. Using this something like this can be made:
- 
+
 ![Red panel button](../../Images/Chapter-IV/Buttons/calling_panel.png)
 
-[I hope you've been listening - we've got a challenge coming up &rarr;](./Part IV: Temperature.html)
+[I hope you've been listening - we've got a challenge coming up &rarr;](./Part-IV:-Temperature.html)

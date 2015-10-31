@@ -7,7 +7,7 @@ Try typing this into Eclipse and see what happens:
 System.out.println(3/0);
 ```
 
-If you have done this right, you should get a lot of red writing appearing in your console. This because dividing by 0 is not possible, and the computer comes up with an error. So, if you were to input this into a program then god knows what might happen. Basically the computer will not know what to do and will ignore it, or in the most extreme cases, close. But, a good program designer will want to catch these errors and tell the user about what went wrong. To do this you will need a *try-catch block*. A try catch block is very easy to use because you only need to wrap the code in it. By that statement I mean you need to do something like the following:
+If you have done this right, you should get a lot of red writing appearing in your console. This because dividing by 0 is not possible, and the computer comes up with an error. So, if you were to input this into a program then god knows what might happen. Basically the computer will not know what to do and will ignore it, or in the most extreme cases, close. But, a good program designer will want to catch these errors and tell the user about what went wrong. To do this you will need a *try-catch block*. A try catch block is very easy to use because you need only to wrap the code around it. By that statement I mean you need to do something like the following:
 
 ```java
 try {
@@ -31,11 +31,12 @@ In this case I have used the parameters `Exception`, which is a generalised vers
 try {
   //code
 } catch(ArithmeticException e) {
-
+  //code
 } catch (NumberFormatException e) 
-
+  //code
 }
 ```
 
 There are a great number of exceptions, and to work out which one you need to use you mainly just have to create the error and read the report generated in the console. As a result I cannot list them, and will leave it up to you to work them out.
 
+[Time to create some pretty interfaces &rarr;](../Chapter-IV/Part-I:-MyFirstWindow.html)

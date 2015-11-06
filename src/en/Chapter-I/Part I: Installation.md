@@ -9,19 +9,19 @@ First, head over to Eclipse's website, which looks like this:
 
 ![A screenshot of the Eclipse website front page](../../Images/Chapter-I/Introduction/Eclipse_website_screenshot1.png)
 
-Next click the orange downloads button to take you to:
+Next, search in the searchbox for **Eclipse standard**:
 
-![A screenshot of the first page of downloads](../../Images/Chapter-I/Introduction/Eclipse_website_screenshot2.png)
+![A screenshot of the results](../../Images/Chapter-I/Introduction/Eclipse_website_screenshot2.png)
 
-Now click "eclipse standard", the first one listed, the latest version at the time of writing is version 4.4:
+Now click **Eclipse standard 4.4**, the first one listed:
 
-![Eclipse standard 4.4](../../Images/Chapter-I/Introduction/eclipse_standard.png)
+![Eclipse standard 4.4](../../Images/Chapter-I/Introduction/Eclipse_standard.png)
 
 Now under download links, you should see your OS (Operating System). Click it:
 
 ![Know your computer version](../../Images/Chapter-I/Introduction/Eclipse_download_links.png)
 
-Next, click where it says "[United Kingdom] UK Mirror Service (http)":
+Next, click where it says **[United Kingdom] UK Mirror Service (http)**, or do the same for whichever country you are in:
 
 ![This was made in the UK](../../Images/Chapter-I/Introduction/Eclipse_UK_mirror_service.png)
 

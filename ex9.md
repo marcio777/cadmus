@@ -1,23 +1,23 @@
 ```java
 public class Ex9 {
   public static void main(String[] args) {
-    int a = 5;
-    double b = Math.pow(5, 2);
-    System.out.println("5 to the power of 2 is " + b);
+    int alpha = 5;
+    double beta = Math.pow(5, 2);
+    System.out.println("5 to the power of 2 is " + beta);
 
-    int c = 5.5;
-    double d = Math.pow(5.5, 2);
-    System.out.println("5.5 to the power of 2 is " + d);
+    int gamma = 5.5;
+    double delta = Math.pow(5.5, 2);
+    System.out.println("5.5 to the power of 2 is " + delta);
 
-    int e = 10;
-    int f = (int) Math.pow(5, 2);
-    System.out.println("5 to the power of 2 is " + f);
+    int epsilon = 10;
+    int zeta = (int) Math.pow(5, 2);
+    System.out.println("5 to the power of 2 is " + zeta);
 
-    int l = 4;
+    int eta = 4;
     double sqrt = Math.sqrt(4);
     System.out.println("The square root of 4 is " + sqrt);
 
-    int m = 5;
+    int theta = 5;
     sqrt = Math.sqrt(5);
     System.out.println("The square root of 5 is " + sqrt);
   }

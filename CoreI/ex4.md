@@ -20,3 +20,22 @@ public class Ex4 {
   }
 }
 ```
+
+### Explanation
+A variable allows you to store a value in the computer's memory and retrieve it by an identifier e.g. `boys` or `girls` in our code. Variable must start with a letter and can contain underscores and numbers. E.g. `boys_1` is a valid identifier but `1boys` is not because it starts with a number. Variable names can also not contain spaces.
+
+In lines 3 to 10 we declare 7 variables, all of which are integers. Variable declarations begin with the data type, here `int` (for integer) then the variable identifier (e.g. `boys`). If you wish to give the variable a value straight away you can put ` = ` and then what you want it to equal.
+
+You can also declare and set a variable on different lines e.g.:
+```java
+int boys;
+boys = 400;
+```
+
+To use a variable just use it in the place of the value it refers to.
+
+Variables can be changed once they're defined, however they're data type can not change. This is not valid code:
+```java
+String name = "Billy";
+name = 5;
+```

@@ -1,17 +1,17 @@
 ```java
 public class Ex3 {
   public static void main(String[] args) {
-    // Look Numbers!!!
+    // Look, numbers!!!
     System.out.println(2);
     System.out.println(5034);
 
-    // Look arithmetic!!!
+    // Look, arithmetic!!!
     System.out.println("How old am I?");
     System.out.println(5 + 20);
 
-    // Look negative numbers!!!
-    System.out.println("What is 3229 subtract 234234?");
-    System.out.println(3229 - 23423);
+    // Look, negative numbers!!!
+    System.out.println("What is 3229 minus 234234?");
+    System.out.println(3229 - 234234);
 
     // We can also have numbers and strings on the same line
     System.out.println("How tall am I in m? " + 2);
@@ -28,8 +28,7 @@ public class Ex3 {
 ```
 
 ### Explanation
-In line 4, you will notice that unlike in the previous exercises where only strings were printed out, here a number was printed out. To be precise, an integer was printed out. An integer, like a string, is an example of a **data type** in Java. Whereas strings need to be put in double quotation marks, integers do not. It is important to note that numbers or rather numeric characters (e.g. 1,2,3,4,5,6,7,8,9,0) can be written in strings as in Line 13, but unlike integers they cannot be added, subtracted, etc. and instead Java treats them the same as letters and other symbols. It is essential you understand that `13` is different from `"13"`, as while `13 + 13` will result in `26`, `"13" + "13"` will result in `"1313"`.
-<br>
+In line 4, you will notice that unlike in the previous exercises where only strings were printed out, here a number was printed out. To be precise, an integer was printed out. An integer, like a string, is an example of a **data type** in Java. Whereas strings need to be surrounded by speech marks, integers do not. It is important to note that numbers or rather numeric characters (e.g. 1,2,3,4,5,6,7,8,9,0) can be written inside of strings as in line 13, but unlike integers that are outside of strings they cannot be added, subtracted, etc. Instead, Java treats them the same as letters and other symbols. It is essential that you understand that `13` is different from `"13"`, as while `13 + 13` will result in `26`, `"13" + "13"` will result in `"1313"`.
 
 As you can see from line 10, integers in Java can be added, subtracted, multiplied and divided. The symbol for multiplication is `*` and division is `/`. In Java this follows the same rules as maths, i.e. BIDMAS (Brackets, Indicies, Division, Multiplication, Addition, Subtraction). So `2 + 3 * 5` will be treated as `2 + (3 * 5)` not `(2 + 3) * 5`. A symbol you might not be familiar with in line 23 is `%`, the modulo operator. The modulo operator means the remainder when a number is divided by another number. So `8 % 5` is `3` as the remainder of `8/5` is 3. You can also use parentheses/brackets to make calculations clearer.
 <br>

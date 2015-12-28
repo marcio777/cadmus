@@ -34,9 +34,6 @@ In line 4, you will notice that unlike in the previous exercises where only stri
 As you can see from line 10, integers in Java can be added, subtracted, multiplied and divided. The symbol for multiplication is `*` and division is `/`. In Java this follows the same rules as maths, i.e. BIDMAS (Brackets, Indicies, Division, Multiplication, Addition, Subtraction). So `2 + 3 * 5` will be treated as `2 + (3 * 5)` not `(2 + 3) * 5`. A symbol you might not be familiar with in line 23 is `%`, the modulo operator. The modulo operator means the remainder when a number is divided by another number. So `8 % 5` is `3` as the remainder of `8/5` is 3. You can also use parentheses/brackets to make calculations clearer.
 <br>
 
-You can see from line 14, that in Java integers can both be positive and negative.
-<br>
-
 It is important you recognise that while `System.out.println(3229 - 234234)` makes sense `System.out.println(3229) - 234234` does not.  `System.out.println(3229) - 234234` makes no sense as you're saying print `3229` and subtract 234234 from whatever `System.out.println(3229)` equals. However `System.out.println(3229)` is a method and doesn't equal a value or rather **return** any value.
 <br>
 

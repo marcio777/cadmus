@@ -23,6 +23,8 @@ public class Ex8 {
   }
 }
 ```
+### Explanation
+In this program the `double` data type is introduced. The `double` data type lets you use and manipulate floating-point numbers (i.e. decimals). In Java, if you divide two integers, Java will always round downwards, as in line 18. If however you divide a floating-point number by an integer (as in line 19) or an integer by a floating-point number (as in line 20) or a floating-point number by another floating-point number, then you get a floating-point number, and Java will not round. Java treats any number with a decimal point as a floating-point number, even if it is just `.0`, that is why `10.0/3` will give `3.333...` but `10/3` will just give `3`. If however you assign an integer e.g. `10` to a variable, that has a `double` as a data type, then it will be implicitly converted to a `double`.
 
 ### Extension Programs
 1. Rewrite `Ex7` as `Ex8B` but using `Double.parseDouble` and storing mass and acceleration as floating point numbers.

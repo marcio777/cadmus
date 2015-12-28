@@ -11,6 +11,9 @@ public class Ex7 {
 }
 ```
 
+### Explanation
+The only thing new in this program, is the function `Integer.parseInt()`. `Integer.parseInt()` takes a single string variable and returns it as an integer. So it converts from strings to integers, essentially. This is useful as it lets you manipulate them mathematically. So if you pass in `"1234"` as its first argument, it will return `1234`.
+
 ### Extension Programs
 1. Write a program `Ex7B`, that calculates the power (measured in Watts) of an electrical device, given that Power = Current (in Amps) * Voltage (in Volts).
 

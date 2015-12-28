@@ -24,9 +24,6 @@ public class Ex2 {
 }
 ```
 
-### What you should get as output
---- IMAGE HERE ---
-
 ### Explanation
 1. As before there are two code blocks, both made clear by curly brackets, and one inside of the other. As you can hopefully tell, the innermost code block here is from line 3 to line 21. You might have noticed at the beginning rather than saying `public class Ex1` it now says `public class Ex2`. For now just think of a class as a way to organise code, and in Java the name of the class matches the name of the file.
 2. The code is very much like the last exercise, however, there are bits of code that begin with `//`. Anything after `//` up to the end of a line is called a comment. Comments are not computer code and they are ignored by the computer. They serve two purposes as explained in the comments of `Ex2.java`: they can be used to document lines of code and they can be used to "comment out" lines of code that you don't want to run (i.e. to see what happens if they don't run).

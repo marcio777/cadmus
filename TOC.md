@@ -25,17 +25,17 @@ Ex 18: Functions
 Ex 19: Number Guessing Game (java.util.Scanner)
 Ex 20: Hangman (java.util.Random)
 Ex 21: Classes
-Ex 22: Inheritance
-Ex 23: RPG (java.util.ArrayList)
-Ex 24: Try/Catch Blocks
-Ex 25: Line Filter (java.io.{BufferedReader, FileReader})
-Ex 26: Client Sockets (java.net.Socket, java.io.InputStreamReader, java.io.InputStream)
-Ex 27: Server Sockets (java.net.ServerSocket)
-Ex 28: Interfaces
-Ex 29: Threading
-Ex 30: Thread Pools
-Ex 31: Threaded Servers
-Ex 32: Asynchronous Servers
+Ex 22: More On Classes
+Ex 23: Inheritance
+Ex 24: RPG (java.util.ArrayList)
+Ex 25: Try/Catch Blocks
+Ex 26: Line Filter (java.io.{BufferedReader, FileReader})
+Ex 27: Client Sockets (java.net.Socket, java.io.InputStreamReader, java.io.InputStream)
+Ex 28: Server Sockets (java.net.ServerSocket)
+Ex 29: Interfaces
+Ex 30: Threading
+Ex 31: Thread Pools
+Ex 32: Threaded Servers
 
 ### Addendum I: Java Swing
 Ex 1: JFrame, JButton, FlowLayout, JLabel

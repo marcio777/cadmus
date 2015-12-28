@@ -21,8 +21,6 @@ public class Ex3 {
 
     // Remainders and division fun
     System.out.println("What is the remainder of 6 divided by 5? " + (6 % 5));
-    System.out.println("This isn't going to make sense: " + (30/8));
-    // Before running the program think about what the last line should print
   }
 }
 ```
@@ -33,4 +31,3 @@ public class Ex3 {
 3. It is important that you recognise that while `System.out.println(3229 - 234234)` makes sense, `System.out.println(3229) - 234234` does not.  `System.out.println(3229) - 234234` makes no sense as you're saying to print `3229` and then subtract 234234 from whatever `System.out.println(3229)` equals. However, `System.out.println(3229)` is a method and doesn't equal a value or rather **return** any value, so you are trying to subtract 234234 from nothing.
 4. In line 16 you can see that you can add, or rather **concatenate**, a string and an integer by using the `+` **operator**. For example, `"aaa" + 5` becomes `"aaa5"`.
 5. In line 17, in the expression `"How tall am I in cm?" + (2*100)`, `(2 * 100)` is first simplified to `200` and then concatenated with `"How tall am I in cm? "`. Although technically you don't need to put parentheses, as `*` has a higher precedence in BIDMAS than `+`.
-6. Finally, look at line 23. According to maths, 30/8 should equal 3.75. However, if you were to run the code (which you should have done), you would notice that the output is 3. This will be explained later in far grater detail, but for the moment, when dividing two integers, the computer will always round down. This is called **integer division**.

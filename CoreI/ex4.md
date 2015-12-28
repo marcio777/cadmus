@@ -31,9 +31,8 @@ public class Ex4 {
         
 4. To use a variable just call it in the place of the value it refers to, for example on line 12, the variable `boys` was used in place of the number `400` which it represents.
 5. The contents of variables can be changed once the variables have been defined, however their data types can not change. This is not valid code:
-```java
-String name = "Billy";
-name = 5;
-```
+
+        String name = "Billy";
+        name = 5;
 
 6. Finally, some terminology. **Variable declaration** is when you state the data type and identifier. **Variable initialisation** is when you give the variable a value **for the first time**. **Variable assignment** is when the variable is given a new value, replacing the old value.

@@ -19,7 +19,6 @@ public class Ex5 {
 ```
 
 ### Explanation
-In this exercise, strings are declared as variables, not just integers. The reason `String` is spelt with a capital "S", and `int` with a lowercase "I" is a matter I shall attend to later.
-<br>
+1. In this exercise, there are variables which use the data type of `String`, not just the data type `int`. The reason `String` is spelt with a capital "S", and `int` with a lowercase "i" is a matter I shall attend to later.
 
-One thing you haven't seen before, is `.length()`. `.length()` is a function that each string has. It is a function that **returns** the length of the string. So far we have only met methods which perform an action. Functions are like methods but they return values. The value they return is what their "output". `.length()` returns the length of a string as an integer. Note that all strings have the `.length()` method, not just those assigned to a variable. So you could equally write `"CW3400E".length()`.
+2. One thing you haven't seen before, is `.length()`. `.length()` is a method that every string has. It is a method that **returns** the length of the string. So far we have only met methods which perform an action, but these methods return a value; the returned value is their **output**. `.length()` returns the length of a string as an integer. Note that all strings have the `.length()` method, not just those assigned to a variable. So you could equally write `"CW3400E".length()` and get the same result as `post_code.length()`.

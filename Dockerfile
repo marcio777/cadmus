@@ -10,5 +10,5 @@ RUN npm install gulp -g
 RUN npm install
 #RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN gulp
-EXPOSE 5000
+EXPOSE 4999
 CMD ["nginx", "-c", "/app/.nginx.conf"]

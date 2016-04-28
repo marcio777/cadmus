@@ -11,9 +11,6 @@ public class Ex1 {
 }
 ```
 
-### What you should get as output:
---- IMAGE HERE ---
-
 ### Explanation
 1. Look at the curly brackets (`{` and `}`). There are 2 pairs of curly brackets in the code above. Notice that for each opening curly bracket (`{`), there is a corresponding closing curly bracket (`}`). The curly brackets represent code blocks and everything contained within them is part of that code block. That is why their contents are indented; indenting code is not necessary but makes code a lot easier to read and debug.
 

@@ -22,7 +22,7 @@ public class Ex4 {
 ```
 
 ### Explanation
-1. In lines 3 to 10, 8 variables are declared, all of which are integers. A variable allows you to store a value in the computer's memory and retrieve it with its identifier e.g. `boys` or `girls` in our code. 
+1. In lines 3 to 10, 8 **variables** are declared, all of which are integers. A variable allows you to store a value in the computer's memory and retrieve it with its identifier e.g. `boys` or `girls` in our code. 
 
 2. When creating a variable, one must begin with the data type, here `int` (for integer). The data type is when you, unsurprisingly, set the type of data which this variable will hold. Then, the variable identifier (e.g. `boys`) must be stated. Variable identifiers must start with a letter and can contain underscores and numbers, e.g. `boys_1` is a valid identifier but `1boys` is not, because it starts with a number. Variable names cannot contain spaces.
 3. If you wish to give the variable a value straight away you can put ` = ` and then what you want it to equal. However, you can just leave a variable without a starting value, and then give it a value later, as shown below:

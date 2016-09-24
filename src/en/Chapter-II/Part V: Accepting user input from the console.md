@@ -71,7 +71,7 @@ Add a lives element to the game so that the user only has ten or so lives to get
 ### Ex 5 (Games): Hangman
 N.B. This exercise is designed to stretch your computational thinking.
 
-Use what you have been taught to create a version of the game Hangman in the console. For the sake of simplicity display the lives as a number, rather than drawing out a pretty diagram, unless you want to.
+Use what you have been taught to create a version of the game Hangman in the console. For the sake of simplicity display the lives as a number, rather than drawing out a pretty diagram, unless you really want to.
 
 #### Hints
 - Use `.nextLine()` coupled with `.substring()` to get a one-letter string

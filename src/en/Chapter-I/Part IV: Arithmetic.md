@@ -1,151 +1,56 @@
 Arithmetic
 ===
 
-## Basic Arithmetic
-I really hope that you know how to do basic arithmetic already, so I'm going to skip through this quickly.
- 
-Adding two ints x and y (given that they have already been initialised to a value):
+Write out the following code fully (do not copy and paste!) and run it to inspect what it does.
 
 ```java
-int z = x + y;
+public class Numbers {
+  public static void main(String[] args) {
+    // Look, numbers!!!
+    System.out.println(2);
+    System.out.println(5034);
+
+    // Look, arithmetic!!!
+    System.out.println("How old am I?");
+    System.out.println(5 + 20);
+
+    // Look, negative numbers!!!
+    System.out.println("What is 3229 minus 234234?");
+    System.out.println(3229 - 234234);
+
+    // We can also have numbers and strings on the same line
+    System.out.println("How tall am I in m? " + 2);
+    System.out.println("How tall am I in cm? " + (2*100));
+    System.out.println("How many eggs do I own? " + 36);
+    System.out.println("How many dozens of eggs do I own? " + (36/12));
+
+    // Remainders and division fun
+    System.out.println("What is the remainder of 6 divided by 5? " + (6 % 5));
+  }
+}
 ```
 
-Subtracting two ints x and y:
+### Explanation
+1. As you can see integers in Java can be added, subtracted, multiplied and divided. The symbol for multiplication is `*` and division is `/`. In Java this follows the same rules as maths, i.e. BIDMAS (Brackets, Indices, Division, Multiplication, Addition, Subtraction). So `2 + 3 * 5` will be treated as `2 + (3 * 5)` not `(2 + 3) * 5`. A symbol you might not be familiar with is in line 22: `%`, the modulo operator. The modulo operator calculates the remainder when a number is divided by another number. So `8 % 5` is `3` as the remainder of `8/5` is 3. You can also use parentheses/brackets to make calculations clearer.
 
-```java
-int z = x - y;
-```
+2. It is important that you recognise that while `System.out.println(3229 - 234234)` makes sense, `System.out.println(3229) - 234234` does not.  `System.out.println(3229) - 234234` makes no sense as you're saying print `3229` and then subtract 234234 from whatever `System.out.println(3229)` equals. However, `System.out.println(3229)` isn't a number and doesn't equal a value, so you are trying to subtract 234234 from nothing.
 
-Dividing two ints x and y:
+3. In line 16 you can see that you can add, or rather **concatenate**, a string and an integer by using the `+` **operator**. For example, `"aaa" + 5` becomes `"aaa5"`.
 
-```java
-int z = x / y;
-```
+4. In line 17, in the expression `"How tall am I in cm?" + (2*100)`, `(2 * 100)` is first simplified to `200` and then concatenated with `"How tall am I in cm? "`. Although technically you don't need to put parentheses, as `*` has a higher precedence in BIDMAS than `+`.
 
-Beware, as x and y are ints z is also an int, and if you remember, ints are whole numbers, so whatever z comes out to be will be rounded down to the nearest integer (i.e. whole number). For example, if `x` was 7, and `y` was 5, then `z` would be `1` when `x` is divided by `y`.
-
-To avoid this problem you can use a double instead, so if `p` is a double equal to `7.0` and `q` is a double `5.0`, we could do the following:
-
-```java
-double p = 7;
-double q = 5;
-double r = p / q;
-//r would be 1.4
-```
-
-If, however, `p` and `q` are integers, `r` will equal `1.0`, because the `/` operator works irresepective of anything other than `p` and `q`, and their datatypes.
-
-Multiplying two integers x and y:
-
-```java
-int z = x * y;
-```
-
-The symbols for addition, subtraction, multiplication and division are `+`, `-`, `*` and `/` respectively.
-
-#### Ex 1 
-Write a program to work out what the power in watts of a device is if the voltage is 10V and the current is 6A, and print the result.
+### Exercises
+1. Write a program to work out what the power in watts of a device is if the voltage is 10V and the current is 6A, and print the result.
 Hint: Power (W) = Current * Voltage
 
-#### Ex 2 
-Write a program to work out the kinetic energy of an object with a mass of 500kg that has a velocity of 12 m/s, and print the result.
+2. Write a program to work out the kinetic energy of an object with a mass of 500kg that has a velocity of 12 m/s, and print the result.
 Hint: Kinetic Energy = 0.5 \* Mass \* (Velocity)<sup>2</sup>
 
-#### Ex 3 
-Write a program to answer the following physics question and print the result.  If a car has a mass of 800 kg and moves with a velocity of 25 m/s, what force is needed to stop the car in 50 metres?
+3. Write a program to answer the following physics question and print the result.  If a car has a mass of 800 kg and moves with a velocity of 25 m/s, what force is needed to stop the car in 50 metres?
 Hint: You will need the equation Energy = Force * Distance and the previous exercise.
 
-#### Ex 4
-Write a program to work out the missing angle of a triangle which has two known angles of 108 degrees and 24 degrees.
+4. Write a program to work out the missing angle of a triangle which has two known angles of 108 degrees and 24 degrees.
 Hint: The angles of a triangle must sum up to 180 degrees.
 
-#### Ex 5
-Write a program in which you work out the percentage efficiency of a light bulb that is supplied with 50J (Joules), and uses 2J to produce light, leaving 48J wasted as thermal energy. Then, print the result.
+5. Write a program in which you work out the percentage efficiency of a light bulb that is supplied with 50J (Joules), and uses 2J to produce light, leaving 48J wasted as thermal energy. Then, print the result.
 Hint: % efficiency = (useful power)/(total power).
-
-## Advanced Arithmetic
-Advanced Arithmetic is one way to describe this, the other is endless Math functions. This will be mentioned again, but to import this you will need the import `java.lang.Math`. 
-
-However, what is an import you ask? In Java there are things called packages, which are pre-made pieces of code. For example, in the `Math` package there is the function `Math.max()`, which takes two arguments and finds the biggest one. That can be done in one line, but somewhere there is a piece of code that makes this function work. The code which makes it work is held in the package. So, you could write out the code yourself, and take a load of lines, or import the code, and save a lot of time. To import a package you have to use the following syntax: `import <insert package name here>;`.
-
-The `java.lang.Math` package contains a load of functions which do various mathematical things, which we will now explore.
-
-### Absolute values
-The first function turns a number into an absolute value. But for that to mean anything, we need to know what an absolute value is. The basic way of saying it is that it is a number regardless of its sign. Therefore -6 = 6 just as 6 = 6. To do this you will need the function `Math.abs()` which can be used in situations such as the following:
-
-```java
-int a = 20;
-int b = 27;
-int c = a - b;
-//in that case c = -7, or you could do the following:
-int c = Math.abs(20 - 27);
-//in which case c = 7
-```
-
-### Maximum & Minimum
-The maximum and the minimum functions take two values and returns either the biggest or the smallest value respectively. You could just do this using two values, which is what I will use as an example, or you could takes two numbers that the user inputted and return the maximum or minimum value. You will learn how to do this in the next chapter. Back on track, this is how they work:
-
-```java
-int a = Math.max(27, 38);
-//a = 38
-int b = Math.min(27, 38);
-//b = 27
-```
-
-### Rounding
-Rounding can be done in three forms using the `java.lang.Math` package. These three forms are `Math.ceil()`, `Math.floor()` and `Math.round()`. Let's do these in order. `Math.ceil()` will round a number up, no matter what the decimal is. So, this is possible:
-
-```java
-Math.ceil(5.23);
-//prints out 6 despite 0.23 being under 0.5
-```
-
-`Math.floor()` does the exact opposite and will always round down:
-
-```java
-Math.floor(5.76);
-//prints out 5
-```
-
-Finally there is `Math.round()`, which actually works like rounding is supposed to!! It's a miracle:
-
-```java
-Math.round(5.23);
-//prints out 5 whereas:
-Math.round(5.76);
-//prints out 6
-```
-
-### Powers
-To get the value of a number to a given power you can use the `Math.pow()` function, which takes two parameters: a number and a power. Then in your `main` method, you can write:
-
-```java
-int number = 2;
-int power = 3;
-System.out.println(Math.pow(number, power));
-// Prints 8
-```
-
-### Square Roots
-Another function in that package is the `Math.sqrt()` that returns the square root of a number.
-
-```java
-System.out.println(Math.sqrt(25)); // Prints 5
-```
-
-### Remainders
-To get the remainder of an int a when divided by another int b we can use `%` instead of `/` when dividing, so `a % b`, where a = 7 and b = 5...
-
-```java
-int n = 7 % 5;
-// would result in n being 2.
-```
-
-#### Ex 6
-Write a program that, given four numbers *x<sub>1</sub>*, *y<sub>1</sub>*, *x<sub>2</sub>* and *y<sub>2</sub>* that are points on a graph, calculates the distance between them using the formula:
-
-![Distance formula](../../Images/Chapter-I/Arithmetic/calculations_for_points_on_a_graph.png)
-
-This is very useful in collision dectection, in scientific models and game programming.
-
-[Let's go see some arrays &rarr;](./Part-V:-Arrays.html)

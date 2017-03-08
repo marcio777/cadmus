@@ -32,7 +32,10 @@ gulp.task("convert", function() {
 		.pipe(marked({
 			highlight: function(code, lang) {
 				if(lang) {
-					return highlight.highlight(lang, code).value;
+					return highlight.highlight(lang, code).value.split("\n").map(function(p, i) {
+						return "<span class=\"line-line\"><span class=\"line-number\">" + (i + 1) + "</span><span class=\"line-contents\">" + p + "</span></span>";
+					}).join("\n");
+					//return highlight.highlight(lang, code).value;
 				} else {
 					return code;
 				}

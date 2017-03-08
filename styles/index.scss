@@ -5,6 +5,11 @@ body {
     padding: 30px;
 }
 
+.markdown-body {
+  padding-left:40px;
+  padding-right:40px
+}
+
 .ribbon {
 	top: 3.2em;
     right: -3.7em;
@@ -47,6 +52,12 @@ nav ul {
 .title {
 	font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 	text-align:center;
+}
+
+.line-number {
+  display:inline-block;
+  width:30px;
+  color:#998;
 }
 
 body {

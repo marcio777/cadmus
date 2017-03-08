@@ -43,28 +43,23 @@ int z = x * y;
 
 The symbols for addition, subtraction, multiplication and division are `+`, `-`, `*` and `/` respectively.
 
-#### Ex 1 (Physics)
+#### Ex 1 
 Write a program to work out what the power in watts of a device is if the voltage is 10V and the current is 6A, and print the result.
 Hint: Power (W) = Current * Voltage
 
-#### Ex 2 (Physics)
+#### Ex 2 
 Write a program to work out the kinetic energy of an object with a mass of 500kg that has a velocity of 12 m/s, and print the result.
 Hint: Kinetic Energy = 0.5 \* Mass \* (Velocity)<sup>2</sup>
 
-#### Ex 3 (Physics)
+#### Ex 3 
 Write a program to answer the following physics question and print the result.  If a car has a mass of 800 kg and moves with a velocity of 25 m/s, what force is needed to stop the car in 50 metres?
 Hint: You will need the equation Energy = Force * Distance and the previous exercise.
 
-#### Ex 4 (Maths)
+#### Ex 4
 Write a program to work out the missing angle of a triangle which has two known angles of 108 degrees and 24 degrees.
 Hint: The angles of a triangle must sum up to 180 degrees.
 
-#### Ex 5 (Ecology)
-![A quadrat](../../Images/Chapter-I/Arithmetic/Quadrants.png)
-
-A standard quadrat used in school has an area of 0.25m<sup>2</sup>. A quadrat is used to sample a random area of a field to estimate the abundance/variety/percentage coverage of a species. For a random sampling to be statistically viable, at least 3% of the area must be sampled. Write a program, given the size of an area, (say 2000m<sup>2</sup>) works out the amount of different samplings that must be done.
-
-#### Ex 6 (Physics)
+#### Ex 5
 Write a program in which you work out the percentage efficiency of a light bulb that is supplied with 50J (Joules), and uses 2J to produce light, leaving 48J wasted as thermal energy. Then, print the result.
 Hint: % efficiency = (useful power)/(total power).
 
@@ -146,7 +141,7 @@ int n = 7 % 5;
 // would result in n being 2.
 ```
 
-#### Ex 7 (Geometry, Physics, Chemistry, Game Programming)
+#### Ex 6
 Write a program that, given four numbers *x<sub>1</sub>*, *y<sub>1</sub>*, *x<sub>2</sub>* and *y<sub>2</sub>* that are points on a graph, calculates the distance between them using the formula:
 
 ![Distance formula](../../Images/Chapter-I/Arithmetic/calculations_for_points_on_a_graph.png)

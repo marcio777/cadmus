@@ -32,17 +32,17 @@ Here is what will happen:
 
 Once this occurs the for loop finishes and the code inside of the loop is no longer run.  Once you understand how a for loop works, the rest of the loops are fairly easy to pick up!
 
-#### Ex 1 (Maths)
+#### Ex 1
 Use a loop of your choice to print out all the multiples of 9 within the range 0-108.
 Hint: x is a multiple of 9 if `x % 9` is 0.
 
-#### Ex 2 (Maths)
+#### Ex 2
 Modify the last exercise so that you print the sum of all the multiples of 9. Hint: You will need to use `+=`.
  
-#### Ex 3 (Maths)
+#### Ex 3
 Write a program, that given a number `n`, calculates whether it is a prime number. `n` should be declared at the beginning.
 
-#### Ex 4 (Morphology)
+#### Ex 4
 Write a program that returns the syllable count of a given word. The word should be defined at the beginning. To do this count the number of vowels including `y` (unless it is at the start of a word), excluding two or more vowels that are in a row (dipthongs).
 
 ## While loops
@@ -78,7 +78,7 @@ while(true) {
 }
 ```
 
-#### Ex 5 (Maths)
+#### Ex 5
 Write a program, that prints all the multiples of a given number, while they are under a hundred.
 
 ## Do loops

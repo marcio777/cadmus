@@ -48,7 +48,7 @@ for(INITIALISATION; CONDITION; INCREMENT) {
 
 2. Loops in general are very important to programmers as they allow us to do complicated, long-winded calculations in a short amount of time and using fewer lines of code. `For` loops are mostly used for counting up or down in steps, usually in steps of 1. There are 3 parts to any `for` loop: initialisation, condition and increment.
   
-3. Remember `++` means add `1`, and `--` means subtract `1`. Similarly remember `+= n` means add `n` and `-= n` means subtract `n`. If we wanted to, we could write `i = i + 1` rather than `i++` but that would be more tedious.
+3. Remember `++` means add `1`, and `--` means subtract `1`. Similarly remember `+= n` means add `n` and `-= n` means subtract `n`. If we wanted to, we could write `i = i + 1` rather than `i++`, but that would be more tedious.
 
 3. The `BODY` is the code that is going to be repeated. The `INITIALISATION` where you declare the variable that will be increased or decreased; in most cases programmers use `i` and it is declared as an integer. The `CONDITION` is what must remain true at the end of each iteration of the `BODY` for the `for` loop to continue. The `INCREMENT` is what happens after each iteration of the `BODY` of the `for` loop.
 

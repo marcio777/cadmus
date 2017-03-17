@@ -1,113 +1,66 @@
 Loops
 ===
 
-Loops are very important to programmers as they allow us to do complicated, long-winded calculations in a short amount of time.
-
-There are four main loops in Java, the **for loop**, **while loop**, **do loop**, and **array loop**. 
-
-## For loops
-For loops are mostly used for counting up or down in steps, usually in steps of one. There are 3 parts: initialisation, a condition and a step-change.  
-
-The initialisation is where you declare a counter to a value of your choice (most of the time we use 0 if counting up to a certain value).
-
-The condition is the statement which must be true for the loop to continue, usually a less than or greater than statement, involving the counter.  
-
-We also have a step-change part to change the counter after each iteration, for increasing by one we will use ++ (as described previously), and for decreasing by one we will use --.  So now you know how a for loop works it is time to show you what one looks like.  
-
-Below is a for loop which starts at 0, counts up by 1 each step, and prints out the number of each step, until 10 steps have been reached.
-
 ```java
-for(int n = 0; n <= 10; n++) {
-	System.out.println(n);
+public class ForLoops {
+  public static void main(String[] args) {
+    // Loop from 0 to 9, incrementing by 1 each time
+    for(int i = 0; i < 10; i++) {
+      System.out.println(i);
+    }
+
+    for(int i = 0; i < 10; i += 2) {
+      System.out.println(i);
+    }
+
+    for(int i = 10; i > 0; i--) {
+      System.out.println(i);
+    }
+
+    for(int i = 10; i > 0; i -= 2) {
+      System.out.println(i);
+    }
+
+    for(int i = 1; i < 257; i *= 2) {
+      System.out.println(i);
+    }
+
+    for(int i = 1024; i > 0; i /= 2) {
+      System.out.println(i);
+    }
+  }
 }
 ```
 
-Here is what will happen:
+### Explanation
+1. In this exercise, we introduce `for loops`, which are a code structure to repeat code a certain number of times. For loops consist of several parts in the form:
 
-1. In the brackets of the for loop we initialise a variable called `n` to 0, and we use `n++` to increase n by 1 after each iteration, and we continue to do this while `n` is less than or equal to 10.  
-2. So, at first, the loop will run the program to check to see whether the value of `n` meets the condition `n<=10`, and since 0 is less than 10, `n` meets the condition, which means that the piece of code within the {} is run once. 
-3. `n` is increased by 1. 
-4. The program checks to see whether the new value of `n` meets the condition, and since 1 is still less than 10 the code inside of the {} of the for loop is run once again.
-5. This process continues until `n` is no longer less than or equal to 10, so the loop will stop when `n` is 11 (and breathe). 
+  ```java
+for(INITIALISATION; CONDITION; INCREMENT) {
+    BODY;
+}
+  ```
 
-Once this occurs the for loop finishes and the code inside of the loop is no longer run.  Once you understand how a for loop works, the rest of the loops are fairly easy to pick up!
+2. Loops are very important to programmers as they allow us to do complicated, long-winded calculations in a short amount of time. For loops are mostly used for counting up or down in steps, usually in steps of one. There are 3 parts: initialisation, condition and increment.
+  
+3. Remember `++` means add 1, and `--` means subtract 1. Similarly remember `+= n` means add `n` and `-= n` means subtract n. If we wanted to we could write `i = i + 1` rather than `i++` but it would be more tedious.
 
-#### Ex 1
-Use a loop of your choice to print out all the multiples of 9 within the range 0-108.
+3. The `BODY` is the code that is going to be repeated. The `INITIALISATION` where you declare the variable that will be increased or decreased; in most cases programmers use `i` and it is declared as an integer. The `CONDITION` is what must remain true at the end of each iteration of the `BODY` for the for loop to continue. The `INCREMENT` is what happens after each iteration of the `BODY` of the for loop.
+
+4. So, for the first for loop, `i` is initialised to `0` and the condition `i < 10` is checked. Since that is true, the body is run. Then the increment runs, which increases `i` by 1, and the condition is checked. It remains true, so the body is run. This continues until `i` is incremented to 10, after which the loop stops. Therefore the loop goes from `0` (inclusive) to `9` (inclusive).
+ 
+5. The increment doesn't have to just be increase by 1, as is shown in the code above. In the third for loop, i starts at 10 and then decreases until it is 0. In the fifth for loop, i is multiplied by 2 every time the code runs until it is greater than 256.
+
+### Exercises
+1. Write a program, `Ex10B` to produce the following sequence: `1 -2 4 -8 16 -32` stopping once it gets to 2000.
+
+2. Write a program, `Ex10C` that produces the following sequence: `1 3 6 10 15 21 28 36`. Hint: Use a counter to store the last number you've printed out, and think about what number to start at.
+
+3. Write a program `Ex10D` that prints out all the multiples of 0 between 0 and 108.
 Hint: x is a multiple of 9 if `x % 9` is 0.
 
-#### Ex 2
-Modify the last exercise so that you print the sum of all the multiples of 9. Hint: You will need to use `+=`.
- 
-#### Ex 3
-Write a program, that given a number `n`, calculates whether it is a prime number. `n` should be declared at the beginning.
-
-#### Ex 4
-Write a program that returns the syllable count of a given word. The word should be defined at the beginning. To do this count the number of vowels including `y` (unless it is at the start of a word), excluding two or more vowels that are in a row (dipthongs).
-
-## While loops
-
-So, onto the while loop. The while loop has only one condition and if the condition is met then the code is run, otherwise the loop finishes.  Below is an example of a while loop. (With while loops, variables must be initialised before the loop starts).
-
-```java
-public void countTenWithWhileLoop() {
-	int n = 0;
-	while (n <= 10) {
-		System.out.println(n);
-	}
-}
-```
-
-Do you see any problems with this loop?  This is an example of an infinite loop, which is a loop that never ends as `n` stays the same. In order for the loop to finish, we need to include a piece of code to change the value of `n`.  Hopefully you have worked out that we could use `n++` to do this.  So, the correct loop would look like this:
-
-```java
-public void countTenWithWhileLoop() {
-	int n = 0;
-	while (n <= 10) {
-		System.out.println(n);
-		n++;
-	}
-}
-```
-
-The best way of having an infinite loop is to use a while loop and set the condition to true. This way the condition is always true and so the code always gets executed.  It would look like this:
-
-```java
-while(true) {
-	// code to execute
-}
-```
-
-#### Ex 5
-Write a program, that prints all the multiples of a given number, while they are under a hundred.
-
-## Do loops
-
-Now onto the do loop.  This loop is nearly exactly the same as the while loop.  However the piece of code within the loop is run before checking to see if the condition is met.  This guarantees that the code is always run at least once.  Here is an example of a do loop.
-
-```java
-public void countTenWithDoLoop() {
-	int n=0 ;
-	do {
-		System.out.println(n);
-		n++;
-	} while (n<=9);
-}
-```
-
-Notice here that we must change the parameters of the `while` from 10 to 9, as if we keep it as 10, once n becomes 11 the piece of code will be run and then the program will check to see if the condition is met. In other words a do loop may run one more time than you want it to if you are not careful.
-
-## Array loops
-
-Finally the array loop.  This is just a more succinct way of looping through an array. It is constructed like a for loop, but inside the parentheses, you write: a variable instantiation of type of a given item of the array; a colon; and the name of the array.
-
-```java
-public void printIntArray() {
-	for(int n : nameOfArray) {
-		System.out.println(n);
-	}
-}
-```
+4. Write a program `Ex10E` that prints the sum of all the multiples of 9 between 0 and 108. 
+Hint: You will need to use `+=`.
 
 [Phew, I'm glad that's over; oh, there's more &rarr;](../Chapter-II/Part-I:-Introduction.html)
 

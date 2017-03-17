@@ -30,10 +30,10 @@ public class WhileLoops {
 ```
 
 ### Explanation
-1. In this exercise, we introduce `while` loops, which are another kind of loop. They are like for loops but they only have one condition that has to be met, and no initialisation or increment. That is why variables used in the condition are defined beforehand.
+1. In this exercise, we introduce `while` loops, which are another kind of loop. They are like for loops, but they only have one condition that has to be met, and no initialisation or increment. That is why variables used in the condition are defined beforehand.
 2. Like for loops, the while loop continues until the condition specified in parentheses is no longer met.
-3. The first while loop loops until `i` equals 11, whereas the second while loop loops until `i` is perfectly divisible by 5.
-4. In the third while loop, `i` is decremented. It continues to run, till `i` becomes 0.
+3. The first while loop repeats itself until `i` equals 11, whereas the second while loop repeats itself, until `i` is divisible by 5.
+4. In the third while loop, `i` is decremented. It continues to run, until `i` becomes 0.
 5. While loops are always in the form:
 ```
 while(CONDITION) {
@@ -42,12 +42,10 @@ while(CONDITION) {
 ```
 
 ### Exercises
-1. Write a program, `Ex11B` to produce the following sequence: `1 -2 4 -8 16 -32` stopping once it gets to 2000.
+1. Write a program, `Ex11B` to produce the following sequence: `1 -2 4 -8 16 -32`, stopping once it gets to 2000.
 
 2. Write a program, `Ex11C` that produces the following sequence: `1 3 6 10 15 21 28 36`. Hint: Use a counter to store the last number you've printed out, and think about what number to start at.
 
-3. Write a program `Ex11D` that prints out all the multiples of 0 between 0 and 108.
-Hint: x is a multiple of 9 if `x % 9` is 0.
+3. Write a program `Ex11D` that prints out all the multiples of 9 between 0 and 108.
 
 4. Write a program `Ex11E` that prints the sum of all the multiples of 9 between 0 and 108. 
-Hint: You will need to use `+=`.

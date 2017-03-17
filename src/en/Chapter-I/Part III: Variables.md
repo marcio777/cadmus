@@ -54,24 +54,6 @@ Binary operators like `+`, `-`, `/` and `*` take two int values.
 
 You will learn how to convert between variables at a later point.
 
-### Real numbers
-While an integer is a whole number, a real number has a decimal point in it. To use a real number in Java, use the `double` data type:
-
-```java
-double pi = 3.14159265359;
-```
-
-You can convert a double into a String, and you will find out how to do that later. That is possible because the method simply sets it to be a piece of text. However, what if you wanted to convert a double into an integer? You will be finding out how to do that using `Integer.parseInt()` in Chapter II, but doing so here will make Java have a fit - it can't understand an integer with a decimal point. To convert it you would use something called "casting". This is the only time I will mention it, so listen carefully. Casting is very easy - all you have to do is write what you want to cast it to in brackets before the actual value. In other words, to make a random number (for example) an int, and not a double,  you would do the following:
-
-```java
-int pi = (int) (Math.random());
-//'pi' is now a random integer
-```
-
-N.B. **DO NOT USE MATH.RANDOM(), YOU WILL FIND A BETTER OPTION IN ONE OF THE EXERCISES IN THE NEXT CHAPTER. I AM SIMPLY USING IT FOR DEMOSTRATORY PURPOSES.**
-
-This can work with other things as well, and may serve as a faster way to convert between variable formats.
-
 ### Booleans
 A boolean is a variable that has two possible values - `true` or `false`. That's it:
 
@@ -89,17 +71,16 @@ char myChar = 'h';
 Bear in mind that when declaring chars, you must use quotation marks, not speech marks.
 
 #### Ex 1
-Write a program in which you initialise an int, a double, a char, a boolean and a String to suitable values of you choice, then get the program to print out the values of each variable on a new line. So if the int is equal to 4, the first line to be printed would be:
+Write a program in which you initialise an int, a char, a boolean and a String to suitable values of you choice, then get the program to print out the values of each variable on a new line. So if the int is equal to 4, the first line to be printed would be:
 `The value of the int is 4`.
 
 ## Primitives versus Classes
-You may have picked up on the fact that `String` is capitalised, while `int`, `double`, `char` and `boolean` are not. This is because `int`, `double`, `char` and `boolean` are all **primitive data types**, while  `String` is a **class data type**. These may not mean anything to you yet, but in essence there are 8 built-in primitives within Java. Primitives cannot be added or removed by the programmer; they are the DNA of the programming language. Primitives represent one scalar value. Classes are far more powerful than primitives. They shift the power to the programmer, allowing the programmer to create classes, which are composed from other data types. Java comes with a bunch of classes built in, namely `String`.
+You may have picked up on the fact that `String` is capitalised, while `int`, `char` and `boolean` are not. This is because `int`, `char` and `boolean` are all **primitive data types**, while  `String` is a **class data type**. These may not mean anything to you yet, but in essence there are 8 built-in primitives within Java. Primitives cannot be added or removed by the programmer; they are the DNA of the programming language. Primitives represent one scalar value. Classes are far more powerful than primitives. They shift the power to the programmer, allowing the programmer to create classes, which are composed from other data types. Java comes with a bunch of classes built in, namely `String`.
 
-But what about `Integer`, `Double`, and `Boolean` etc.? These are indeed classes, that wrap around their respective primitives. So the following would be perfectly valid:
+But what about `Integer` and `Boolean`? These are indeed classes, that wrap around their respective primitives. So the following would be perfectly valid:
 
 ```java
 Integer age = 13;
-Double pi = 3.14;
 Boolean alive = false;
 ```
 
